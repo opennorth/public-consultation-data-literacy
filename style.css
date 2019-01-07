@@ -22,7 +22,6 @@
       padding: 15px;
     }
 
-
     /* added to fix as issue with the modal popup */
     .fade.in {
     	opacity: 1;
@@ -44,4 +43,16 @@
         padding: 15px;
       }
       .row.content {height:auto;} 
+    }
+    .body-title{
+      margin-top: 20px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .dropdown-menu{
+      position: absolute; 
+      will-change: transform; 
+      top: 0px; 
+      left: 0px; 
+      transform: translate3d(0px, 38px, 0px);
     }
