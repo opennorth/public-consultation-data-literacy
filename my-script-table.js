@@ -1,9 +1,10 @@
-url1 = "https://hannahker.github.io/web-development/data-sample.json"
+url1 = "https://hannahker.github.io/web-development/data.json"
 
 function getData(source){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
 		XMLHttpRequestObject = new XMLHttpRequest();
+		XMLHttpRequestObject.responseType = 'json';
 
 	} else if(window.ActiveXObject){
 		XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
@@ -14,7 +15,8 @@ function getData(source){
 		XMLHttpRequestObject.onreadystatechange = function(){
 			if (XMLHttpRequestObject.readyState == 4 && XMLHttpRequestObject.status == 200){
 				//document.getElementByID("targetDiv").innerHTML = XMLHttpRequestObject.responseText;
-				console.log(XMLHttpRequestObject.response)
+				test =XMLHttpRequestObject.response[3].Date;
+				console.log(test);
 				delete XMLHttpRequestObject; 
 				XMLHttpRequestObject = null; 
 			}
