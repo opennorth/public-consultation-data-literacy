@@ -22,17 +22,21 @@ request.onload = function() {
     	document.getElementById("dropdown-1").innerHTML = data.Dropdown[0];
     	document.getElementById("dropdown-2").innerHTML = data.Dropdown[1];
     	document.getElementById("dropdown-3").innerHTML = data.Dropdown[2];
-    	//fill in body
-		document.getElementById("body1-title").innerHTML = data.Body[0].title;
-		document.getElementById("body1-content").innerHTML = data.Body[0].Content;
-		document.getElementById("body2-title").innerHTML = data.Body[1].title;
-		document.getElementById("body2-content").innerHTML = data.Body[1].Content;
-		//fill in modal
-		document.getElementById("modal-button").innerHTML = data.Modal.button;
-		document.getElementById("modal-title").innerHTML = data.Modal.title;
-		document.getElementById("modal-content").innerHTML = data.Modal.content;
-		document.getElementById("modal-close").innerHTML = data.Modal.close;
+    		 
 	}
 	fillContent(json_data);
+
+	function changeTable1(){
+		console.log("table 1");
+	}
+	changeTable1();
+
+	function changeTable2(){
+		console.log("table 2");
+	}
+
+	function changeTable3(){
+		console.log("table 3");
+	}
 
 }

@@ -56,3 +56,23 @@
       left: 0px; 
       transform: translate3d(0px, 38px, 0px);
     }
+    .card-title{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .group-buttons{
+      margin-bottom: 20px;
+      width:370px;
+      margin: auto;
+    }
+    .table1{
+      height:200px;
+      overflow: auto;
+      margin-top: 20px;
+    }
+    .progress{
+      margin: 15px;
+    }
+    .error{
+      color:red;
+    }
