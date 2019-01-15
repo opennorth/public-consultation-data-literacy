@@ -1,5 +1,7 @@
 url1 = "https://hannahker.github.io/web-development/data.json";
 url2 = "https://hannahker.github.io/web-development/header.json"
+url3 = "https://hannahker.github.io/web-development/data2.json";
+url4 = "https://hannahker.github.io/web-development/data3.json";
 
 
 function getData(source, type){
