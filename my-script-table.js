@@ -28,16 +28,34 @@ function getData(source, type){
 					//add table headers with content in the first JSON object
 					for(i=0; i<columns; i++){
 						attribute = Object.keys(data[0])[i];
-						header = "<th scope=\"col\">" + data[0][attribute] + "</th>";
+						content = data[0][attribute];
+						//shorten the content printed in the table to improve visuals 
+						//full content visible in tooltip
+						if(content.length>100){
+							shortened_content = content.substring(0,100);
+							header = "<th title=\"" + content + "\" scope=\"col\">" + shortened_content + "...</th>";
+						}else{
+							header = "<th scope=\"col\">" + content + "</th>";
+						}
+						
 						table += header; 
 					}
 					table += "</tr></thread><tbody>"; 
 					//add content to the table
 					for(i=1; i<rows; i++){
-						table+="<tr><th scope=\"row\"></th>";
+						table+="<tr>";
 						for(j=0; j<columns; j++){
-							attribute = Object.keys(data[i])[j]
-							entry = "<td>" + data[i][attribute] + "</td>";
+							attribute = Object.keys(data[i])[j];
+							content = data[i][attribute];
+							//shorten the content printed in the table to improve visuals 
+							//full content visible in tooltip
+							if(content.length>100){
+								shortened_content = content.substring(0,100); 
+								entry = "<td title=\"" + content + "\">" + shortened_content + "...</td>";
+							}else{
+								entry = "<td>" + content + "</td>";
+							}
+							
 							table+=entry;
 						}
 						table+="</tr>"; 
@@ -64,7 +82,7 @@ function getData(source, type){
 			    	document.getElementById("body1-title").innerHTML = data.Body[0].title;
 				}
 
-				//determine which 
+				//determine which type of content to fill
 				if(type>0){
 					fillTable();
 				}
