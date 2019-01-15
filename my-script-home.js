@@ -42,17 +42,4 @@ request.onload = function() {
 	}
 	fillContent(json_data);
 
-	function changeTable1(){
-		console.log("table 1");
-	}
-	changeTable1();
-
-	function changeTable2(){
-		console.log("table 2");
-	}
-
-	function changeTable3(){
-		console.log("table 3");
-	}
-
 }
