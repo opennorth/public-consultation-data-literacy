@@ -11,7 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style-m1.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -21,7 +21,7 @@
 
   <!-- nav bar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-    <a id="title" class="navbar-brand" href="#"></a>
+    <a id="title" class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,12 +29,12 @@
     <div class="navbar-collapse collapse" id="navbarColor01" style="">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a id="header-1" class="nav-link" href="home.html"><span class="sr-only">(current)</span></a>
+          <a id="header-1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
         </li>
         <li class="nav-item dropdown  active">
   	    <a id="header-2" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
   	    <div class="dropdown-menu" x-placement="bottom-start">
-  	      <a id="dropdown-1" class="dropdown-item" href="table.html"></a>
+  	      <a id="dropdown-1" class="dropdown-item" href=#"></a>
   	      <div class="dropdown-divider"></div>
   	      <a id="dropdown-2" class="dropdown-item active" href="module1.html"></a>
   	      <a id="dropdown-3" class="dropdown-item" href="module2.html"></a>
@@ -59,9 +59,7 @@
       <!-- center content --> 
       <div class="col-sm-8 text-left"> 
 
-        <div id="body1-title" class="body-title"><h3>Module 1: What is Public Consultation Data?</h3></div>
-        <div id="body1-content"></div>
-        <hr><hr>
+        <div class="body-title m1"><h3>Module 1: Consultation Results as Data</h3></div>
 
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -79,33 +77,85 @@
         </ul>
 
         <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade show active" id="first">
-                <div id="item1">
-                  <div id="body2-title" class="body-title"><h4>Consultation Results as Data</h4></div>
-                  <div id="body2-content"><p></p></div>
-                </div>
+
+          <!-- First tab pane --> 
+          <div class="tab-pane fade show active" id="first">                
+                  <div id="body2-title" class="tab content header 1"><h4>Consultation Results as Data</h4></div>
+                  <div id="body2-content" class='tab content a'>
+                    <p>Imagine that you have consulted Canadians across the country on the visitor fees for National Parks. These visitor fees were last adjusted in 2008, and you believed that it was time to engage citizens in conversations on this topic. You want to understand how citizens feel about fee adjustments, and the desire that citizens have for value-added services, such as guided tours and recreational facilities. You have used multiple approaches to consult with citizens on this topic:</p>
+
+                    <p>1. You have held 15 town hall meetings in communities across the country. Citizens attended these meetings in person to learn more about fee structures at Canada’s National Parks and share their opinions with you and other members of your team. During each of these meetings, members of your team took notes on the key topics that were discussed.</p>
+                    <p>
+                    2. You created an online questionnaire that was distributed to citizens across the country. This form contained several multiple choice questions and several freeform text questions. You collected 3305 responses to this questionnaire, which were then exported to a spreadsheet.</p>
+
+                    <p>3. Members of your team conducted 24 telephone interviews with key stakeholders and civil society representatives. These telephone interviews were recorded and transcribed.</p>
+
+                    <p>You now have lots of feedback from Canadians. This is all valuable data! You will use it to inform the decisions that you make about visitor fees for National Parks.</p>
+
+                    <p>Let's review the types of data that you have collected:</p>
+                  </div>
+                  <div class='tab content button'>
+                    <button type="button" class="btn btn-success" id="notes" onclick="reveal('notesDiv')">Handwritten notes</button>
+                    <button type="button" class="btn btn-success" id="spreadsheet" onclick="reveal('spreadsheetDiv')">Spreadsheet</button>
+                    <button type="button" class="btn btn-success" id="transcript" onclick="reveal('transcriptDiv')">Transcript</button>
+                  </div>
+                  <div id='notesDiv' class="card text-white bg-primary mb-3">
+                    <div class="card-header"><b>Handwritten notes</b></div>
+                    <div class="card-body">
+                      <p class="card-text">You have 47 pages of notes taken by your colleagues during the town hall meetings. Your colleagues transcribed some key quotes, summarized key points, and noted the names of citizens who participated.</p>
+                      <div class=card-image><img src='images/notes.png'></div>
+                    </div>
+                  </div>
+                  <div id='spreadsheetDiv' class="card text-white bg-primary mb-3">
+                    <div class="card-header"><b>Spreadsheet</b></div>
+                    <div class="card-body">
+                      <p class="card-text">You have an Excel file (.XLSX) with 3305 responses to the online form that you sent to citizens. Each response contains responses to multiple choice questions and freeform text responses. Each response also contains the age and gender of the respondent, the date and time of form submission, and a unique ID number.</p>
+                      <div class=card-image><img src='images/spreadsheet.png'></div>
+                    </div>
+                  </div>
+                  <div id='transcriptDiv' class="card text-white bg-primary mb-3">
+                    <div class="card-header"><b>Transcript</b></div>
+                    <div class="card-body">
+                      <p class="card-text">You have transcripts from 24 telephone interviews with representatives from neighbourhood associations. Each transcript is in a word document (.DOCX) format. Each interview was approximately 1 hour long.</p>
+                      <div class=card-image><img src='images/transcript.png'></div>
+                    </div>
+                  </div>
+                <div class='tab content b'><p>Now that you have collected all this data, what do you do with it?</p></div>
           </div>
-          <div class="tab-pane fade" id="second">
-              <div id="item2">
-                <div id="body3-title" class="body-title"><h4>What is Data?</h4></div>
-                <div id="body3-content"><p></p></div>
+
+          <!-- Second tab pane --> 
+          <div class="tab-pane fade" id="second">            
+                <div id="body3-title" class="tab content header 2"><h4>What is Data?</h4></div>
+                <div id="body3-content" class='tab content a'>
+                  <p>The data that you collected from your public consultation is an attempt to capture the needs and opinions of the citizens that you consulted. This data is thus valuable resource can be used to inform your decision-making.</p>
+
+                  <p>In its raw form, however, this data is not immediately useful. This data may be messy, unstructured, and disorganized. You need to preprocess and analyze the data to generate new information. You then need to interpret this information to generate knowledge about the needs and wants of the community members that you have consulted. It is this knowledge, not the raw data itself, that will help you determine how to best develop your new park.</p>
+                </div>    
+          </div>
+
+          <!-- third tab pane --> 
+          <div class="tab-pane fade" id="third">           
+              <div id="body4-title" class="tab content header 3"><h4>Introduction to Components of a Tabular Dataset</h4></div>
+              <div id="body4-content" class='tab content 3'>
+                <p>Let’s explore the spreadsheet of feedback that you collected from the online form that you sent around to Canadian citizens during your consultation. Go ahead and click on the buttons at the bottom of the page to highlight some of the different data types.</p>
+              </div>            
+          </div>
+
+          <!-- fourth tab pane --> 
+          <div class="tab-pane fade" id="fourth">
+              <div id="body5-title" class="tab content header 4"><h4>Check Your Understanding: Quiz</h4></div>
+              <div class="tab content intro 5">
+                The multiple choice questions will be based on the following content, collected as part of Natural Resources Canada’s Generation Energy consultationand available here. This content was collected from an online forum located on the Generation Energy website. You may want to visit this link and take a look at the documentation (available for PDF download) to help you answer the following questions.
+              </div>
+              <div class='tab content table' id='table1'>               
+              </div>
+              <div class='quiz-wrapper'>
+                <div id="quiz"></div>
+                <button type="button" class="btn btn-success" id="submit">Submit Quiz</button>
+                <div id="results"></div>
               </div>
           </div>
-          <div class="tab-pane fade" id="third">
-            <div id="item3">
-              <div id="body4-title" class="body-title"><h4>Introduction to Components of a Tabular Dataset</h4></div>
-              <div id="body4-content"><p></p></div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="fourth">
-            <div id="item4">
-              <div id="body5-title" class="body-title"><h4>Check Your Understanding: Quiz</h4></div>
-              <div id="body5-content"><p></p></div>
-            </div>
-          </div>
         </div>
-
-        <hr><hr>
 
         <div id="item5">
           <div id="body5-title" class="body-title"><h4>Key Vocabulary from this Module</h4></div>
@@ -257,6 +307,9 @@
       <!-- end of modal -->
 
   <script src="my-script-m1.js"></script>
+  <script src="quiz.js"></script>
+  <script src='my-script-table.js'></script>
+  <script src='reveal.js'></script>
 
 </body>
 </html>

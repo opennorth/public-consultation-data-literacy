@@ -73,14 +73,6 @@
       height: 400px;
       overflow: auto;
     }
-    .progress{
-      margin: 15px;
-    }
-    .error{
-      color:red;
-    }
-    .pagination{
-      margin-top: 30px;
-    }
+
 
 

@@ -105,4 +105,4 @@ function getData(source, type){
 //-1 (for filling the text content)
 
 getData(url1,1);
-getData(url2,-1);
+//getData(url2,-1);
