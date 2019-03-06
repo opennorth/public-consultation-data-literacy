@@ -108,18 +108,34 @@ body{
   overflow: auto;
 }
 
-/*popup cards for the data types*/
-.card{
+/*popup cards for the data types section 1.1*/
+.card.text-white.bg-primary.mb-3.m1{
   width: 100%;
   display: none;
   margin-top: 20px;
 }
-/*text content after interactive part*/
+/*text content after interactive part section 1.1*/
 .tab.content.b{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/*image formatting*/
+/*image formatting section 1.1*/
 img{
   height: 200px;
 }
+
+/*data type box display section 1.2*/
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.card.text-white.bg-primary.mb-3.m2, .card.border-primary.mb-3.m2, .card.text-white.bg-info.mb-3.m2, .card.border-info.mb-3.m2, .card.text-white.bg-secondary.mb-3.m2, .card.border-secondary.mb-3.m2{
+  margin:auto;
+  flex-grow: 1;
+  margin: 5px;
+  width: 33%;
+}
+
+
+
