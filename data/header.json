@@ -1,0 +1,42 @@
+{
+  "Title": "Data Literacy Guide",
+  "Header": [
+    "Home",
+    "Learning Modules",
+    "About this Tool",
+    "Contact Information"
+  ],
+  "Dropdown": [
+    "Overview",
+    "Module 1",
+    "Module 2"
+  ],
+  "Body": [
+    {
+      "title": "Welcome",
+      "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "title": "Item 1",
+      "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ],
+  "Modal": {
+    "button": "modal popup",
+    "title": "This is a popup",
+    "content": "Some content in the popup",
+    "close": "Close popup"
+  },
+  "Card": [
+    {
+      "header": "Header 1",
+      "title": "This is a card",
+      "content": "Here is an example of some text that could be inside a card"
+    },
+    {
+      "header": "Header 2",
+      "title": "This is another card",
+      "content": "Here is an example of some text that could be inside a card"
+    }
+  ]
+}

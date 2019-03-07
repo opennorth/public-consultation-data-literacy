@@ -1,0 +1,160 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}   
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/*modal popup */
+.fade.in {
+  opacity: 1;
+}  
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+ 	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+}    
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height:auto;
+  } 
+}
+/*page title*/
+.body-title{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.dropdown-menu{
+  position: absolute; 
+  will-change: transform; 
+  top: 0px; 
+  left: 0px; 
+  transform: translate3d(0px, 38px, 0px);
+}
+
+/*height for the side columns*/
+.col-sm-2{
+  height: auto;
+}
+/*bottom margin before footer*/
+.body-content{
+  margin-bottom: 50px
+}
+/*footer*/
+.navbar-fixed-bottom{
+  background-color: #2c2d2d;
+  color: white;
+}
+
+/*124.38 is combined height of header and footer*/
+.container-fluid, .col-sm-2, .col-sm-8{
+  min-height: calc(100vh - 124.38px);
+}
+
+/*styling for the mult choice quiz elements*/
+.question{
+    font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+.quiz-wrapper{
+  padding: 15px;
+}
+
+/*tabs for the module content*/
+.tab-pane{
+  padding: 20px;
+  margin-bottom: 20px;
+  border-top: 5px solid #2c3e50;
+  border-bottom: 5px solid #2c3e50;
+}
+
+/*space below header in module tab*/
+.tab.content.header{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*for the table in the quiz*/
+.tab.content.table{
+  overflow: auto;
+  margin-top: 20px;
+  font-size: 10px;
+  height: 400px;
+  width: 100%;
+  overflow: auto;
+}
+
+/*popup cards for the data types section 1.1*/
+.card.text-white.bg-primary.mb-3.m1{
+  width: 100%;
+  display: none;
+  margin-top: 20px;
+}
+/*text content after interactive part section 1.1*/
+.tab.content.b{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*image formatting section 1.1*/
+img{
+  height: 200px;
+}
+/*data type box display section 1.2*/
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px; 
+}
+.vertical{
+  flex-direction: column;
+  width: 33%;
+  align-content: stretch;
+}
+.sub{
+ display: none;
+}
+.card.text-white.bg-primary.mb-3.m2,  .card.text-white.bg-info.mb-3.m2,  .card.text-white.bg-secondary.mb-3.m2{
+  /*height: 375px;*/
+  height: 100%
+}
+.card.border-primary.mb-3.m2, .card.border-info.mb-3.m2{
+  color: black;
+  margin-top: 10px;
+}
+
+/*interactive table elements in 1.2*/
+#example-table{
+  width: 100%;
+  font-size: 9pt;
+}
+/*adjust header to fit all of text in 1.2 table*/
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title{
+  white-space: normal;
+  text-overflow: clip;
+  height: 150px;
+}
+
+
+
+
