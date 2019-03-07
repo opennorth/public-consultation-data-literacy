@@ -72,14 +72,13 @@ function getData(source, type){
 					//fill in nav bar
 					document.getElementById("header-1").innerHTML = data.Header[0];
 			    	document.getElementById("header-2").innerHTML = data.Header[1];
-			    	document.getElementById("header-3").innerHTML = data.Header[2];
-			    	document.getElementById("header-4").innerHTML = data.Header[3];	
+			    	document.getElementById("header-3").innerHTML = data.Header[2];	
 			    	//fill in dropdown
 			    	document.getElementById("dropdown-1").innerHTML = data.Dropdown[0];
 			    	document.getElementById("dropdown-2").innerHTML = data.Dropdown[1];
 			    	document.getElementById("dropdown-3").innerHTML = data.Dropdown[2];
 
-			    	document.getElementById("body1-title").innerHTML = data.Body[0].title;
+			    	//document.getElementById("body1-title").innerHTML = data.Body[0].title;
 				}
 
 				//determine which type of content to fill
@@ -105,4 +104,4 @@ function getData(source, type){
 //-1 (for filling the text content)
 
 getData(url1,1);
-//getData(url2,-1);
+getData(url2,-1);

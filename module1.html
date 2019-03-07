@@ -11,6 +11,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- for tabulator --> 
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="tabulator-master/dist/css/bootstrap/tabulator_bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="tabulator-master/dist/js/tabulator.min.js"></script>
+  <!-- --> 
+
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -32,14 +41,14 @@
         <li class="nav-item dropdown  active">
   	    <a id="header-2" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
   	    <div class="dropdown-menu" x-placement="bottom-start">
-  	      <a id="dropdown-1" class="dropdown-item" href=#"></a>
+  	      <a id="dropdown-1" class="dropdown-item" href="overview.html"></a>
   	      <div class="dropdown-divider"></div>
   	      <a id="dropdown-2" class="dropdown-item active" href="module1.html"></a>
   	      <a id="dropdown-3" class="dropdown-item" href="module2.html"></a>
   	    </div>
     	</li>
         <li class="nav-item">
-          <a id="header-3" class="nav-link" href="#"></a>
+          <a id="header-3" class="nav-link" href="about.html"></a>
         </li>
       </ul>
     </div>
@@ -98,21 +107,33 @@
                     <button type="button" class="btn btn-success" id="transcript" onclick="reveal('transcriptDiv')">Transcript</button>
                   </div>
                   <div id='notesDiv' class="card text-white bg-primary mb-3 m1">
-                    <div class="card-header"><b>Handwritten notes</b></div>
+                    <div class="card-header"><b>Handwritten notes</b>
+                      <button type="button" class="close" onclick="reveal('notesDiv')" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <p class="card-text">You have 47 pages of notes taken by your colleagues during the town hall meetings. Your colleagues transcribed some key quotes, summarized key points, and noted the names of citizens who participated.</p>
                       <div class=card-image><img src='images/notes.png'></div>
                     </div>
                   </div>
                   <div id='spreadsheetDiv' class="card text-white bg-primary mb-3 m1">
-                    <div class="card-header"><b>Spreadsheet</b></div>
+                    <div class="card-header"><b>Spreadsheet</b>
+                      <button type="button" class="close" onclick="reveal('spreadsheetDiv')" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <p class="card-text">You have an Excel file (.XLSX) with 3305 responses to the online form that you sent to citizens. Each response contains responses to multiple choice questions and freeform text responses. Each response also contains the age and gender of the respondent, the date and time of form submission, and a unique ID number.</p>
-                      <div class=card-image><img src='images/spreadsheet.png'></div>
+                      <div class=card-image><img src='images/spreadsheet.PNG'></div>
                     </div>
                   </div>
                   <div id='transcriptDiv' class="card text-white bg-primary mb-3 m1">
-                    <div class="card-header"><b>Transcript</b></div>
+                    <div class="card-header"><b>Transcript</b>
+                      <button type="button" class="close" onclick="reveal('transcriptDiv')" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <p class="card-text">You have transcripts from 24 telephone interviews with representatives from neighbourhood associations. Each transcript is in a word document (.DOCX) format. Each interview was approximately 1 hour long.</p>
                       <div class=card-image><img src='images/transcript.png'></div>
@@ -133,53 +154,74 @@
                 <div class='tab content b'>Before we get into the analysis and interpretation, let’s understand a bit more about some basic ways of classifying different types of data. These distinctions help us determine what kinds of analysis we can perform and what kinds of questions we can answer with our data</div>  
 
                 <div class='box'>
+
+                  <div class='vertical'>
+                    <div 
                     <div class="card text-white bg-primary mb-3 m2">
                       <div class="card-header"><b>Qualitative Data</b></div>
                       <div class='card-body'>
-                        <p class="card-text">Qualitative data is used to describe the qualities of real-world objects or entities. Qualitative data is often descriptive and may be retrieved from documents in different formats, such as text or audio. <i>(Eg. hair colour, socio-economic status)</i></p>
+                        <p class="card-text">Qualitative data is used to describe the qualities of real-world objects or entities. Qualitative data is often descriptive and may be retrieved from documents in different formats, such as text or audio.</p><p><i>Eg. hair colour, socio-economic status</i></p>
+                        <button type="button" class="btn btn-warning" onclick='reveal("more-qual", "seemore-qual")' id='seemore-qual'>See more</button>
                       </div>
                     </div>
-                    <div class="card border-primary mb-3 m2">
-                      <div class="card-header"><b>Nominal</b></div>
-                      <div class='card-body'>
-                        <p class="card-text">Nominal data does not have a natural ranking or order. <i>(Eg. hair colour)</i></p>
+
+                    <div class='sub' id='more-qual'>
+                      <div class="card border-primary mb-3 m2">
+                        <div class="card-header"><b>Nominal</b></div>
+                        <div class='card-body'>
+                          <p class="card-text">Nominal data does not have a natural ranking or order.</p><p><i>Eg. hair colour</i></p>
+                        </div>
+                      </div>
+                      <div class="card border-primary mb-3 m2">
+                        <div class="card-header"><b>Ordinal</b></div>
+                        <div class='card-body'>
+                          <p class="card-text">Ordinal data has a natural ranking or order. Note that this distance between each item cannot be measured.</p><p><i>Eg. socio-economic status</i></p>
+                        </div>
                       </div>
                     </div>
-                    <div class="card border-primary mb-3 m2">
-                      <div class="card-header"><b>Ordinal</b></div>
-                      <div class='card-body'>
-                        <p class="card-text">Ordinal data has a natural ranking or order. Note that this distance between each item cannot be measured. <i>(Eg. socio-economic status)</i></p>
-                      </div>
-                    </div>
-                </div>
-                <div class='box'>
+
+                  </div>
+
+                  <div class='vertical'>
+
                     <div class="card text-white bg-info mb-3 m2">
                       <div class="card-header"><b>Quantitative Data</b></div>
                       <div class='card-body'>
-                        <p class="card-text">Quantitative data is used to capture quantities of objects or entities. Quantitative data is numerical and reflects properties that can be measured. <i>(Eg. temperature, number of children)</i></p>
+                       <p class="card-text">Quantitative data is used to capture quantities of objects or entities. Quantitative data is numerical and reflects properties that can be measured.</p><p><i>Eg. temperature, number of children</i></p>
+                        <button type="button" class="btn btn-warning" onclick='reveal("more-quant", "seemore-quant")' id='seemore-quant'>See more</button>
                       </div>
                     </div>
-                    <div class="card border-info mb-3 m2">
-                      <div class="card-header"><b>Discrete</b></div>
-                      <div class='card-body'>
-                        <p class="card-text">Discrete data only contains certain allowable values. <i>(Eg. number of children)</i></p>
+
+                    <div class='sub' id='more-quant'>
+                      <div class="card border-info mb-3 m2">
+                        <div class="card-header"><b>Discrete</b></div>
+                        <div class='card-body'>
+                          <p class="card-text">Discrete data only contains certain allowable values.</p><p><i>Eg. number of children</i></p>
+                        </div>
+                      </div>
+                      <div class="card border-info mb-3 m2">
+                        <div class="card-header"><b>Continuous</b></div>
+                        <div class='card-body'>
+                          <p class="card-text">Any value within a given interval is a possible data point (depending on the measuring device).</p><p><i>Eg. temperature</i></p>
+                        </div>
                       </div>
                     </div>
-                    <div class="card border-info mb-3 m2">
-                      <div class="card-header"><b>Continuous</b></div>
-                      <div class='card-body'>
-                        <p class="card-text">Any value within a given interval is a possible data point, depending on the measuring device. <i>(Eg. temperature)</i></p>
-                      </div>
-                    </div>
-                </div>
-                <div class='box'>
+                    
+                  </div>
+
+                  <div class='vertical'>
                     <div class="card text-white bg-secondary mb-3 m2">
-                      <div class="card-header">Metadata</div>
+                      <div class="card-header"><b>Metadata</b></div>
                       <div class='card-body'>
-                        <p class="card-text">Metadata describes the characteristics of data. <i>(Eg. data collection method, date of data collection, author)</i></p>
+                        <p class="card-text">Metadata describes the characteristics of data.</p><p><i>Eg. data collection method, date of data collection, author</i></p>
                       </div>
                     </div>
+                  </div>
+    
                 </div>
+
+
+              
                 <div class='tab content c'>Note that the quantitative and qualitative classifications are mutually exclusive. Data cannot be both quantitative and qualitative. There can, however, be both quantitative and qualitative types of data within a single dataset. Metadata can also be either quantitative or qualitative.</div>
           </div>
 
@@ -189,13 +231,13 @@
               <div id="body4-content" class='tab content a'>
                 <p>Let’s explore the spreadsheet of feedback that you collected from the online form that you sent around to Canadian citizens during your consultation. Go ahead and click on the buttons at the bottom of the page to highlight some of the different data types.</p>
               </div>  
-              <div class='tab content table' id='table1'></div>
+              <div id="example-table"></div>
               <div class='button group'>
-                <button type="button" class="btn btn-success">Quantitative: Discrete</button>
-                <button type="button" class="btn btn-success">Quantitative: Continuous</button>
-                <button type="button" class="btn btn-success">Qualitative: Nominal</button>
-                <button type="button" class="btn btn-success">Qualitative: Ordinal</button>
-                <button type="button" class="btn btn-success">Metadata</button>
+                <button type="button" class="btn btn-success btn-sm" id='quant-d'>Quantitative: Discrete</button>
+                <button type="button" class="btn btn-success btn-sm" id='quant-c'>Quantitative: Continuous</button>
+                <button type="button" class="btn btn-success btn-sm" id='qual-n'>Qualitative: Nominal</button>
+                <button type="button" class="btn btn-success btn-sm" id='qual-o'>Qualitative: Ordinal</button>
+                <button type="button" class="btn btn-success btn-sm" id='metadata'>Metadata</button>
               </div>
               <div class='tab content b'>
                 <p>It is important to note the structure of how data is stored in this table. The data is organized in rows and columns. Each column contains a single variable, or data type. The column labels, or headers, are stored in the first row of the table. Each row contains a single data entry, indicating that all the data in that row corresponds to the same real-world entity.</p>
@@ -369,10 +411,11 @@
       </div>
       <!-- end of modal -->
 
-  <script src="js/my-script-m1.js"></script>
+  
   <script src="js/quiz.js"></script>
   <script src='js/my-script-table.js'></script>
   <script src='js/reveal.js'></script>
+  <script src='js/table-12.js'></script>
 
 </body>
 </html>
