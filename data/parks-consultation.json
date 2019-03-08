@@ -1,0 +1,202 @@
+[
+  {
+    "ID": 1,
+    "Date": "23-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 3,
+    "How would you rate your overall experience at Canada's National Parks?": "Very satisfied",
+    "What services did you use at the park(s) that you visited?": "Guided tour",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$3"
+  },
+  {
+    "ID": 2,
+    "Date": "23-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 2,
+    "How would you rate your overall experience at Canada's National Parks?": "Very satisfied",
+    "What services did you use at the park(s) that you visited?": "Visitor's Center",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$10"
+  },
+  {
+    "ID": 3,
+    "Date": "23-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 2,
+    "How would you rate your overall experience at Canada's National Parks?": "Very satisfied",
+    "What services did you use at the park(s) that you visited?": "None",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "I don't know",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 4,
+    "Date": "24-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "None",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "No",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 5,
+    "Date": "24-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Very dissatisfied",
+    "What services did you use at the park(s) that you visited?": "Equipment rental",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$2.50"
+  },
+  {
+    "ID": 6,
+    "Date": "25-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 4,
+    "How would you rate your overall experience at Canada's National Parks?": "Neutral",
+    "What services did you use at the park(s) that you visited?": "Visitor's Center",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "No",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 7,
+    "Date": "25-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Dissatisfied",
+    "What services did you use at the park(s) that you visited?": "Guided tour, Free parking",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$20"
+  },
+  {
+    "ID": 8,
+    "Date": "25-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "Equipment rental",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "No",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 9,
+    "Date": "26-01-2019",
+    "Gender": "Prefer not to say",
+    "How many times did you visit a National Park in the last year?": 5,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "Venue rental",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$1"
+  },
+  {
+    "ID": 10,
+    "Date": "26-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 4,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "None",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "I don't know",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 11,
+    "Date": "27-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 3,
+    "How would you rate your overall experience at Canada's National Parks?": "Neutral",
+    "What services did you use at the park(s) that you visited?": "Recreational fishing permits",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "I don't know",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 12,
+    "Date": "28-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 2,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "Visitor's Center",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$0.01"
+  },
+  {
+    "ID": 13,
+    "Date": "28-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 2,
+    "How would you rate your overall experience at Canada's National Parks?": "Neutral",
+    "What services did you use at the park(s) that you visited?": "Visitor's Center, Venue rental",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$5"
+  },
+  {
+    "ID": 14,
+    "Date": "29-01-2019",
+    "Gender": "Prefer not to say",
+    "How many times did you visit a National Park in the last year?": 2,
+    "How would you rate your overall experience at Canada's National Parks?": "Very satisfied",
+    "What services did you use at the park(s) that you visited?": "Free parking",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "Yes",
+    "If yes, how much more would you be willing to pay?": "$10"
+  },
+  {
+    "ID": 15,
+    "Date": "29-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "None",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "I don't know",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 16,
+    "Date": "29-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "Visitor's Center",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "No",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 17,
+    "Date": "29-01-2019",
+    "Gender": "Male",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "None",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "No",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 18,
+    "Date": "30-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 1,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "Free parking",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "I don't know",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 19,
+    "Date": "31-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 2,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "Free parking",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "I don't know",
+    "If yes, how much more would you be willing to pay?": ""
+  },
+  {
+    "ID": 20,
+    "Date": "31-01-2019",
+    "Gender": "Female",
+    "How many times did you visit a National Park in the last year?": 3,
+    "How would you rate your overall experience at Canada's National Parks?": "Satisfied",
+    "What services did you use at the park(s) that you visited?": "None",
+    "Would you be willing to pay more to visit a National Park in exchange for more services offered?": "No",
+    "If yes, how much more would you be willing to pay?": ""
+  }
+]
