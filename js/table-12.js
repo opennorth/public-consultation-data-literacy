@@ -1,7 +1,7 @@
 //script to generate the example table in Section 1.2 and add functionality to highlight certain columns on button click 
 
 //load json data
-		var url = "https://hannahker.github.io/web-development/data/modernization-labour-mod-short.json";
+		var url = "https://hannahker.github.io/web-development/data/parks-consultation.json";
 		var request = new XMLHttpRequest();
 		request.open('GET', url);
 		request.responseType = 'json';
@@ -28,51 +28,60 @@
 				 	{title:colHeaders[4], field:colHeaders[4], headerSort:false, formatter: "textarea"},
 				 	{title:colHeaders[5], field:colHeaders[5], headerSort:false, formatter: "textarea"},
 				 	{title:colHeaders[6], field:colHeaders[6], headerSort:false, formatter: "textarea"},
-				 	//{title:colHeaders[7], field:colHeaders[7], headerSort:false, formatter: "textarea"},
+				 	{title:colHeaders[7], field:colHeaders[7], headerSort:false, formatter: "textarea"},
 			 	],
 
 			});			
-
 			//function to highlight a column based on the column index
+			//index = array of integers with column indices to highight 
+			//color = highlight color 
 			function highlightColumn(index, color){
 				//select the columns components
 				var colList = table.getColumns();
-				//get all the cells in a single column
-				var col = colList[index].getCells(); 
-				//20 is the number of elements in each page
-				//go through each cell in the column and make it red to highlight 
-				for(var i=0; i<20; i++){
-					//check to see if it's already highlighted 
-					if(col[i].getElement().style.color == color){
-						col[i].getElement().style.color = 'black';
-				}else{
-					col[i].getElement().style.color = color;
+				//get the total number of columns 
+				var x = colList.length; 
+				//get the total number of rows - ASSUMES THE DATASET IS SYMMETRICAL	
+				var y = colList[0].getCells().length; 
+				//get length of input index array 
+				var z = index.length;
+
+				//remove all colours 
+				for(var i=0; i<x; i++){
+					var cur_col = colList[i].getCells(); 
+					for(var j=0; j<y; j++){
+						var cur_cell = cur_col[j]; 
+						cur_cell.getElement().style.backgroundColor = 'white'; 
 					}
 				}
+				//add colours to the right cells 
+				for(var i=0; i<z; i++){
+					var col_highlight = colList[index[i]].getCells(); 
+					for(var j=0; j<y; j++){
+						var cur_cell = col_highlight[j]; 
+						cur_cell.getElement().style.backgroundColor = color;  
+					} 
+				}
 			}
+			//row indices for each type of data 
+			var metadata = [0, 1, 2]; 
+			var quantd = [0,3]; 
+			var quantc = [1,7]; 
+			var qualn = [2,5,6]; 
+			var qualo = [4]; 
 
-			//add the function to the right buttons
 			document.getElementById("metadata").addEventListener("click", function(){
-			    highlightColumn(0, 'red');
-			    highlightColumn(1, 'red');
-			    highlightColumn(2, 'red');
-			    //highlightColumn(3, 'red');
-			});
-			document.getElementById("quant-c").addEventListener("click", function(){
-			    highlightColumn(0, 'green');
-			});
+					highlightColumn(metadata, "#dee3ea"); 
+				});	
 			document.getElementById("quant-d").addEventListener("click", function(){
-			    highlightColumn(6, 'orange');
-			});
+					highlightColumn(quantd, "#dee3ea"); 
+				});	
+			document.getElementById("quant-c").addEventListener("click", function(){
+					highlightColumn(quantc, "#dee3ea"); 
+				});	
 			document.getElementById("qual-n").addEventListener("click", function(){
-			    highlightColumn(1, 'pink');
-			    highlightColumn(2, 'pink');
-			    highlightColumn(3, 'pink');
-			    highlightColumn(4, 'pink');
-			   // highlightColumn(5, 'pink');
-			});
+					highlightColumn(qualn, "#dee3ea"); 
+				});	
 			document.getElementById("qual-o").addEventListener("click", function(){
-			    highlightColumn(5, 'blue');
-			});
-
+					highlightColumn(qualo, "#dee3ea"); 
+				});	
 		}

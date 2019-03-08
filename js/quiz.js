@@ -6,30 +6,42 @@
 
 		const myQuestions = [
 		  {
-		    question: "Who is the strongest?",
+		    question: "What would we call this spreadsheet?",
 		    answers: {
-		      a: "Superman",
-		      b: "The Terminator",
-		      c: "Waluigi, obviously"
+		      a: "A spreadsheet of information",
+		      b: "Something that comes from a computer",
+		      c: "A table with comments from people", 
+		      d: "Public consultation data!"
+		    },
+		    correctAnswer: "d"
+		  },
+		  {
+		    question: "Which of the following fields contains discrete quantitative data?",
+		    answers: {
+		      a: "Title",
+		      b: "User defined theme",
+		      c: "Idea score", 
+		      d: "Forum related theme"
 		    },
 		    correctAnswer: "c"
 		  },
 		  {
-		    question: "What is the best site ever created?",
+		    question: "Which of the following fields contains nominal qualitative data?",
 		    answers: {
-		      a: "SitePoint",
-		      b: "Simple Steps Code",
-		      c: "Trick question; they're both the best"
+		      a: "Total 'likes'",
+		      b: "Post number",
+		      c: "Date posted",
+		      d: "Idea or comment"
 		    },
-		    correctAnswer: "c"
-		  },
+		    correctAnswer: "d"
+		  }, 
 		  {
-		    question: "Where is Waldo really?",
+		    question: "How many fields could be considered as metadata?",
 		    answers: {
-		      a: "Antarctica",
-		      b: "Exploring the Pacific Ocean",
-		      c: "Sitting in a tree",
-		      d: "Minding his own business, so stop asking"
+		      a: "3",
+		      b: "None",
+		      c: "1",
+		      d: "15"
 		    },
 		    correctAnswer: "d"
 		  }
