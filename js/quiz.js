@@ -61,7 +61,7 @@
 		        answers.push(
 		          `<label>
 		            <input type="radio" name="question${questionNumber}" value="${letter}">
-		            ${letter} :
+		            
 		            ${currentQuestion.answers[letter]}
 		          </label>`
 		        );
