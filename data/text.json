@@ -1,0 +1,102 @@
+{
+  "Navbar": {
+    "Title": {
+      "EN": "Template",
+      "FR": "TBD"
+    },
+    "Header": {
+      "EN": [
+        "Home",
+        "Learning Modules",
+        "About this Tool",
+        "Contact Information"
+      ],
+      "FR": [
+        "TBD"
+      ]
+    },
+    "Dropdown": {
+      "EN": [
+        "Overview",
+        "Module 1",
+        "Module 2"
+      ],
+      "FR": [
+        "TBD"
+      ]
+    }
+  },
+  "Module1": {
+    "Title": {
+      "EN": "Module 1: Consultation Results as Data",
+      "FR": "TBD"
+    },
+    "Subtitles": {
+      "EN": [
+        "Section 1",
+        "Section 2",
+        "Section 3",
+        "Check Your Understanding"
+      ],
+      "FR": [
+        "TBD"
+      ]
+    },
+    "Section1": {
+      "Title": {
+        "EN": "Consultation Results as Data",
+        "FR": "TBD"
+      },
+      "Text1": {
+        "EN": "Imagine that you have consulted Canadians across the country on the visitor fees for National Parks. These visitor fees were last adjusted in 2008, and you believed that it was time to engage citizens in conversations on this topic. You want to understand how citizens feel about fee adjustments, and the desire that citizens have for value-added services, such as guided tours and recreational facilities. You have used multiple approaches to consult with citizens on this topic:",
+        "FR": "TBD"
+      },
+      "Text2": {
+        "EN": "1. You have held 15 town hall meetings in communities across the country. Citizens attended these meetings in person to learn more about fee structures at Canada’s National Parks and share their opinions with you and other members of your team. During each of these meetings, members of your team took notes on the key topics that were discussed.",
+        "FR": "TBD"
+      },
+      "Text3": {
+        "EN": "2. You created an online questionnaire that was distributed to citizens across the country. This form contained several multiple choice questions and several freeform text questions. You collected 3305 responses to this questionnaire, which were then exported to a spreadsheet.",
+        "FR": "TBD"
+      },
+      "Text4": {
+        "EN": "3. Members of your team conducted 24 telephone interviews with key stakeholders and civil society representatives. These telephone interviews were recorded and transcribed.",
+        "FR": "TBD"
+      },
+      "Text5": {
+        "EN": "You now have lots of feedback from Canadians. This is all valuable data! You will use it to inform the decisions that you make about visitor fees for National Parks.",
+        "FR": "TBD"
+      },
+      "Text6": {
+        "EN": "Let's review the types of data that you have collected:",
+        "FR": "TBD"
+      },
+      "Buttons": {
+        "EN": [
+          "Handwritten notes",
+          "Spreadsheet",
+          "Transcript"
+        ],
+        "FR": [
+          "TBD"
+        ]
+      },
+      "Text7": {
+        "EN": "Now that you have collected all this data, what do you do with it?",
+        "FR": "TBD"
+      },
+      "Button1": {
+        "EN": "Handwritten notes",
+        "FR": "TBD"
+      },
+      "Button2": {
+        "EN": "Spreadsheet",
+        "FR": "TBD"
+      },
+      "Button3": {
+        "EN": "Transcript",
+        "FR": "TBD"
+      }
+    }
+  }
+}
