@@ -1,5 +1,5 @@
 //reveal/hide a div - function used on button click in Module 1
-//need to add functionality to remove other divs
+//used in section 1.1
 function reveal(divID) {
   var x = document.getElementById(divID);
   if (x.style.display === "block") {
@@ -10,6 +10,7 @@ function reveal(divID) {
 }
 
 //pretty much the same function, except this one changes the text on the button
+//used in section 1.2
 function seemore(divID, buttonID){
 	var x = document.getElementById(divID);
   if (x.style.display === "block") {
