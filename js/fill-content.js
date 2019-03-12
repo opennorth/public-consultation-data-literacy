@@ -1,6 +1,7 @@
 header = "https://hannahker.github.io/web-development/data/header.json";
 table13 = "https://hannahker.github.io/web-development/data/parks-consultation.json";
 table14 = "https://hannahker.github.io/web-development/data/gen-eng-subset.json";
+text = "https://hannahker.github.io/web-development/data/text.json";
 
 function getData(source){
 	var XMLHttpRequestObject = false; 
@@ -25,17 +26,17 @@ function getData(source){
 					var table = new Tabulator("#example-table", {
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	data:data, //assign data to table
-					 	layout:"fitColumns", //fit columns to width of table (optional)
+					 	//layout:"fitColumns", //fit columns to width of table (optional)
 					 	columns:[ //Define Table Columns
-					 		{title:colHeaders[0], field: colHeaders[0], headerSort:false, formatter: "textarea"},
-					 		//{title:colHeaders[0], field: colHeaders[0], headerSort:false, cellClick:function(e,cell){reveal('a');}},
-						 	{title:colHeaders[1], field:colHeaders[1], headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[2], field:colHeaders[2], headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[3], field:colHeaders[3], headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[4], field:colHeaders[4], headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[5], field:colHeaders[5], headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[6], field:colHeaders[6], headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[7], field:colHeaders[7], headerSort:false, formatter: "textarea"},
+					 		{title:colHeaders[0], field: colHeaders[0], width: 40, headerSort:false, formatter: "textarea"},
+					 		//{title:colHeaders[0], field: colHeaders[0], width: 40, headerSort:false, cellClick:function(e,cell){reveal('a');}},
+						 	{title:colHeaders[1], field:colHeaders[1], width: 80, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[2], field:colHeaders[2], width: 80, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[3], field:colHeaders[3], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[4], field:colHeaders[4], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[5], field:colHeaders[5], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[6], field:colHeaders[6], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[7], field:colHeaders[7], width: 120, headerSort:false, formatter: "textarea"},
 					 	],
 
 					});
@@ -102,22 +103,22 @@ function getData(source){
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	data:data, //assign data to table
 					 	columns:[ //Define Table Columns
-					 		{title:colHeaders[0], field: colHeaders[0], width: 40, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[1], field:colHeaders[1], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[2], field:colHeaders[2], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[3], field:colHeaders[3], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[4], field:colHeaders[4], width: 40, headerSort:false, formatter: "textarea"},
+					 		{title:colHeaders[0], field: colHeaders[0], width: 80, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[1], field:colHeaders[1], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[2], field:colHeaders[2], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[3], field:colHeaders[3], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[4], field:colHeaders[4], width: 80, headerSort:false, formatter: "textarea"},
 						 	{title:colHeaders[5], field:colHeaders[5], width: 200, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[6], field:colHeaders[6], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[7], field:colHeaders[7], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[8], field:colHeaders[8], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[9], field:colHeaders[9], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[10], field:colHeaders[10], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[11], field:colHeaders[11], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[12], field:colHeaders[12], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[13], field:colHeaders[13], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[14], field:colHeaders[14], width: 80, headerSort:false, formatter: "textarea"},
-						 	{title:colHeaders[15], field:colHeaders[15], width: 80, headerSort:false, formatter: "textarea"}
+						 	{title:colHeaders[6], field:colHeaders[6], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[7], field:colHeaders[7], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[8], field:colHeaders[8], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[9], field:colHeaders[9], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[10], field:colHeaders[10], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[11], field:colHeaders[11], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[12], field:colHeaders[12], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[13], field:colHeaders[13], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[14], field:colHeaders[14], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[15], field:colHeaders[15], width: 120, headerSort:false, formatter: "textarea"}
 					 	],
 
 					});	
@@ -138,6 +139,26 @@ function getData(source){
 			    	//fill in footer
 				}
 
+				//fill in the content for module 1
+				//ONGOING !!!
+				function fillm1(){
+
+					//content for Section 1
+					document.getElementById("m1-s1-title").innerHTML = "<h4>" + data.Module1.Section1.Title.EN + "</h4>"; 
+					document.getElementById("m1-s1-text1").innerHTML = data.Module1.Section1.Text1.EN; 
+					document.getElementById("m1-s1-text2").innerHTML = data.Module1.Section1.Text2.EN;
+					document.getElementById("m1-s1-text3").innerHTML = data.Module1.Section1.Text3.EN;
+					document.getElementById("m1-s1-text4").innerHTML = data.Module1.Section1.Text4.EN;  
+					document.getElementById("m1-s1-text5").innerHTML = data.Module1.Section1.Text5.EN; 
+					document.getElementById("m1-s1-text6").innerHTML = data.Module1.Section1.Text6.EN; 
+					document.getElementById("m1-s1-text7").innerHTML = data.Module1.Section1.Text7.EN; 
+
+					//text content for buttons 
+					document.getElementById("m1-s1-button1").innerHTML = data.Module1.Section1.Button1.EN;
+					document.getElementById("m1-s1-button2").innerHTML = data.Module1.Section1.Button2.EN;
+					document.getElementById("m1-s1-button3").innerHTML = data.Module1.Section1.Button3.EN;
+				}
+
 				//determine which type of content to fill
 				if(source == "https://hannahker.github.io/web-development/data/header.json"){
 					fillHeader();
@@ -147,6 +168,9 @@ function getData(source){
 				}
 				if(source == "https://hannahker.github.io/web-development/data/gen-eng-subset.json"){
 					fillTable14(); 
+				}
+				if(source == "https://hannahker.github.io/web-development/data/text.json"){
+					fillm1();
 				}
 
 				delete XMLHttpRequestObject; 
@@ -160,4 +184,5 @@ function getData(source){
 }
 getData(header);
 getData(table13); 
-getData(table14)
+getData(table14);
+getData(text); 

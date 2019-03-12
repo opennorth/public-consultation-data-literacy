@@ -86,26 +86,19 @@
 
           <!-- First tab pane --> 
           <div class="tab-pane fade show active" id="first">                
-                  <div id="body2-title" class="tab content header 1"><h4>Consultation Results as Data</h4></div>
-                  <div id="body2-content" class='tab content a'>
-                    <p>Imagine that you have consulted Canadians across the country on the visitor fees for National Parks. These visitor fees were last adjusted in 2008, and you believed that it was time to engage citizens in conversations on this topic. You want to understand how citizens feel about fee adjustments, and the desire that citizens have for value-added services, such as guided tours and recreational facilities. You have used multiple approaches to consult with citizens on this topic:</p>
-
-                    <p>1. You have held 15 town hall meetings in communities across the country. Citizens attended these meetings in person to learn more about fee structures at Canada’s National Parks and share their opinions with you and other members of your team. During each of these meetings, members of your team took notes on the key topics that were discussed.</p>
-                    <p>
-                    2. You created an online questionnaire that was distributed to citizens across the country. This form contained several multiple choice questions and several freeform text questions. You collected 3305 responses to this questionnaire, which were then exported to a spreadsheet.</p>
-
-                    <p>3. Members of your team conducted 24 telephone interviews with key stakeholders and civil society representatives. These telephone interviews were recorded and transcribed.</p>
-
-                    <p>You now have lots of feedback from Canadians. This is all valuable data! You will use it to inform the decisions that you make about visitor fees for National Parks.</p>
-
-                    <p>Let's review the types of data that you have collected:</p>
+                  <div id="m1-s1-title" class="header"></div>
+                  <div id="m1-s1-text1" class='body-text'></div>
+                  <div id="m1-s1-text2" class='body-text'></div>
+                  <div id="m1-s1-text3" class='body-text'></div>
+                  <div id="m1-s1-text4" class='body-text'></div>
+                  <div id="m1-s1-text5" class='body-text'></div>
+                  <div id="m1-s1-text6" class='body-text'></div>
+                  <div class="button-group">
+                    <button type="button" class="btn btn-success" id="m1-s1-button1" onclick="reveal('notesDiv')"></button>
+                    <button type="button" class="btn btn-success" id="m1-s1-button2" onclick="reveal('spreadsheetDiv')"></button>
+                    <button type="button" class="btn btn-success" id="m1-s1-button3" onclick="reveal('transcriptDiv')"></button>
                   </div>
-                  <div class='tab content button'>
-                    <button type="button" class="btn btn-success" id="notes" onclick="reveal('notesDiv')">Handwritten notes</button>
-                    <button type="button" class="btn btn-success" id="spreadsheet" onclick="reveal('spreadsheetDiv')">Spreadsheet</button>
-                    <button type="button" class="btn btn-success" id="transcript" onclick="reveal('transcriptDiv')">Transcript</button>
-                  </div>
-                  <div id='notesDiv' class="card text-white bg-primary mb-3 m1">
+                  <div id='notesDiv' class="card text-white bg-primary mb-3 popup">
                     <div class="card-header"><b>Handwritten notes</b>
                       <button type="button" class="close" onclick="reveal('notesDiv')" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -116,7 +109,7 @@
                       <div class=card-image><img src='images/notes.png'></div>
                     </div>
                   </div>
-                  <div id='spreadsheetDiv' class="card text-white bg-primary mb-3 m1">
+                  <div id='spreadsheetDiv' class="card text-white bg-primary mb-3 popup">
                     <div class="card-header"><b>Spreadsheet</b>
                       <button type="button" class="close" onclick="reveal('spreadsheetDiv')" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -127,7 +120,7 @@
                       <div class=card-image><img src='images/spreadsheet.PNG'></div>
                     </div>
                   </div>
-                  <div id='transcriptDiv' class="card text-white bg-primary mb-3 m1">
+                  <div id='transcriptDiv' class="card text-white bg-primary mb-3 popup">
                     <div class="card-header"><b>Transcript</b>
                       <button type="button" class="close" onclick="reveal('transcriptDiv')" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -138,19 +131,19 @@
                       <div class=card-image><img src='images/transcript.png'></div>
                     </div>
                   </div>
-                <div class='tab content b'><p>Now that you have collected all this data, what do you do with it?</p></div>
+                <div id ='m1-s1-text7' class='body-text'></div>
           </div>
 
           <!-- Second tab pane --> 
           <div class="tab-pane fade" id="second">            
-                <div id="body3-title" class="tab content header 2"><h4>What is Data?</h4></div>
-                <div id="body3-content" class='tab content a'>
+                <div id="body3-title" class="header"><h4>What is Data?</h4></div>
+                <div id="body3-content" class='body-text'>
                   <p>The data collected during your public consultation is an attempt to capture the needs and opinions of citizens and other stakeholders. This data is thus a valuable resource that can be used to inform your decision-making. In its raw form, however, this data is not immediately useful. </p>
 
                   <p>This data may be messy, unstructured, and disorganized. You need to preprocess and analyze the data to generate new information. You then need to interpret this information to generate knowledge about the needs and wants of the community members that you have consulted. It is this knowledge, not the raw data itself, that will help you determine how to best revise the visitor fee structure.</p>
                 </div> 
                 <div id="body3-img"></div>
-                <div class='tab content b'>Before we get into the analysis and interpretation, let’s understand a bit more about some basic ways of classifying different types of data. These distinctions help us determine what kinds of analysis we can perform and what kinds of questions we can answer with our data.</div>  
+                <div class='body-text'>Before we get into the analysis and interpretation, let’s understand a bit more about some basic ways of classifying different types of data. These distinctions help us determine what kinds of analysis we can perform and what kinds of questions we can answer with our data.</div>  
 
                 <div class='box'>
                   <div class='vertical'>                    
@@ -215,16 +208,16 @@
     
                 </div>
               
-                <div class='tab content c'>Note that the quantitative and qualitative classifications are mutually exclusive. Data cannot be both quantitative and qualitative. There can, however, be both quantitative and qualitative types of data within a single dataset. Metadata can also be either quantitative or qualitative.</div>
+                <div class='body-text'>Note that the quantitative and qualitative classifications are mutually exclusive. Data cannot be both quantitative and qualitative. There can, however, be both quantitative and qualitative types of data within a single dataset. Metadata can also be either quantitative or qualitative.</div>
           </div>
 
           <!-- third tab pane --> 
           <div class="tab-pane fade" id="third">           
-              <div id="body4-title" class="tab content header 3"><h4>Introduction to Components of a Tabular Dataset</h4></div>
-              <div id="body4-content" class='tab content a'>
-                <p>Let’s explore the spreadsheet of feedback that you collected from the online form that you sent around to Canadian citizens during your consultation. Go ahead and click on the buttons at the bottom of the page to highlight some of the different data types.</p>
+              <div id="body4-title" class="header"><h4>Introduction to Components of a Tabular Dataset</h4></div>
+              <div id="body4-content" class='body-text'>
+                <p>Let’s explore a subset of the spreadsheet of feedback that you collected from the online form that you sent around to Canadian citizens during your consultation. Go ahead and click on the buttons at the bottom of the page to highlight some of the different data types.</p>
               </div>  
-              <div class = 'tab content table' id="example-table"></div>
+              <div class = 'table' id="example-table"></div>
               <div class='button group'>
                 <button type="button" class="btn btn-success btn-sm data-type" id='quant-d'>Quantitative: Discrete</button>
                 <button type="button" class="btn btn-success btn-sm data-type" id='quant-c'>Quantitative: Continuous</button>
@@ -232,7 +225,7 @@
                 <button type="button" class="btn btn-success btn-sm data-type" id='qual-o'>Qualitative: Ordinal</button>
                 <button type="button" class="btn btn-success btn-sm data-type" id='metadata'>Metadata</button>
               </div>
-              <div class='tab content b'>
+              <div class='body-text'>
                 <p>It is important to note the structure of how data is stored in this table. The data is organized in rows and columns. Each column contains a single variable, or data type. The column labels, or headers, are stored in the first row of the table. Each row contains a single data entry, indicating that all the data in that row corresponds to the same real-world entity.</p>
                 <p>This is a standard structure for tabular datasets and may be required for the data to be read by analysis software. In most cases, consultation datasets should follow this format.</p>
               </div>
@@ -243,9 +236,9 @@
           <div class="tab-pane fade" id="fourth">
               <div id="body5-title" class="tab content header 4"><h4>Check Your Understanding: Quiz</h4></div>
               <div class="tab content intro 5">
-                The multiple choice questions will be based on the following content, collected as part of Natural Resources Canada’s Generation Energy consultationand available here. This content was collected from an online forum located on the Generation Energy website. You may want to visit this link and take a look at the documentation (available for PDF download) to help you answer the following questions.
+                The multiple choice questions will be based on the following content, collected as part of Natural Resources Canada’s Generation Energy consultation. This content was collected from an online forum located on the Generation Energy website. 
               </div>
-              <div class='tab content table' id='quiz-table'>               
+              <div class='table' id='quiz-table'>               
               </div>
               <div class='quiz-wrapper'>
                 <div id="quiz"></div>
