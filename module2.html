@@ -39,6 +39,9 @@
         <li class="nav-item">
           <a id="header-1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
         </li>
+        <li class="nav-item">
+          <a id="header-3" class="nav-link" href="about.html"></a>
+        </li>
         <li class="nav-item dropdown  active">
   	    <a id="header-2" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
   	    <div class="dropdown-menu" x-placement="bottom-start">
@@ -48,9 +51,6 @@
   	      <a id="dropdown-3" class="dropdown-item active" href="module2.html"></a>
   	    </div>
     	</li>
-        <li class="nav-item">
-          <a id="header-3" class="nav-link" href="about.html"></a>
-        </li>
       </ul>
     </div>
   </nav>
@@ -71,16 +71,16 @@
 
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#first">Section 1</a>
+            <a class="nav-link active tabs" data-toggle="tab" href="#first">Section 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#second">Section 2</a>
+            <a class="nav-link tabs" data-toggle="tab" href="#second">Section 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#third">Section 3</a>
+            <a class="nav-link tabs" data-toggle="tab" href="#third">Section 3</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#fourth">Check Your Understanding</a>
+            <a class="nav-link tabs" data-toggle="tab" href="#fourth">Check Your Understanding</a>
           </li>
         </ul>
 
@@ -204,7 +204,7 @@
               </div>
             </div>
             <div id='m2-s2-text4' class='body-text'>Feel free to download the data yourself for further exploration and to experiment with basic preprocessing.</div>
-            <button id="modal-button" type="button" class="btn btn-info" onclick="window.location.href = 'https://open.canada.ca/data/en/dataset/5e9433bf-2334-463a-bd48-03ba53a7051c';">Download data</button>
+            <button id="modal-button" type="button" class="btn btn-info" onclick="window.open('https://open.canada.ca/data/en/dataset/5e9433bf-2334-463a-bd48-03ba53a7051c')">Download</button>
 
           </div>
           <div class="tab-pane fade" id="third">
@@ -214,19 +214,22 @@
             <div id="m2-s3-tab1" class='body-text highlight'>
               <p>LEVEL 1: Modernization of federal labour standards survey</p>
               <p>The field headers in this dataset are in two different rows. This structural issue may cause errors when attempting to analyze the data. Try to correct this structural issue.</p>
-              <button type="button" class="btn btn-success" id="m2-s3-button1">Download</button>
+              <p>(Download either the French or the English version)</p>
+              <button type="button" class="btn btn-success" id="m2-s3-button1" onclick="window.open('https://open.canada.ca/data/en/dataset/7b7fd6a0-db05-400a-84be-94430a6d4567')">Download</button>
               <button type="button" class="btn btn-success" id="m2-s3-button2">Google Sheets</button>
             </div>
             <div id="m2-s3-tab2" class='body-text highlight'>
               <p>LEVEL 2: Generation energy idea and comment submissions</p>
               <p>This dataset contains both ideas and comments (in response to ideas) from consultation participants. Each idea is scored, and comes from a certain user category. For your analysis, you are only interested in ideas from “small business” users with a score of greater than 0. Select the appropriate subset from this dataset.</p>
-              <button type="button" class="btn btn-success" id="m2-s3-button1">Download</button>
+              <p>(Download the "Generation Energy Submissions" dataset in CSV format)</p>
+              <button type="button" class="btn btn-success" id="m2-s3-button1" onclick="window.open('https://open.canada.ca/data/en/dataset/7faa991d-7d49-49ee-b1ff-78c2246988c1')">Download</button>
               <button type="button" class="btn btn-success" id="m2-s3-button2">Google Sheets</button>
             </div>
             <div id="m2-s3-tab3" class='body-text highlight'>
-              <p>LEVEL 3: Third biennial plan to Open Government Partnership online survey (individual comments)</p>
+              <p>LEVEL 3: Third biennial plan to Open Government Partnership online survey</p>
               <p>Imagine that you are interested in the respondents’ preferred way(s) to participate in Open Government. This dataset contains responses to a survey question on that topic, whereby respondents selected from multiple predefined options (coded as an integer). The responses to this question may contain multiple options within a single cell. This structure of data storage means that it is difficult to count the total number of times that each option was selected by respondents. Try to restructure the way that this data is stored so that a single cell contains a maximum of one integer. You will have to increase the number of columns that are used to store this data. *Note: you may also want to take a look at the metadata (Release Notes) for this dataset to give you some context for the coded integer values.</p>
-              <button type="button" class="btn btn-success" id="m2-s3-button1">Download</button>
+              <p>(Download the "Individual Comments" dataset in CSV or XLS format)</p>
+              <button type="button" class="btn btn-success" id="m2-s3-button1" onclick="window.open('https://open.canada.ca/data/en/dataset/8ef41d2e-9309-486a-9f9f-bfd11945a959')">Download</button>
               <button type="button" class="btn btn-success" id="m2-s3-button2">Google Sheets</button>
             </div>
           </div>
