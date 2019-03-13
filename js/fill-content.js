@@ -2,6 +2,7 @@ header = "https://hannahker.github.io/web-development/data/header.json";
 table13 = "https://hannahker.github.io/web-development/data/parks-consultation.json";
 table14 = "https://hannahker.github.io/web-development/data/gen-eng-subset.json";
 text = "https://hannahker.github.io/web-development/data/text.json";
+table24 = "https://hannahker.github.io/web-development/data/ntnl-scrt-2-sub.json"
 
 function getData(source){
 	var XMLHttpRequestObject = false; 
@@ -99,7 +100,7 @@ function getData(source){
 				function fillTable14(){
 					var colHeaders = Object.keys(data[0])
 					//create Tabulator on DOM element with id "example-table"
-					var table = new Tabulator("#quiz-table", {
+					var table = new Tabulator("#quiz1-table", {
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	data:data, //assign data to table
 					 	columns:[ //Define Table Columns
@@ -119,6 +120,38 @@ function getData(source){
 						 	{title:colHeaders[13], field:colHeaders[13], width: 120, headerSort:false, formatter: "textarea"},
 						 	{title:colHeaders[14], field:colHeaders[14], width: 120, headerSort:false, formatter: "textarea"},
 						 	{title:colHeaders[15], field:colHeaders[15], width: 120, headerSort:false, formatter: "textarea"}
+					 	],
+
+					});	
+				}
+
+				function fillTable24(){
+					var colHeaders = Object.keys(data[0])
+					//create Tabulator on DOM element with id "example-table"
+					var table = new Tabulator("#quiz2-table", {
+					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+					 	data:data, //assign data to table
+					 	columns:[ //Define Table Columns
+					 		{title:colHeaders[0], field: colHeaders[0], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[1], field:colHeaders[1], width: 300, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[2], field:colHeaders[2], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[3], field:colHeaders[3], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[4], field:colHeaders[4], width: 80, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[5], field:colHeaders[5], width: 200, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[6], field:colHeaders[6], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[7], field:colHeaders[7], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[8], field:colHeaders[8], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[9], field:colHeaders[9], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[10], field:colHeaders[10], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[11], field:colHeaders[11], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[12], field:colHeaders[12], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[13], field:colHeaders[13], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[14], field:colHeaders[14], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[15], field:colHeaders[15], width: 120, headerSort:false, formatter: "textarea"}, 
+						 	{title:colHeaders[16], field:colHeaders[16], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[17], field:colHeaders[17], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[18], field:colHeaders[18], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[19], field:colHeaders[19], width: 120, headerSort:false, formatter: "textarea"}
 					 	],
 
 					});	
@@ -172,6 +205,9 @@ function getData(source){
 				if(source == "https://hannahker.github.io/web-development/data/text.json"){
 					fillm1();
 				}
+				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-2-sub.json"){
+					fillTable24();
+				}
 
 				delete XMLHttpRequestObject; 
 				XMLHttpRequestObject = null; 
@@ -186,3 +222,4 @@ getData(header);
 getData(table13); 
 getData(table14);
 getData(text); 
+getData(table24);

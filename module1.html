@@ -65,7 +65,7 @@
       <!-- center content --> 
       <div class="col-sm-8 text-left"> 
 
-        <div class="body-title m1"><h3>Module 1: Consultation Results as Data</h3></div>
+        <div class="body-title m1"><h3>Module 1: What is Public Consultation Data?</h3></div>
 
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -235,10 +235,10 @@
           <!-- fourth tab pane --> 
           <div class="tab-pane fade" id="fourth">
               <div id="body5-title" class="tab content header 4"><h4>Check Your Understanding: Quiz</h4></div>
-              <div class="tab content intro 5">
+              <div class="body-text">
                 The multiple choice questions will be based on the following content, collected as part of Natural Resources Canada’s Generation Energy consultation. This content was collected from an online forum located on the Generation Energy website. 
               </div>
-              <div class='table' id='quiz-table'>               
+              <div class='table' id='quiz1-table'>               
               </div>
               <div class='quiz-wrapper'>
                 <div id="quiz"></div>
@@ -251,13 +251,10 @@
         <div id="item5">
           <div id="body5-title" class="body-title"><h4>Key Vocabulary from this Module</h4></div>
           <div id="body5-content" class=body-content>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#data">Data</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#info">Information</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#literacy">Data literacy</button>
+            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#data">Public consultation data</button>
             <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#quantitative">Quantitative data</button>
             <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#qualitative">Qualitative data</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#metadata">Metadata</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#model">Data model</button>
+            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#md">Metadata</button>
           </div>
         </div>
 
@@ -284,7 +281,7 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div id="modal-content" class="modal-body">
-              <p>This is a definition of "data"</p>
+              <p>Public consultation data is the comments or feedback that you collect from citizens during a public consultation. Public consultation data can come in many different formats, such as handwritten notes, spreadsheets, or audio recordings.</p>
             </div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -295,39 +292,6 @@
       </div>
       <!-- end of modal -->
 
-      <!-- Modal -->
-      <div class="modal fade" id="info" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "information"</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
-
-      <!-- Modal -->
-      <div class="modal fade" id="literacy" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "literacy"</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
 
       <!-- Modal -->
       <div class="modal fade" id="quantitative" role="dialog">
@@ -335,7 +299,7 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div id="modal-content" class="modal-body">
-              <p>This is a definition of "quantitative data</p>
+              <p>Quantitative data captures quantities of objects or entities. Quantitative data is numerical and reflects properties that can be measured. Includes discrete data, which only contains certain allowable values, and continuous data, in which any value within a given interval is a possible data point.</p>
             </div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -352,7 +316,7 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div id="modal-content" class="modal-body">
-              <p>This is a definition of "qualitative data"</p>
+              <p>Qualitative data describes the qualities of real-world objects or entities. Qualitative data is often descriptive and may be retrieved from documents in different formats, such as text or audio. Includes nominal data, which does not have a natural order or ranking, and ordinal data, which does have a natural order. </p>
             </div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -364,29 +328,12 @@
       <!-- end of modal -->
 
       <!-- Modal -->
-      <div class="modal fade" id="metadata" role="dialog">
+      <div class="modal fade" id="md" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
             <div id="modal-content" class="modal-body">
-              <p>This is a definition of "metadata"</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
-
-      <!-- Modal -->
-      <div class="modal fade" id="model" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "data model"</p>
+              <p>Metadata is data that describes the characteristics of an associated dataset.</p>
             </div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -398,7 +345,7 @@
       <!-- end of modal -->
 
   <script src="js/fill-content.js"></script>
-  <script src="js/quiz.js"></script>
+  <script src="js/quiz1.js"></script>
   <script src='js/reveal.js'></script>
 
 

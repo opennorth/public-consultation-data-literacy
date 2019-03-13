@@ -163,6 +163,13 @@ button.data-type:focus{
   text-align: center;
 }
 
+/*text styling option*/
+/*used for text on homepage*/
+.extra-text{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 /*image container - used on homepage*/
 .img-container{
   text-align: center;

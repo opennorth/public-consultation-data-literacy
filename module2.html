@@ -11,6 +11,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+ <!-- for tabulator --> 
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/tabulator-tables@4.2.2/dist/css/bootstrap/tabulator_bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.2/dist/js/tabulator.min.js"></script>
+
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -59,7 +67,7 @@
       <!-- center content --> 
       <div class="col-sm-8 text-left"> 
 
-        <div class="body-title m2"><h3>Module 2: Data Structuring and Preprocessing</h3></div>
+        <div class="body-title m2"><h3>Module 2: Data Preprocessing</h3></div>
 
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -80,7 +88,7 @@
           <div class="tab-pane fade show active" id="first">
             <div id="m2-s1-title" class="header"><h4>Data Preprocessing Techniques</h4></div>
             <div id="m2-s1-text1" class='body-text'>Data preprocessing is an important step to prepare your data for analysis. Many “raw” datasets contain errors, unecessary information, incomplete entries, and may not be structured or organized in the way that you would like. Effective preprocessing will improve the quality of your data, thus improving the quality of your data analysis and allowing you to obtain more accurate and useful knowledge from your data.</div>
-            <div id="m2-s1-text2" class='body-text'>Specific preprocessing activities will depend on the characteristics of your dataset, your intended data analysis approach, and the overarching aims of your analysis. Nevertheless, the following is a list of four categories of common preprocessing activities:</div>
+            <div id="m2-s1-text2" class='body-text'>Specific preprocessing activities will depend on the characteristics of your dataset, your intended data analysis approach, and the overarching aims of your analysis. Nevertheless, the following is a list of three categories of common preprocessing activities:</div>
             <div class='tab content button'>
               <button type="button" class="btn btn-success" id="m2-s1-button1" onclick="reveal('cleaningDiv')">Data cleaning</button>
               <button type="button" class="btn btn-success" id="m2-s1-button2" onclick="reveal('integrationDiv')">Data integration</button>
@@ -139,6 +147,7 @@
             <div id="m2-s2-text2" class="body-text highlight">What are Canadians’ expections regarding privacy in both the physical and digital worlds? Do expectations of privacy differ across these two environments?</div>
             <div id="m2-s2-text3" class="body-text">To help answer this question, you have downloaded a dataset that was collected as part of the Government of Canada’s consultation on national security. Let’s begin by exploring this dataset and asking some basic questions:</div>
             <div class='table'></div>
+            <div id="m2-s2-text4" class='body-text'>Click on the buttons below to reveal some key questions to ask while exploring your dataset, important attributes of the dataset to consider when determining your preprocessing approach, and potential preprocessing options</div>
             <div class="button-group">
               <button type="button" class="btn btn-success" id="m2-s2-button1" onclick="reveal('exploreDiv')">Exploring your dataset</button>
               <button type="button" class="btn btn-success" id="m2-s2-button2" onclick="reveal('considerationsDiv')">Preprocessing considerations</button>
@@ -199,23 +208,46 @@
 
           </div>
           <div class="tab-pane fade" id="third">
-            <div id="body3-title" class="tab content header 3"><h4>Preprocessing Your Data</h4></div>
-            <div id="body3-content"><p></p></div>
+            <div id="body3-title" class="tab content header 3"><h4>Examples of Preprocessing Needs in Federal Datasets</h4></div>
+            <div id="m2-s3-text1" class='body-text'>Now that you have learned about basic preprocessing techniques and have practiced exploring a dataset, let’s take a look at some consultation datasets from the Government of Canada that might need preprocessing.</div>
+            <div id="m2-s3-text2" class='body-text'>For each of the following examples, a specific preprocessing need will be highlighted. You can then download the dataset yourself or access a copy via Google Sheets. Once you have the dataset in front of you, follow the instructions presented in the example to try to address the preprocessing need.</div>
+            <div id="m2-s3-tab1" class='body-text highlight'>
+              <p>LEVEL 1: Modernization of federal labour standards survey</p>
+              <p>The field headers in this dataset are in two different rows. This structural issue may cause errors when attempting to analyze the data. Try to correct this structural issue.</p>
+              <button type="button" class="btn btn-success" id="m2-s3-button1">Download</button>
+              <button type="button" class="btn btn-success" id="m2-s3-button2">Google Sheets</button>
+            </div>
+            <div id="m2-s3-tab2" class='body-text highlight'>
+              <p>LEVEL 2: Generation energy idea and comment submissions</p>
+              <p>This dataset contains both ideas and comments (in response to ideas) from consultation participants. Each idea is scored, and comes from a certain user category. For your analysis, you are only interested in ideas from “small business” users with a score of greater than 0. Select the appropriate subset from this dataset.</p>
+              <button type="button" class="btn btn-success" id="m2-s3-button1">Download</button>
+              <button type="button" class="btn btn-success" id="m2-s3-button2">Google Sheets</button>
+            </div>
+            <div id="m2-s3-tab3" class='body-text highlight'>
+              <p>LEVEL 3: Third biennial plan to Open Government Partnership online survey (individual comments)</p>
+              <p>Imagine that you are interested in the respondents’ preferred way(s) to participate in Open Government. This dataset contains responses to a survey question on that topic, whereby respondents selected from multiple predefined options (coded as an integer). The responses to this question may contain multiple options within a single cell. This structure of data storage means that it is difficult to count the total number of times that each option was selected by respondents. Try to restructure the way that this data is stored so that a single cell contains a maximum of one integer. You will have to increase the number of columns that are used to store this data. *Note: you may also want to take a look at the metadata (Release Notes) for this dataset to give you some context for the coded integer values.</p>
+              <button type="button" class="btn btn-success" id="m2-s3-button1">Download</button>
+              <button type="button" class="btn btn-success" id="m2-s3-button2">Google Sheets</button>
+            </div>
           </div>
           <div class="tab-pane fade" id="fourth">
             <div id="body4-title" class="tab content header 4"><h4>Check Your Understanding: Quiz</h4></div>
-            <div id="body4-content"><p></p></div>
+            <div id="body-text">The multiple choice questions will be based on the following dataset, collected as part of the Government of Canada’s National Security Consultation, available here. This dataset contains a collection of email responses. You may want to visit this link and take a look at the documentation (available for PDF download) to help you answer the following questions.</div>
+            <div class='table' id='quiz2-table'>               
+            </div>
+            <div class='quiz-wrapper'>
+                <div id="quiz"></div>
+                <button type="button" class="btn btn-success" id="submit">Submit Quiz</button>
+                <div id="results"></div>
+              </div>
           </div>
         </div>
 
         <div id="item5">
           <div id="body5-title" class="body-title"><h4>Key Vocabulary from this Module</h4></div>
           <div id="body5-content" class=body-content>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#data">Preprocessing</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#info">Cleaning</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#literacy">Integration</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#quantitative">Transformation</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#qualitative">Data quality</button>
+            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#preprocessing">Preprocessing</button>
+            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#quality">Data quality</button>
           </div>
         </div>
 
@@ -237,12 +269,12 @@
 </nav>
 
       <!-- Modal -->
-      <div class="modal fade" id="data" role="dialog">
+      <div class="modal fade" id="preprocessing" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
             <div id="modal-content" class="modal-body">
-              <p>This is a definition of "data"</p>
+              <p>Data preprocessing includes activities to prepare a dataset for analysis. Preprocessing activities can include data cleaning, data transformation, and data integration. </p>
             </div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -254,12 +286,13 @@
       <!-- end of modal -->
 
       <!-- Modal -->
-      <div class="modal fade" id="info" role="dialog">
+      <div class="modal fade" id="quality" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
             <div id="modal-content" class="modal-body">
-              <p>This is a definition of "information"</p>
+              <p>Data quality refers to the extent to which a dataset is fit for its intended purpose.</p>
+              <p>Source: Wang, R. Y., & Strong, D. M. (1996). Beyond accuracy: What data quality means to data consumers. Journal of management information systems, 12(4), 5-33.</p>
             </div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -270,92 +303,10 @@
       </div>
       <!-- end of modal -->
 
-      <!-- Modal -->
-      <div class="modal fade" id="literacy" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "literacy"</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
-
-      <!-- Modal -->
-      <div class="modal fade" id="quantitative" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "quantitative data</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
-
-      <!-- Modal -->
-      <div class="modal fade" id="qualitative" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "qualitative data"</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
-
-      <!-- Modal -->
-      <div class="modal fade" id="metadata" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "metadata"</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
-
-      <!-- Modal -->
-      <div class="modal fade" id="model" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>This is a definition of "data model"</p>
-            </div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
-        </div>
-      </div>
-      <!-- end of modal -->
+      
 
   <script src="js/fill-content.js"></script>
+  <script src="js/quiz2.js"></script>
   <script src='js/reveal.js'></script>
 
 </body>
