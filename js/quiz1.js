@@ -90,12 +90,14 @@ function showResults(){
       // add to the number of correct answers
       numCorrect++;
       // color the answers green
-     answerContainers[questionNumber].style.color = 'lightgreen';
+     answerContainers[questionNumber].style.color = '#048701';
+     answerContainers[questionNumber].style.fontWeight = 'bold';
     }
     // if answer is wrong or blank
    else{
       //color the answers red
-    answerContainers[questionNumber].style.color = 'red';
+    answerContainers[questionNumber].style.color = '#db230d';
+    answerContainers[questionNumber].style.fontWeight = 'bold';
    }		   
   });
 	 // add to results box
