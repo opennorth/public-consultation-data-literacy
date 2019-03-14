@@ -158,6 +158,38 @@ function getData(source){
 					});	
 				}
 
+				function fillTable22(){
+					var colHeaders = Object.keys(data[0])
+					//create Tabulator on DOM element with id "example-table"
+					var table = new Tabulator("#m2-example-table", {
+					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+					 	data:data, //assign data to table
+					 	columns:[ //Define Table Columns
+					 		{title:colHeaders[0], field: colHeaders[0], width: 80, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[1], field:colHeaders[1], width: 80, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[2], field:colHeaders[2], width: 80, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[3], field:colHeaders[3], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[4], field:colHeaders[4], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[5], field:colHeaders[5], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[6], field:colHeaders[6], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[7], field:colHeaders[7], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[8], field:colHeaders[8], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[9], field:colHeaders[9], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[10], field:colHeaders[10], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[11], field:colHeaders[11], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[12], field:colHeaders[12], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[13], field:colHeaders[13], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[14], field:colHeaders[14], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[15], field:colHeaders[15], width: 120, headerSort:false, formatter: "textarea"}, 
+						 	{title:colHeaders[16], field:colHeaders[16], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[17], field:colHeaders[17], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[18], field:colHeaders[18], width: 120, headerSort:false, formatter: "textarea"},
+						 	{title:colHeaders[19], field:colHeaders[19], width: 120, headerSort:false, formatter: "textarea"}
+					 	],
+
+					});	
+				}
+
 				//fills standard text across all pages 
 				function fillHeader(){
 					//fill in title
@@ -209,6 +241,9 @@ function getData(source){
 				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-email.json"){
 					fillTable24();
 				}
+				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-online.json"){
+					fillTable22();
+				}
 
 				delete XMLHttpRequestObject; 
 				XMLHttpRequestObject = null; 
@@ -224,3 +259,4 @@ getData(table13);
 getData(table14);
 getData(text); 
 getData(table24);
+getData(table22);

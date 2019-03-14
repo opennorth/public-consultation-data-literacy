@@ -186,6 +186,42 @@ button.data-type:focus{
 .tabs{
   color: black;
 }
+/*button styling*/
+/*existing green #18BC9C, highlight = #149A80*/
+/*existing blue #3498DB, highlight = #2384C6*/
+.btn-success{
+ /* color: black;
+  background-color: #19E1C3;
+  border: #19E1C3; 
+  color: white;
+  background-color: #0D7360;
+  border: #0D7360;*/ 
+  color: black;
+}
+.btn-success:hover{
+  color: black;
+  background-color: #19E1C3;
+}
+.btn-info{
+  /*color: white;
+  background-color: #1F77B2;
+  border: #1F77B2;*/ 
+  color: black;
+}
+.btn-info:hover{
+  color: black;
+  background-color: #A0CFEE;
+}
+.btn-warning{
+  color: black;
+}
+.btn-warning:hover{
+  color:black;
+  background-color: #F6B651;
+}
+
+
+
 
 
 

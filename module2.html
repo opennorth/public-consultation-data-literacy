@@ -146,7 +146,7 @@
             <div id="m2-s2-text1" class="body-text">Imagine that you are interested in the following question:</div>
             <div id="m2-s2-text2" class="body-text highlight">What are Canadians’ expections regarding privacy in both the physical and digital worlds? Do expectations of privacy differ across these two environments?</div>
             <div id="m2-s2-text3" class="body-text">To help answer this question, you have downloaded a dataset that was collected as part of the Government of Canada’s consultation on national security. Let’s begin by exploring this dataset and asking some basic questions:</div>
-            <div class='table'></div>
+            <div class='table' id='m2-example-table'></div>
             <div id="m2-s2-text4" class='body-text'>Click on the buttons below to reveal some key questions to ask while exploring your dataset, important attributes of the dataset to consider when determining your preprocessing approach, and potential preprocessing options</div>
             <div class="button-group">
               <button type="button" class="btn btn-success" id="m2-s2-button1" onclick="reveal('exploreDiv')">Exploring your dataset</button>
@@ -161,7 +161,7 @@
               </div>
               <div class="card-body">
                 <ul>
-                  <li>Where does this data come from? How was this data collected? (you may need to investigate this link and look for relevant metadata)</li>
+                  <li>Where does this data come from? How was this data collected? (you may need to visit the "Download" link and look for relevant metadata)</li>
                   <li>What data do I need to address my policy question?</li>
                   <li>Are there any errors in this dataset that are readily apparent?</li>
                   <li>Do I have enough data? Too much data?</li>
@@ -177,7 +177,6 @@
               </div>
               <div class="card-body">
                 <ul>
-                  <li>The metadata contained in the first three rows creates a non-standard tabular structure that may complicate future analysis.</li>
                   <li>This dataset contains 3307 entries. Think about what tasks can be done manually and what should be automated. For example, imagine that you have to change the date/time format. Do you want to manually reformat the date/time in each entry or do you want to create a formula in Excel (or another software tool) to do it all at once?</li>
                   <li>This dataset contains entries in both French and English.</li>
                   <li>This dataset contains responses to many questions, not all of which are relevant to the question that you are trying to address.</li>
@@ -194,7 +193,6 @@
               </div>
               <div class="card-body">
                 <ul>
-                  <li>Remove descriptive metadata contained in first three rows to create a standard tabular structure</li>
                   <li>Identify and remove any duplicate data entries</li>
                   <li>Separate French and English entries</li>
                   <li>Remove unnecessary fields (eg. those containing responses to irrelevant questions)</li>
@@ -203,7 +201,7 @@
                 </ul>
               </div>
             </div>
-            <div id='m2-s2-text4' class='body-text'>Feel free to download the data yourself for further exploration and to experiment with basic preprocessing.</div>
+            <div id='m2-s2-text4' class='body-text'>Feel free to download the data yourself for further exploration and to experiment with basic preprocessing. (Download the dataset that was received via online consultation portal from 05/11/2016-15/12/2016)</div>
             <button id="modal-button" type="button" class="btn btn-info" onclick="window.open('https://open.canada.ca/data/en/dataset/5e9433bf-2334-463a-bd48-03ba53a7051c')">Download</button>
 
           </div>
