@@ -2,7 +2,8 @@ header = "https://hannahker.github.io/web-development/data/header.json";
 table13 = "https://hannahker.github.io/web-development/data/parks-consultation.json";
 table14 = "https://hannahker.github.io/web-development/data/gen-eng-subset.json";
 text = "https://hannahker.github.io/web-development/data/text.json";
-table24 = "https://hannahker.github.io/web-development/data/ntnl-scrt-2-sub.json"
+table24 = "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-email.json";
+table22 = "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-online.json"; 
 
 function getData(source){
 	var XMLHttpRequestObject = false; 
@@ -205,7 +206,7 @@ function getData(source){
 				if(source == "https://hannahker.github.io/web-development/data/text.json"){
 					fillm1();
 				}
-				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-2-sub.json"){
+				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-email.json"){
 					fillTable24();
 				}
 
