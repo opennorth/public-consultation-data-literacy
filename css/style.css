@@ -220,6 +220,31 @@ button.data-type:focus{
   background-color: #F6B651;
 }
 
+/*align in center*/
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*styling for links*/
+.light-link{
+  color: white;
+  text-decoration:underline;
+}
+.light-link:hover{
+  color: #ED2024;
+}
+.link{
+  text-decoration: underline;
+}
+
+/*bold text*/
+.bold{
+  font-weight:bold;
+}
+
+
 
 
 
