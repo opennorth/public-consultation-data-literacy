@@ -2,26 +2,22 @@
   "Nav": {
     "EN": {
       "Title": "Data Literacy Guide",
-      "Items": [
-        "Home",
-        "About this Guide",
-        "Learning Modules"
-      ],
-      "Dropdown": [
-        "Overview",
-        "Module 1",
-        "Module 2"
-      ],
-      "Footer": "Developed by <a href='https://www.opennorth.ca/'>OpenNorth</a>"
+      "I1": "Home",
+      "I2": "About this Guide",
+      "I3": "Learning Modules",
+      "D1": "Overview",
+      "D2": "Module 1",
+      "D3": "Module 2",
+      "Footer": "Developed by Developed by <a class=\"light-link\" href=\"https://www.opennorth.ca/\">OpenNorth</a>"
     },
-    "FR": {
+    "Fr": {
       "Title": "TBD",
-      "Items": [
-        "TBD"
-      ],
-      "Dropdown": [
-        "TBD"
-      ],
+      "I1": "TBD",
+      "I2": "TBD",
+      "I3": "TBD",
+      "D1": "TBD",
+      "D2": "TBD",
+      "D3": "TBD",
       "Footer": "TBD"
     }
   }
