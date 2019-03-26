@@ -29,5 +29,5 @@ function getData(source){
 	
 }
 
-getData('https://hannahker.github.io/web-development/data/nav.json');
+getData('https://hannahker.github.io/web-development/data/index.json');
 getData("https://hannahker.github.io/web-development/data/overview.json");
