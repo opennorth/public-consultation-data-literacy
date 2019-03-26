@@ -21,13 +21,19 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="js/homepage.js"></script>
+  <script>
+    getData("https://hannahker.github.io/web-development/data/nav.json", "EN");
+   //getData("https://hannahker.github.io/web-development/data/homepage.json", "EN");
+  </script>
+
 </head>
 
 <body>
 
   <!-- nav bar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-    <a id="title" class="navbar-brand" href="index.html"></a>
+    <a id="NavTitle" class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,20 +41,20 @@
     <div class="navbar-collapse collapse" id="navbarColor01" style="">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a id="header-1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
+          <a id="Item1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a id="header-3" class="nav-link" href="about.html"></a>
+          <a id="Item2" class="nav-link" href="about.html"></a>
         </li>
-        <li class="nav-item dropdown  active">
-  	    <a id="header-2" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
-  	    <div class="dropdown-menu" x-placement="bottom-start">
-  	      <a id="dropdown-1" class="dropdown-item" href="overview.html"></a>
-  	      <div class="dropdown-divider"></div>
-  	      <a id="dropdown-2" class="dropdown-item active" href="module1.html"></a>
-  	      <a id="dropdown-3" class="dropdown-item" href="module2.html"></a>
-  	    </div>
-    	</li>
+        <li class="nav-item dropdown active">
+        <a id="Item3" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+        <div class="dropdown-menu" x-placement="bottom-start">
+          <a id="Dropdown1" class="dropdown-item" href="overview.html"></a>
+          <div class="dropdown-divider"></div>
+          <a id="Dropdown2" class="dropdown-item active" href="module1.html"></a>
+          <a id="Dropdown3" class="dropdown-item" href="module2.html"></a>
+        </div>
+      </li>
       </ul>
     </div>
   </nav>
@@ -269,11 +275,9 @@
     </div>
   </div>
 
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="footer">
-    Developed by <a class="light-link" href="https://www.opennorth.ca/">OpenNorth</a>
-  </div>
-</nav>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div id="Footer" class="footer"></div>
+  </nav>
 
       <!-- Modal -->
       <div class="modal fade" id="data" role="dialog">

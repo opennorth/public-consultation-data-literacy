@@ -11,18 +11,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/homepage.js"></script>
+  <script>
+    getData("https://hannahker.github.io/web-development/data/nav.json", "EN");
+    getData("https://hannahker.github.io/web-development/data/homepage.json", "EN");
+  </script>
 
 </head>
 
 <body>
 
-  <!-- nav bar --> 
+   <!-- nav bar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-    <a id="title" class="navbar-brand" href="index.html"></a>
+    <a id="NavTitle" class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,21 +33,20 @@
     <div class="navbar-collapse collapse" id="navbarColor01" style="">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a id="header-1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
+          <a id="Item1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a id="header-3" class="nav-link" href="about.html"></a>
+          <a id="Item2" class="nav-link" href="about.html"></a>
         </li>
         <li class="nav-item dropdown">
-  	    <a id="header-2" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
-  	    <div class="dropdown-menu" x-placement="bottom-start">
-  	      <a id="dropdown-1" class="dropdown-item" href="overview.html"></a>
-  	      <div class="dropdown-divider"></div>
-  	      <a id="dropdown-2" class="dropdown-item" href="module1.html"></a>
-  	      <a id="dropdown-3" class="dropdown-item" href="module2.html"></a>
-  	    </div>
-    	</li>
-        
+        <a id="Item3" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+        <div class="dropdown-menu" x-placement="bottom-start">
+          <a id="Dropdown1" class="dropdown-item" href="overview.html"></a>
+          <div class="dropdown-divider"></div>
+          <a id="Dropdown2" class="dropdown-item" href="module1.html"></a>
+          <a id="Dropdown3" class="dropdown-item" href="module2.html"></a>
+        </div>
+      </li>
       </ul>
     </div>
   </nav>
@@ -59,24 +61,8 @@
 
         <!-- center content --> 
         <div class="col-sm-8 text-left"> 
-
-          <div id="index-title" class="body-title extra-header"><h3>Data Literacy Guide for Public Consultation</h3></div>
-          <div id="body1-content" class='extra-text'>
-            <p>This guide is intended to promote data literacy for Government of Canada employees who are engaging in delivering public consultations and/or incorporating their results into decision-making processes.</p>
-            <p> The feedback that you collect from citizens during public consultations is valuable data that needs to be effectively managed so that it can inform decision-making. While there are many important activities that go into planning and executing a public consultation event (whether it be online or in person), the work does not stop once the event is complete. You may end up with large volumes of citizen feedback (data) in a variety of (structured and unstructured) formats. By possessing a strong foundation in data literacy, you will be better able to translate this complex data into actionable knowledge, leading to more informed decision-making.</p>
-            <p>Please continue to the <a href="about.html" class="link">About this Guide</a> section to begin. </p>
-
-          </div>
-          <!-- -->
-
-          <div id='Title'></div>
-          <div id="Modules"></div>
-          <div id="Descriptions"></div>
-
-          <!-- --> 
-
-          
-
+          <div id="HomeTitle" class="body-title extra-header"></div>
+          <div id="IntroText" class='extra-text'></div>
         </div>
         <!-- end of center content --> 
 
@@ -88,15 +74,8 @@
     </div>
 
   <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="footer">
-      Developed by <a class="light-link" href="https://www.opennorth.ca/">OpenNorth</a>
-    </div>
+    <div id="Footer" class="footer"></div>
   </nav>
-
- 
-
- <!-- <script src="js/fill-content.js"></script>-->
-  <script src="js/homepage.js"></script>
 
 </body>
 </html>
