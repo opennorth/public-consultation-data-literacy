@@ -1,7 +1,7 @@
 {
   "Nav": {
     "EN": {
-      "Title": "Data Literacy Guide",
+      "NavTitle": "Data Literacy Guide",
       "I1": "Home",
       "I2": "About this Guide",
       "I3": "Learning Modules",
@@ -11,7 +11,7 @@
       "Footer": "Developed by Developed by <a class=\"light-link\" href=\"https://www.opennorth.ca/\">OpenNorth</a>"
     },
     "Fr": {
-      "Title": "TBD",
+      "OverviewTitle": "TBD",
       "I1": "TBD",
       "I2": "TBD",
       "I3": "TBD",
