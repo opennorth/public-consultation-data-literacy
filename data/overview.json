@@ -2,27 +2,29 @@
   "Overview": {
     "EN": {
       "OverviewTitle": "Learning Modules Overview",
-      "M1": "Module1: What is Public Consultation Data?",
-      "D1": "<p>This module introduces the concept of public consultation results as data. You will see examples of different kinds of public consultation data and be introduced to some basic data types. You will also get to take a look at some example datasets and explore the types of data that they contain.</p><p><a href=\"module1.html\" class=\"link\">Go to this module</a></p>",
-      "M2": "Module 2: Data Preprocessing",
-      "D2": "<p>This module will teach you about basic data preprocessing. Preprocessing is important as it allows you to improve the quality of your data, making it more suitable for analysis and thus able to provide you with greater insight. You will learn about different categories of preprocessing activities and get to explore a real public consultation dataset. You will also be asked to perform different preprocessing tasks on a variety of open consultations datasets from open.canada.ca.</p><p><a href=\"module2.html\" class=\"link\">Go to this module</a></p>",
-      "M3": "Module 3: Data Analysis",
-      "D3": "Not yet developed.",
-      "M4": "Module 4: Interpretation and Evaluation",
-      "D4": "Not yet developed.",
-      "M5": "Module 5: Decision-Making and Impact on Policy",
-      "D5": "Not yet developed."
+      "Module1": "Module1: What is Public Consultation Data?",
+      "Descr1": "<p>This module introduces the concept of public consultation results as data. You will see examples of different kinds of public consultation data and be introduced to some basic data types. You will also get to take a look at some example datasets and explore the types of data that they contain.</p><p><a href=\"module1.html\" class=\"link\">Go to this module</a></p>",
+      "Module2": "Module 2: Data Preprocessing",
+      "Descr2": "<p>This module will teach you about basic data preprocessing. Preprocessing is important as it allows you to improve the quality of your data, making it more suitable for analysis and thus able to provide you with greater insight. You will learn about different categories of preprocessing activities and get to explore a real public consultation dataset. You will also be asked to perform different preprocessing tasks on a variety of open consultations datasets from open.canada.ca.</p><p><a href=\"module2.html\" class=\"link\">Go to this module</a></p>",
+      "Module3": "Module 3: Data Analysis",
+      "Descr3": "Not yet developed.",
+      "Module4": "Module 4: Interpretation and Evaluation",
+      "Descr4": "Not yet developed.",
+      "Module5": "Module 5: Decision-Making and Impact on Policy",
+      "Descr5": "Not yet developed."
     },
     "FR": {
       "OverviewTitle": "TBD",
-      "M1": "TBD",
-      "D1": "TBD",
-      "D2": "TBD",
-      "D3": "TBD",
-      "M4": "TBD",
-      "D4": "TBD",
-      "M5": "TBD",
-      "D5": "TBD"
+      "Module1": "TBD",
+      "Descr1": "TBD",
+      "Module2": "TBD",
+      "Descr2": "TBD",
+      "Module3": "TBD",
+      "Descr3": "TBD",
+      "Module4": "TBD",
+      "Descr4": "TBD",
+      "Module5": "TBD",
+      "Descr5": "TBD"     
     }
   }
 }

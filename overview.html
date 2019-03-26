@@ -19,7 +19,7 @@
 
   <!-- nav bar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-    <a id="Title" class="navbar-brand" href="index.html"></a>
+    <a id="NavTitle" class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,18 +27,18 @@
     <div class="navbar-collapse collapse" id="navbarColor01" style="">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a id="I1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
+          <a id="Item1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a id="I2" class="nav-link" href="about.html"></a>
+          <a id="Item2" class="nav-link" href="about.html"></a>
         </li>
         <li class="nav-item dropdown active">
-  	    <a id="I3" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+  	    <a id="Item3" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
   	    <div class="dropdown-menu" x-placement="bottom-start">
-  	      <a id="D1" class="dropdown-item active" href="overview.html"></a>
+  	      <a id="Dropdown1" class="dropdown-item active" href="overview.html"></a>
   	      <div class="dropdown-divider"></div>
-  	      <a id="D2" class="dropdown-item" href="module1.html"></a>
-  	      <a id="D3" class="dropdown-item" href="module2.html"></a>
+  	      <a id="Dropdown2" class="dropdown-item" href="module1.html"></a>
+  	      <a id="Dropdown3" class="dropdown-item" href="module2.html"></a>
   	    </div>
     	</li>
       </ul>
@@ -56,37 +56,30 @@
         <!-- center content --> 
         <div class="col-sm-8 text-left"> 
 
-          <div id="body1-title" class="body-title extra-header"><h3>Learning Modules Overview</h3></div>
+          <div id="OverviewTitle" class="body-title extra-header"><h3></h3></div>
           <div class="extra-text">
-            <p>The content of this guide is divided into a series of learning modules. Each learning module covers a step in a generalized data processing workflow.</p>
-            <p><b>Please note: </b>As this guide is currently in the prototype phase, only the first two modules have been developed.</p>
+            <div id="Module1" class="bold"></div>
+            <div id="Descr1"></div>
           </div>
           <hr>
           <div class="extra-text">
-          <p class="bold">Module 1: What is Public Consultation Data?</p>
-          <p>This module introduces the concept of public consultation results as data. You will see examples of different kinds of public consultation data and be introduced to some basic data types. You will also get to take a look at some example datasets and explore the types of data that they contain.</p>
-          <p><a href="module1.html" class="link">Go to this module</a></p>
+            <div id="Module2" class="bold"></div>
+            <div id="Descr2"></div>
           </div>
           <hr>
           <div class="extra-text">
-          <p class="bold">Module 2: Data Preprocessing</p>
-          <p>This module will teach you about basic data preprocessing. Preprocessing is important as it allows you to improve the quality of your data, making it more suitable for analysis and thus able to provide you with greater insight. You will learn about different categories of preprocessing activities and get to explore a real public consultation dataset. You will also be asked to perform different preprocessing tasks on a variety of open consultations datasets from open.canada.ca.</p>
-          <p><a href="module2.html" class="link">Go to this module</a></p>
+            <div id="Module3" class="bold"></div>
+            <div id="Descr3"></div>
           </div>
           <hr>
           <div class="extra-text">
-          <p class="bold">Module 3: Data Analysis</p>
-          <p>Not yet developed.</p>
+            <div id="Module4" class="bold"></div>
+            <div id="Descr4"></div>
           </div>
           <hr>
           <div class="extra-text">
-          <p class="bold">Module 4: Interpretation and Evaluation</p>
-          <p>Not yet developed.</p>
-          </div>
-          <hr>
-          <div class="extra-text">
-          <p class="bold">Module 5: Decision-Making and Impact on Policy</p>
-          <p>Not yet developed.</p>
+            <div id="Module5" class="bold"></div>
+            <div id="Descr5"></div>
           </div>
 
         </div>
@@ -108,6 +101,7 @@
   <script src="js/homepage.js"></script>
   <script>
     getData("https://hannahker.github.io/web-development/data/nav.json", "EN");
+    getData("https://hannahker.github.io/web-development/data/overview.json", "EN");
   </script>
 
 </body>
