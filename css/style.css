@@ -41,13 +41,6 @@
     height:auto;
   } 
 }
-/*page title*/
-.body-title{
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 30px;
-  font-weight: bold;
-}
 .dropdown-menu{
   position: absolute; 
   will-change: transform; 
@@ -72,6 +65,20 @@
 
 /*---------------------- TEXT STYLING OPTIONS -----------------*/
 
+/*page title*/
+.body-title{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+/*space below header in module tab*/
+.header{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
 /*bold text*/
 .bold{
   font-weight:bold;
@@ -156,11 +163,7 @@ button.data-type:focus{
 
 /*-------------------- GENERAL LAYOUT OPTIONS ------------------*/
 
-/*space below header in module tab*/
-.header{
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
+
 /*align in center*/
 .center{
   display: block;

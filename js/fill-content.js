@@ -80,19 +80,19 @@ function getData(source){
 					var qualn = [2,5,6]; 
 					var qualo = [4]; 
 
-					document.getElementById("metadata").addEventListener("click", function(){
+					document.getElementById("M1S3Button5").addEventListener("click", function(){
 							highlightColumn(metadata, "#dee3ea"); 
 						});	
-					document.getElementById("quant-d").addEventListener("click", function(){
+					document.getElementById("M1S3Button1").addEventListener("click", function(){
 							highlightColumn(quantd, "#dee3ea"); 
 						});	
-					document.getElementById("quant-c").addEventListener("click", function(){
+					document.getElementById("M1S3Button2").addEventListener("click", function(){
 							highlightColumn(quantc, "#dee3ea"); 
 						});	
-					document.getElementById("qual-n").addEventListener("click", function(){
+					document.getElementById("M1S3Button3").addEventListener("click", function(){
 							highlightColumn(qualn, "#dee3ea"); 
 						});	
-					document.getElementById("qual-o").addEventListener("click", function(){
+					document.getElementById("M1S3Button4").addEventListener("click", function(){
 							highlightColumn(qualo, "#dee3ea"); 
 						});	
 				}

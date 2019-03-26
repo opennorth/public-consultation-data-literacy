@@ -1,7 +1,7 @@
 //https://www.sitepoint.com/simple-javascript-quiz/
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
+const submitButton = document.getElementById('M1S4Button');
 
 const myQuestions = [
   {
