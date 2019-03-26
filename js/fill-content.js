@@ -4,6 +4,7 @@ table14 = "https://hannahker.github.io/web-development/data/gen-eng-subset.json"
 text = "https://hannahker.github.io/web-development/data/text.json";
 table24 = "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-email.json";
 table22 = "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-online.json"; 
+homepage = 'https://hannahker.github.io/web-development/data/home.json'; 
 
 function getData(source){
 	var XMLHttpRequestObject = false; 
