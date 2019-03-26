@@ -24,7 +24,7 @@
   <script src="js/homepage.js"></script>
   <script>
     getData("https://hannahker.github.io/web-development/data/nav.json", "EN");
-   //getData("https://hannahker.github.io/web-development/data/homepage.json", "EN");
+    getData("https://hannahker.github.io/web-development/data/module2.json", "EN");
   </script>
 
 </head>
@@ -73,188 +73,149 @@
       <!-- center content --> 
       <div class="col-sm-8 text-left"> 
 
-        <div class="body-title m2"><h3>Module 2: Data Preprocessing</h3></div>
+        <div id="M2Title" class="body-title m2"></div>
+
+<!-------------------- SECTION TABS ------------------------>
 
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active tabs" data-toggle="tab" href="#first">Section 1</a>
+            <a id="M2S1Tab" class="nav-link active tabs" data-toggle="tab" href="#first"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link tabs" data-toggle="tab" href="#second">Section 2</a>
+            <a id="M2S2Tab" class="nav-link tabs" data-toggle="tab" href="#second"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link tabs" data-toggle="tab" href="#third">Section 3</a>
+            <a id="M2S3Tab" class="nav-link tabs" data-toggle="tab" href="#third"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link tabs" data-toggle="tab" href="#fourth">Check Your Understanding</a>
+            <a id="M2S4Tab" class="nav-link tabs" data-toggle="tab" href="#fourth"></a>
           </li>
         </ul>
 
         <div id="myTabContent" class="tab-content">
+
+<!-------------------- SECTION 1 --------------------------->
+
           <div class="tab-pane fade show active" id="first">
-            <div id="m2-s1-title" class="header"><h4>Data Preprocessing Techniques</h4></div>
-            <div id="m2-s1-text1" class='body-text'>Data preprocessing is an important step to prepare your data for analysis. Many “raw” datasets contain errors, unecessary information, incomplete entries, and may not be structured or organized in the way that you would like. Effective preprocessing will improve the quality of your data, thus improving the quality of your data analysis and allowing you to obtain more accurate and useful knowledge from your data.</div>
-            <div id="m2-s1-text2" class='body-text'>Specific preprocessing activities will depend on the characteristics of your dataset, your intended data analysis approach, and the overarching aims of your analysis. Nevertheless, the following is a list of three categories of common preprocessing activities:</div>
+            <div id="M2S1Title" class="header"></div>
+            <div id="M2S1Text1" class='body-text'></div>
             <div class='tab content button'>
-              <button type="button" class="btn btn-success" id="m2-s1-button1" onclick="reveal('cleaningDiv')">Data cleaning</button>
-              <button type="button" class="btn btn-success" id="m2-s1-button2" onclick="reveal('integrationDiv')">Data integration</button>
-              <button type="button" class="btn btn-success" id="m2-s1-button3" onclick="reveal('transformationDiv')">Data transformation</button>
+              <button type="button" class="btn btn-success" id="M2S1Button1" onclick="reveal('cleaningDiv')"></button>
+              <button type="button" class="btn btn-success" id="M2S1Button2" onclick="reveal('integrationDiv')"></button>
+              <button type="button" class="btn btn-success" id="M2S1Button3" onclick="reveal('transformationDiv')"></button>
             </div>
             <div id='cleaningDiv' class="card text-white bg-primary mb-3 popup">
-              <div class="card-header"><b>Data Cleaning</b>
+              <div id="M2S1Button1Title" class="card-header bold">
                 <button type="button" class="close" onclick="reveal('cleaningDiv')" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="card-body">
-                <p class="card-text">Processes of data cleaning involve identifying and removing data entries with obvious errors or inaccuracies. Errors in your dataset may be identified programmatically or by manual review. Unwanted data entries may include the following:</p>
-                <ul>
-                  <li>Duplicates: When one entry exactly matches another</li>
-                  <li>Unrealistic values: Such as an age of 0</li>
-                  <li>Incomplete: When the entry is missing one or more important fields</li>
-                  <li>Irrelevant: Data that is not relevant to the task or question at hand</li>
-                </ul>
-                <p class="card-text">When cleaning your data, be careful not to remove entries just because they aren’t what you expected. Doing so can introduce bias into your dataset and cause you to lose valuable information. Specific data cleaning activities will depend on the characteristics of your dataset.</p>
-              </div>
+              <div id="M2S1Button1Text" class="card-body"></div>
             </div>
             <div id='integrationDiv' class="card text-white bg-primary mb-3 popup">
-              <div class="card-header"><b>Data Integration</b>
+              <div id="M2S1Button2Title" class="card-header bold">
                 <button type="button" class="close" onclick="reveal('integrationDiv')" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="card-body">
-                <p class="card-text">Data integration is the process of combining data from multiple sources. Different integration techniques may be employed, depending on the content and structure of the datasets that you are combining. Consider the following examples:</p>
-                <p class="card-text">1. You have two spreadsheets of responses to the same online form. One spreadsheet is a set of responses from 2016, and the other is from 2017. As the columns in both spreadsheets match up, your process of integrating these two datasets into a single spreadsheet is simple. You can copy all the responses from the 2016 spreadsheet and paste them directly into the 2017 spreadsheet.</p>
-                <p class="card-text">2. You have a list of participants at a town hall meeting that includes first name, last name, and profession. You have a seperate spreadsheet with the results to a digital polling exercise conducted during the meeting, containing last name and polling response. You are able to join these two datasets by matching entries according to the participant’s last name.</p>
-              </div>
+              <div id="M2S1Button2Text" class="card-body"></div>
             </div>
             <div id='transformationDiv' class="card text-white bg-primary mb-3 popup">
-              <div class="card-header"><b>Data Transformation</b>
+              <div id="M2S1Button3Title" class="card-header bold">
                 <button type="button" class="close" onclick="reveal('transformationDiv')" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="card-body">
-                <p class="card-text">Data transformation involves manipulating data into another format that is more appropriate for the eventual analysis.</p>
-                <p class="card-text">Imagine that you wanted to determine the most frequently occurring words in a set of responses to a consultation question. You need to transform your text in several ways so that a computer can accurately calculate the number of times that each word occurs:</p>
-                <ul>
-                  <li>Convert all letters to lowercase (so that “Cat” and “cat” will be identified as the same word)</li>
-                  <li>Remove punctuation (you don’t care about how many “.”’s there are)</li>
-                  <li>Remove commonly used, but meaningless, words such as “a”, “the”, and “and”</li>
-                </ul>
-              </div>
+              <div id="M2S1Button3Text" class="card-body"></div>
             </div>
-            <div id="m2-s1-text3" class='body-text'>No matter what kind of preprocessing you do, it is important to DOCUMENT every step that you take. Clearly documenting your preprocessing procedure will help others replicate your analysis, interpret your results, and understand potential limitations and biases.</div>
+            <div id="M2S1Text2" class='body-text'></div>
           </div>
+
+<!-------------------- SECTION 2 --------------------------->
+
           <div class="tab-pane fade" id="second">
-            <div id="m2-s2-title" class="header"><h4>Getting to Know a Dataset</h4></div>
-            <div id="m2-s2-text1" class="body-text">Imagine that you are interested in the following question:</div>
-            <div id="m2-s2-text2" class="body-text highlight">What are Canadians’ expections regarding privacy in both the physical and digital worlds? Do expectations of privacy differ across these two environments?</div>
-            <div id="m2-s2-text3" class="body-text">To help answer this question, you have downloaded a dataset that was collected as part of the Government of Canada’s consultation on national security. Let’s begin by exploring this dataset and asking some basic questions:</div>
+            <div id="M2S2Title" class="header"></div>
+            <div id="M2S2Text1" class="body-text"></div>
+            <div id="M2S2Text2" class="body-text highlight"></div>
+            <div id="M2S2Text3" class="body-text"></div>
             <div class='table' id='m2-example-table'></div>
-            <div id="m2-s2-text4" class='body-text'>Click on the buttons below to reveal some key questions to ask while exploring your dataset, important attributes of the dataset to consider when determining your preprocessing approach, and potential preprocessing options</div>
+            <div id="M2S2Text4" class='body-text'></div>
             <div class="button-group">
-              <button type="button" class="btn btn-success" id="m2-s2-button1" onclick="reveal('exploreDiv')">Exploring your dataset</button>
-              <button type="button" class="btn btn-success" id="m2-s2-button2" onclick="reveal('considerationsDiv')">Preprocessing considerations</button>
-              <button type="button" class="btn btn-success" id="m2-s2-button3" onclick="reveal('optionsDiv')">Potential preprocessing options</button>
+              <button type="button" class="btn btn-success" id="M2S2Button1" onclick="reveal('exploreDiv')"></button>
+              <button type="button" class="btn btn-success" id="M2S2Button2" onclick="reveal('considerationsDiv')"></button>
+              <button type="button" class="btn btn-success" id="M2S2Button3" onclick="reveal('optionsDiv')"></button>
             </div>
             <div id='exploreDiv' class="card text-white bg-primary mb-3 popup">
-              <div class="card-header"><b>Exploring your dataset</b>
+              <div id="M2S2Button1Title" class="card-header bold">
                 <button type="button" class="close" onclick="reveal('exploreDiv')" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="card-body">
-                <ul>
-                  <li>Where does this data come from? How was this data collected? (you may need to visit the "Download" link and look for relevant metadata)</li>
-                  <li>What data do I need to address my policy question?</li>
-                  <li>Are there any errors in this dataset that are readily apparent?</li>
-                  <li>Do I have enough data? Too much data?</li>
-                  <li>How might I analyze this data to answer my policy question?</li>
-                </ul>
-              </div>
+              <div id="M2S2Button1Text" class="card-body"></div>
             </div>
             <div id='considerationsDiv' class="card text-white bg-primary mb-3 popup">
-              <div class="card-header"><b>Preprocessing considerations</b>
+              <div id="M2S2Button2Title" class="card-header bold">
                 <button type="button" class="close" onclick="reveal('considerationsDiv')" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="card-body">
-                <ul>
-                  <li>This dataset contains 3307 entries. Think about what tasks can be done manually and what should be automated. For example, imagine that you have to change the date/time format. Do you want to manually reformat the date/time in each entry or do you want to create a formula in Excel (or another software tool) to do it all at once?</li>
-                  <li>This dataset contains entries in both French and English.</li>
-                  <li>This dataset contains responses to many questions, not all of which are relevant to the question that you are trying to address.</li>
-                  <li>Some of the entries in this dataset are missing responses to certain questions.</li>
-                  <li>Some entries in this dataset are duplicates (how can you identify duplicates)?</li>
-                </ul>
-              </div>
+              <div id="M2S2Button2Text" class="card-body"></div>
             </div>
             <div id='optionsDiv' class="card text-white bg-primary mb-3 popup">
-              <div class="card-header"><b>Potential preprocessing options</b>
+              <div id="M2S2Button3Title" class="card-header bold">
                 <button type="button" class="close" onclick="reveal('optionsDiv')" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="card-body">
-                <ul>
-                  <li>Identify and remove any duplicate data entries</li>
-                  <li>Separate French and English entries</li>
-                  <li>Remove unnecessary fields (eg. those containing responses to irrelevant questions)</li>
-                  <li>Remove entries that do not contain answers to the relevant consultation question</li>
-                  <li>Convert from .XLSX to .CSV (depending on the software that will be used for analysis</li>
-                </ul>
-              </div>
+              <div id="M2S2Button3Text" class="card-body"></div>
             </div>
-            <div id='m2-s2-text4' class='body-text'>Feel free to download the data yourself for further exploration and to experiment with basic preprocessing. (Download the dataset that was received via online consultation portal from 05/11/2016-15/12/2016)</div>
-            <button id="modal-button" type="button" class="btn btn-info" onclick="window.open('https://open.canada.ca/data/en/dataset/5e9433bf-2334-463a-bd48-03ba53a7051c')">Download</button>
+            <div id='M2S2Text5' class='body-text'></div>
+            <button id="M2S2Button4" type="button" class="btn btn-info" onclick="window.open('https://open.canada.ca/data/en/dataset/5e9433bf-2334-463a-bd48-03ba53a7051c')"></button>
 
           </div>
+
+<!-------------------- SECTION 3 --------------------------->
+
           <div class="tab-pane fade" id="third">
-            <div id="body3-title" class="tab content header 3"><h4>Examples of Preprocessing Needs in Federal Datasets</h4></div>
-            <div id="m2-s3-text1" class='body-text'>Now that you have learned about basic preprocessing techniques and have practiced exploring a dataset, let’s take a look at some consultation datasets from the Government of Canada that might need preprocessing.</div>
-            <div id="m2-s3-text2" class='body-text'>For each of the following examples, a specific preprocessing need will be highlighted. You can then download the dataset yourself or access a copy via Google Sheets. Once you have the dataset in front of you, follow the instructions presented in the example to try to address the preprocessing need.</div>
-            <div id="m2-s3-tab1" class='body-text highlight'>
-              <p>LEVEL 1: Modernization of federal labour standards survey</p>
-              <p>The field headers in this dataset are in two different rows. This structural issue may cause errors when attempting to analyze the data. Try to correct this structural issue.</p>
-              <p>(Download either the French or the English version)</p>
-              <button type="button" class="btn btn-success" id="m2-s3-button1" onclick="window.open('https://open.canada.ca/data/en/dataset/7b7fd6a0-db05-400a-84be-94430a6d4567')">Download</button>
-              <button type="button" class="btn btn-success" id="m2-s3-button2" onclick="window.open('https://docs.google.com/spreadsheets/d/1ZGlCNRoCX3HxDWYDLYRL9ACT_ZHVCGFAriFcYcOaEI8/edit?usp=sharing')">Google Sheets</button>
+            <div id="M2S3Title" class="header"></div>
+            <div id="M2S3Text1" class='body-text'></div>
+            <div class='body-text highlight'>
+              <div id="M2S3Card1Text"></div>
+              <button type="button" class="btn btn-success" id="M2S3Card1Button1" onclick="window.open('https://open.canada.ca/data/en/dataset/7b7fd6a0-db05-400a-84be-94430a6d4567')"></button>
+              <button type="button" class="btn btn-success" id="M2S3Card1Button2" onclick="window.open('https://docs.google.com/spreadsheets/d/1ZGlCNRoCX3HxDWYDLYRL9ACT_ZHVCGFAriFcYcOaEI8/edit?usp=sharing')"></button>
             </div>
-            <div id="m2-s3-tab2" class='body-text highlight'>
-              <p>LEVEL 2: Generation energy idea and comment submissions</p>
-              <p>This dataset contains both ideas and comments (in response to ideas) from consultation participants. Each idea is scored, and comes from a certain user category. For your analysis, you are only interested in ideas from “small business” users with a score of greater than 0. Select the appropriate subset from this dataset.</p>
-              <p>(Download the "Generation Energy Submissions" dataset in CSV format)</p>
-              <button type="button" class="btn btn-success" id="m2-s3-button1" onclick="window.open('https://open.canada.ca/data/en/dataset/7faa991d-7d49-49ee-b1ff-78c2246988c1')">Download</button>
-              <button type="button" class="btn btn-success" id="m2-s3-button2" onclick="window.open('https://docs.google.com/spreadsheets/d/15qbQkl6nsAUREbkykQq1MZetjjvk8JebKyzlr5JFnyU/edit?usp=sharing')">Google Sheets</button>
+            <div class='body-text highlight'>
+              <div id="M2S3Card2Text"></div>
+              <button type="button" class="btn btn-success" id="M2S3Card2Button1" onclick="window.open('https://open.canada.ca/data/en/dataset/7faa991d-7d49-49ee-b1ff-78c2246988c1')"></button>
+              <button type="button" class="btn btn-success" id="M2S3Card2Button2" onclick="window.open('https://docs.google.com/spreadsheets/d/15qbQkl6nsAUREbkykQq1MZetjjvk8JebKyzlr5JFnyU/edit?usp=sharing')"></button>
             </div>
-            <div id="m2-s3-tab3" class='body-text highlight'>
-              <p>LEVEL 3: Third biennial plan to Open Government Partnership online survey</p>
-              <p>Imagine that you are interested in the respondents’ preferred way(s) to participate in Open Government. This dataset contains responses to a survey question on that topic, whereby respondents selected from multiple predefined options (coded as an integer). The responses to this question may contain multiple options within a single cell. This structure of data storage means that it is difficult to count the total number of times that each option was selected by respondents. Try to restructure the way that this data is stored so that a single cell contains a maximum of one integer. You will have to increase the number of columns that are used to store this data. *Note: you may also want to take a look at the metadata (Release Notes) for this dataset to give you some context for the coded integer values.</p>
-              <p>(Download the "Individual Comments" dataset in CSV or XLS format)</p>
-              <button type="button" class="btn btn-success" id="m2-s3-button1" onclick="window.open('https://open.canada.ca/data/en/dataset/8ef41d2e-9309-486a-9f9f-bfd11945a959')">Download</button>
-              <button type="button" class="btn btn-success" id="m2-s3-button2" onclick="window.open('https://docs.google.com/spreadsheets/d/1TQdovVj5-jzD2kOhsB8JHJofzw26wUEl3WmP6Wi9nG8/edit?usp=sharing')">Google Sheets</button>
+            <div class='body-text highlight'>
+              <div id="M2S3Card3Text"></div>
+              <button type="button" class="btn btn-success" id="M2S3Card3Button1" onclick="window.open('https://open.canada.ca/data/en/dataset/8ef41d2e-9309-486a-9f9f-bfd11945a959')"></button>
+              <button type="button" class="btn btn-success" id="M2S3Card3Button2" onclick="window.open('https://docs.google.com/spreadsheets/d/1TQdovVj5-jzD2kOhsB8JHJofzw26wUEl3WmP6Wi9nG8/edit?usp=sharing')"></button>
             </div>
           </div>
+
+<!-------------------- SECTION 4 --------------------------->
+
           <div class="tab-pane fade" id="fourth">
-            <div id="body4-title" class="tab content header 4"><h4>Check Your Understanding: Quiz</h4></div>
-            <div id="body-text">The multiple choice questions will be based on the following dataset, collected as part of the Government of Canada’s National Security Consultation, available here. This dataset contains a collection of email responses. You may want to visit this link and take a look at the documentation (available for PDF download) to help you answer the following questions.</div>
+            <div id="M2S4Title" class="header"></div>
+            <div id="M2S4Text1"></div>
             <div class='table' id='quiz2-table'>               
             </div>
             <div class='quiz-wrapper'>
                 <div id="quiz"></div>
-                <button type="button" class="btn btn-success" id="submit">Submit Quiz</button>
+                <button type="button" class="btn btn-success" id="M2S4Button"></button>
                 <div id="results"></div>
               </div>
           </div>
         </div>
 
         <div id="item5">
-          <div id="body5-title" class="body-title"><h4>Key Vocabulary from this Module</h4></div>
+          <div id="M2Vocabulary" class="header"></div>
           <div id="body5-content" class=body-content>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#preprocessing">Preprocessing</button>
-            <button id="modal-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#quality">Data quality</button>
+            <button id="M2Vocab1" type="button" class="btn btn-info" data-toggle="modal" data-target="#preprocessing"></button>
+            <button id="M2Vocab2" type="button" class="btn btn-info" data-toggle="modal" data-target="#quality"></button>
           </div>
         </div>
 
@@ -278,9 +239,7 @@
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>Data preprocessing includes activities to prepare a dataset for analysis. Preprocessing activities can include data cleaning, data transformation, and data integration. </p>
-            </div>
+            <div id="M2Vocab1Def" class="modal-body"></div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
             </div>
@@ -295,10 +254,7 @@
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
-            <div id="modal-content" class="modal-body">
-              <p>Data quality refers to the extent to which a dataset is fit for its intended purpose.</p>
-              <p>Source: Wang, R. Y., & Strong, D. M. (1996). Beyond accuracy: What data quality means to data consumers. Journal of management information systems, 12(4), 5-33.</p>
-            </div>
+            <div id="M2Vocab2Def" class="modal-body"></div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
             </div>
