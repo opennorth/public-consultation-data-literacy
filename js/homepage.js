@@ -1,4 +1,6 @@
-function getData(source){
+//SOURCE = url for the JSON
+//LANG = "EN" or "FR"
+function getData(source, lang){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
 		XMLHttpRequestObject = new XMLHttpRequest();
@@ -13,11 +15,19 @@ function getData(source){
 		XMLHttpRequestObject.onreadystatechange = function(){
 			if (XMLHttpRequestObject.readyState == 4 && XMLHttpRequestObject.status == 200){
 				data=XMLHttpRequestObject.response;
-				//creates tabulator table for section 1.3
-				console.log("hi");
-				
-				console.log(source);
-				console.log(data); 
+				//get the name of the object **assumes that the JSON only has one object**
+				var name = Object.keys(data)[0];
+				//get the attributes of the JSON object	as an ARRAY		
+				attributes = Object.keys(data[name][lang]);
+				//loop through each attribute in the ARRAY and find the corresponding HTML elements 
+				attributes.forEach(function(attribute){
+					//divid to search for
+					var divid = attribute; 
+					//get HTML element with the right divid
+					var div = document.getElementById(divid); 
+					//append the text to the HTML element
+					div.innerHTML = data[name][lang][divid];
+				});
 
 				delete XMLHttpRequestObject; 
 				XMLHttpRequestObject = null; 
@@ -29,5 +39,5 @@ function getData(source){
 	
 }
 
-getData('https://hannahker.github.io/web-development/data/index.json');
-getData("https://hannahker.github.io/web-development/data/overview.json");
+//getData('https://hannahker.github.io/web-development/data/homepage.json');
+getData("https://hannahker.github.io/web-development/data/overview.json", "EN");
