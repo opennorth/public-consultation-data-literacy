@@ -11,14 +11,14 @@
       "Footer": "Developed by <a class=\"light-link\" href=\"https://www.opennorth.ca/\">OpenNorth</a>"
     },
     "FR": {
-      "NavTitle": "TBD",
-      "Item1": "TBD",
-      "Item2": "TBD",
-      "Item3": "TBD",
-      "Dropdown1": "TBD",
-      "Dropdown2": "TBD",
-      "Dropdown3": "TBD",
-      "Footer": "TBD"
+      "NavTitle": "",
+      "Item1": "",
+      "Item2": "",
+      "Item3": "",
+      "Dropdown1": "",
+      "Dropdown2": "",
+      "Dropdown3": "",
+      "Footer": ""
     }
   }
 }

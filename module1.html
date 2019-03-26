@@ -24,7 +24,7 @@
   <script src="js/homepage.js"></script>
   <script>
     getData("https://hannahker.github.io/web-development/data/nav.json", "EN");
-   //getData("https://hannahker.github.io/web-development/data/homepage.json", "EN");
+   getData("https://hannahker.github.io/web-development/data/module1.json", "EN");
   </script>
 
 </head>
@@ -71,11 +71,11 @@
       <!-- center content --> 
       <div class="col-sm-8 text-left"> 
 
-        <div class="body-title m1"><h3>Module 1: What is Public Consultation Data?</h3></div>
+        <div id="M1Title" class="body-title m1"></div>
 
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active tabs" data-toggle="tab" href="#first">Section 1</a>
+            <a id="M1S1Tab" class="nav-link active tabs" data-toggle="tab" href="#first">Section 1</a>
           </li>
           <li class="nav-item">
             <a class="nav-link tabs" data-toggle="tab" href="#second">Section 2</a>
