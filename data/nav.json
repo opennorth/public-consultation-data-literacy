@@ -1,0 +1,28 @@
+{
+  "Nav": {
+    "EN": {
+      "Title": "Data Literacy Guide",
+      "Items": [
+        "Home",
+        "About this Guide",
+        "Learning Modules"
+      ],
+      "Dropdown": [
+        "Overview",
+        "Module 1",
+        "Module 2"
+      ],
+      "Footer": "Developed by <a href='https://www.opennorth.ca/'>OpenNorth</a>"
+    },
+    "FR": {
+      "Title": "TBD",
+      "Items": [
+        "TBD"
+      ],
+      "Dropdown": [
+        "TBD"
+      ],
+      "Footer": "TBD"
+    }
+  }
+}
