@@ -13,13 +13,19 @@
   <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="js/homepage.js"></script>
+  <script>
+    getData("https://hannahker.github.io/web-development/data/nav.json", "EN");
+    getData("https://hannahker.github.io/web-development/data/about.json", "EN");
+  </script>
+
 </head>
 
 <body>
 
   <!-- nav bar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-    <a id="title" class="navbar-brand" href="index.html"></a>
+    <a id="NavTitle" class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,20 +33,20 @@
     <div class="navbar-collapse collapse" id="navbarColor01" style="">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a id="header-1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
+          <a id="Item1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
         </li>
         <li class="nav-item active">
-          <a id="header-3" class="nav-link" href="about.html"></a>
+          <a id="Item2" class="nav-link" href="about.html"></a>
         </li>
-        <li class="nav-item dropdown">
-  	    <a id="header-2" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
-  	    <div class="dropdown-menu" x-placement="bottom-start">
-  	      <a id="dropdown-1" class="dropdown-item" href="overview.html"></a>
-  	      <div class="dropdown-divider"></div>
-  	      <a id="dropdown-2" class="dropdown-item" href="module1.html"></a>
-  	      <a id="dropdown-3" class="dropdown-item" href="module2.html"></a>
-  	    </div>
-    	</li>
+        <li class="nav-item dropdown active">
+        <a id="Item3" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+        <div class="dropdown-menu" x-placement="bottom-start">
+          <a id="Dropdown1" class="dropdown-item" href="overview.html"></a>
+          <div class="dropdown-divider"></div>
+          <a id="Dropdown2" class="dropdown-item" href="module1.html"></a>
+          <a id="Dropdown3" class="dropdown-item" href="module2.html"></a>
+        </div>
+      </li>
       </ul>
     </div>
   </nav>
@@ -56,40 +62,30 @@
         <!-- center content --> 
         <div class="col-sm-8 text-left"> 
 
-          <div id="body1-title" class="body-title extra-header"><h3>About this Guide</h3></div>
+          <div id="AboutTitle" class="body-title extra-header"></div>
          <div class='extra-text'>
-            <p class="bold">What is the aim of this guide?</p>
-            <p>This guide is intended to promote data literacy for Government of Canada employees who are engaging in delivering public consultations and/or incorporating consultation results into decision-making processes. While this guide addresses many generalizable concepts, such as the difference between quantitative and qualitative data, all content is tailored to the context of public consultation activities.</p>
+            <div id="Question1" class="bold bottom-margin"></div>
+            <div id="Answer1"></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <p class="bold">What is data literacy?</p>
-            <p>Data literacy refers to “the ability to read, work with, analyze, and argue with data”. </p>
-            <ul>
-              <li>“Reading data” means that you understand what data is and what elements of the real world it represents.</li>
-              <li>“Working with data” involves tasks such as collecting, storing, cleaning, and managing data.</li>
-              <li>Analysis may include activities such as filtering, comparing, sorting, and summarizing data.</li>
-              <li>“Arguing with data” means that you can use data to support a greater narrative and purpose. </li>
-            </ul>
-            <p>Source: <i>Bhargava, R., & D’Ignazio, C. (2015, June). Designing tools and activities for data literacy learners. In Workshop on Data Literacy, Webscience.</i></p>
-            <p>In the context of public consultation activities, data literacy includes the understanding that the feedback collected during a public consultation is data. </p>
+            <div id="Question2" class="bold bottom-margin"></div>
+            <div id="Answer2"></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <p class="bold">Why is data important in the context of public consultation?</p>
-            <p>The feedback that you collect from citizens during public consultations is valuable data that needs to be effectively managed so that it can inform decision-making. While there are many important activities that go into planning and executing a public consultation event (whether it be online or in person), the work does not stop once the event is complete. You may end up with large volumes of citizen feedback (data) in a variety of (structured and unstructured) formats. By possessing a strong foundation in data literacy, you will be better able to translate this complex data into actionable knowledge, leading to more informed decision-making. </p>
+            <div id="Question3" class="bold bottom-margin"></div>
+            <div id="Answer3"></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <p class="bold">How should I navigate through this guide?</p>
-            <p>The educational material in this guide is broken down into a series of learning modules. Each learning module is part of a sequence of activities that make up a generalized data processing workflow. Before jumping into the learning modules, it is important to first familiarize yourself with the overall data processing workflow that these modules will be walking you through. This can be done by reviewing the content on the Learning Modules Overview page. By doing so, you will be able to understand how the modules are related to each other.</p>
-            <p>You should then begin by engaging with the first learning module (What is Public Consultation Data?). Even if you consider yourself to have an advanced level of data literacy, all users of this guide should begin with the first learning module as certain terms are introduced in this module that will be referenced in subsequent modules.</p>
-            <p>The content in each learning module is further broken down into subsections. You can navigate through these subsections by click on different tabs within the module page. The ordering of these subsections is indicated by the titles on each tab. The last subsection of each module contains a “Check Your Understanding” quiz, which contains several multiple choice questions to test your comprehension of the module’s learning material. The key vocabulary introduced in each module is listed at the bottom of each module page. You can click on each term to reveal an associated definition.</p>
-            <p>Throughout the subsections of each module, both static and interactive content is presented. Try clicking on the buttons to reveal additional information or highlight relevant content on the page. A variety of datasets are also presented to demonstrate key concepts. You can scroll through these datasets (both vertically and horizontally) to reveal more data. Where possible, these datasets are real public consultation datasets published by the Government of Canada, found on open.canada.ca (some real datasets may have undergone some basic cleaning to be suitable for this web format).</p>
+            <div id="Question4" class="bold bottom-margin"></div>
+            <div id="Answer4"></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <p class="bold">What are the learning objectives of this guide?</p>
+            <div id="Question5" class="bold bottom-margin"></div>
+            <div id="Answer5"></div>
             <p>The learning objectives of this guide can be broken down according to the subsections in each module. The learning objectives for Modules 1 and 2 are as follows:</p>
             <p><i>Module 1: What is public consultation data?</i></p>
             Section 1: Consultation Results as Data
@@ -131,6 +127,11 @@
             <ul>
               <li>Users are able to apply their knowledge and check their understanding of the content presented in the previous sections.</li>
             </ul>
+          </div>
+          <hr>
+          <div class='extra-text'>
+            <div id="Question6" class="bold bottom-margin"></div>
+            <div id="Answer6"></div>
           </div>
 
         </div>

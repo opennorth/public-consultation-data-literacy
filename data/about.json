@@ -1,28 +1,34 @@
 {
   "About": {
     "EN": {
-      "Title": "About this Guide",
-      "Questions": [
-        "What is the aim of this guide?",
-        "What is data literacy?",
-        "Why is data important in the context of public consultation?",
-        "How should I navigate through this guide?"
-      ],
-      "Answers": [
-        "This guide is intended to promote data literacy for Government of Canada employees who are engaging in delivering public consultations and/or incorporating consultation results into decision-making processes. While this guide addresses many generalizable concepts, such as the difference between quantitative and qualitative data, all content is tailored to the context of public consultation activities."
-        "<p>Data literacy refers to 'the ability to read, work with, analyze, and argue with data'.</p><ul><li>'Reading data' means that you understand what data is and what elements of the real world it represents.</li><li>'Working with data' involves tasks such as collecting, storing, cleaning, and managing data.</li><li>Analysis may include activities such as filtering, comparing, sorting, and summarizing data.</li><li>'Arguing with data' means that you can use data to support a greater narrative and purpose.</li><p>Source: Bhargava, R., & D’Ignazio, C. (2015, June). Designing tools and activities for data literacy learners. In Workshop on Data Literacy, Webscience.</p><p>In the context of public consultation activities, data literacy includes the understanding that the feedback collected during a public consultation is data.</p>",
-        "The feedback that you collect from citizens during public consultations is valuable data that needs to be effectively managed so that it can inform decision-making. While there are many important activities that go into planning and executing a public consultation event (whether it be online or in person), the work does not stop once the event is complete. You may end up with large volumes of citizen feedback (data) in a variety of (structured and unstructured) formats. By possessing a strong foundation in data literacy, you will be better able to translate this complex data into actionable knowledge, leading to more informed decision-making.",
-        "<p>The educational material in this guide is broken down into a series of learning modules. Each learning module is part of a sequence of activities that make up a generalized data processing workflow. Before jumping into the learning modules, it is important to first familiarize yourself with the overall data processing workflow that these modules will be walking you through. This can be done by reviewing the content on the Learning Modules Overview page. By doing so, you will be able to understand how the modules are related to each other.</p><p>You should then begin by engaging with the first learning module (What is Public Consultation Data?). Even if you consider yourself to have an advanced level of data literacy, all users of this guide should begin with the first learning module as certain terms are introduced in this module that will be referenced in subsequent modules.</p><p>The content in each learning module is further broken down into subsections. You can navigate through these subsections by click on different tabs within the module page. The ordering of these subsections is indicated by the titles on each tab. The last subsection of each module contains a “Check Your Understanding” quiz, which contains several multiple choice questions to test your comprehension of the module’s learning material. The key vocabulary introduced in each module is listed at the bottom of each module page. You can click on each term to reveal an associated definition.</p><p>Throughout the subsections of each module, both static and interactive content is presented. Try clicking on the buttons to reveal additional information or highlight relevant content on the page. A variety of datasets are also presented to demonstrate key concepts. You can scroll through these datasets (both vertically and horizontally) to reveal more data. Where possible, these datasets are real public consultation datasets published by the Government of Canada, found on open.canada.ca (some real datasets may have undergone some basic cleaning to be suitable for this web format).</p>", 
-      ]
-    },
-    "FR": {
-      "Title": "TBD", 
-      "Questions": [
-        "TBD"
-      ],
-      "Answers": [
-        "TBD"
-      ]
+      "AboutTitle": "About this Guide",
+      "Question1": "What is the aim of this guide?",
+      "Answer1": "This guide is intended to promote data literacy for Government of Canada employees who are engaging in delivering public consultations and/or incorporating consultation results into decision-making processes. While this guide addresses many generalizable concepts, such as the difference between quantitative and qualitative data, all content is tailored to the context of public consultation activities.",
+      "Question2": "What is data literacy?",
+      "Answer2": "<p>Data literacy refers to 'the ability to read, work with, analyze, and argue with data'.</p><ul><li>'Reading data' means that you understand what data is and what elements of the real world it represents.</li><li>'Working with data' involves tasks such as collecting, storing, cleaning, and managing data.</li><li>Analysis may include activities such as filtering, comparing, sorting, and summarizing data.</li><li>'Arguing with data' means that you can use data to support a greater narrative and purpose.</li><p>Source: Bhargava, R., & D’Ignazio, C. (2015, June). Designing tools and activities for data literacy learners. In Workshop on Data Literacy, Webscience.</p><p>In the context of public consultation activities, data literacy includes the understanding that the feedback collected during a public consultation is data.</p>",
+      "Question3": "Why is data important in the context of public consultation?",
+      "Answer3": "The feedback that you collect from citizens during public consultations is valuable data that needs to be effectively managed so that it can inform decision-making. While there are many important activities that go into planning and executing a public consultation event (whether it be online or in person), the work does not stop once the event is complete. You may end up with large volumes of citizen feedback (data) in a variety of (structured and unstructured) formats. By possessing a strong foundation in data literacy, you will be better able to translate this complex data into actionable knowledge, leading to more informed decision-making.",
+      "Question4": "How should I navigate through this guide?",
+      "Answer4": "<p>The educational material in this guide is broken down into a series of learning modules. Each learning module is part of a sequence of activities that make up a generalized data processing workflow. Before jumping into the learning modules, it is important to first familiarize yourself with the overall data processing workflow that these modules will be walking you through. This can be done by reviewing the content on the Learning Modules Overview page. By doing so, you will be able to understand how the modules are related to each other.</p><p>You should then begin by engaging with the first learning module (What is Public Consultation Data?). Even if you consider yourself to have an advanced level of data literacy, all users of this guide should begin with the first learning module as certain terms are introduced in this module that will be referenced in subsequent modules.</p><p>The content in each learning module is further broken down into subsections. You can navigate through these subsections by click on different tabs within the module page. The ordering of these subsections is indicated by the titles on each tab. The last subsection of each module contains a “Check Your Understanding” quiz, which contains several multiple choice questions to test your comprehension of the module’s learning material. The key vocabulary introduced in each module is listed at the bottom of each module page. You can click on each term to reveal an associated definition.</p><p>Throughout the subsections of each module, both static and interactive content is presented. Try clicking on the buttons to reveal additional information or highlight relevant content on the page. A variety of datasets are also presented to demonstrate key concepts. You can scroll through these datasets (both vertically and horizontally) to reveal more data. Where possible, these datasets are real public consultation datasets published by the Government of Canada, found on open.canada.ca (some real datasets may have undergone some basic cleaning to be suitable for this web format).</p>",
+      "Question5": "What are the learning objectives of the modules in this guide?",
+      "Answer5": "",
+      "Question6": "Where can I find resources for further learning?",
+      "Answer6": "Please visit this link to find a post with further resources."
     }
+  },
+  "FR": {
+    "AboutTitle": "TBD",
+    "Question1": "TBD",
+    "Answer1": "TBD",
+    "Question2": "TBD",
+    "Answer2": "TBD",
+    "Question3": "TBD",
+    "Answer3": "TBD",
+    "Question4": "TBD",
+    "Answer4": "TBD",
+    "Question5": "TBD",
+    "Answer5": "TBD",
+    "Question6": "TBD",
+    "Answer6": "TBD"
   }
 }

@@ -39,4 +39,3 @@ function getData(source, lang){
 	
 }
 
-//getData('https://hannahker.github.io/web-development/data/homepage.json');
