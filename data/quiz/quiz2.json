@@ -11,7 +11,7 @@
         "correctAnswer": "b"
       },
       {
-        "question": "Which of the following fields contains discrete quantitative data?",
+        "question": "Where does this dataset show evidence of previous preprocessing?",
         "answers": {
           "a": "Removal of personal information",
           "b": "Online publishing",
@@ -20,11 +20,11 @@
         "correctAnswer": "a"
       }, 
       {
-        "question": "Which of the following fields contains nominal qualitative data?",
+        "question": "Why might it be important to preserve duplicate entries in this case?",
         "answers": {
           "a": "Minimize time and effort spent preprocessing",
           "b": "The presence of duplicate entries is from a targeted email campaign, rather than errors in data entry",
-          "c": "To maintain a high numver of total entries"
+          "c": "To maintain a high number of total entries"
         },
         "correctAnswer": "b"
       }
