@@ -52,7 +52,8 @@
       "M2Vocab1": "Preprocessing",
       "M2Vocab1Def": "Data preprocessing includes activities to prepare a dataset for analysis. Preprocessing activities can include data cleaning, data transformation, and data integration.",
       "M2Vocab2": "Data quality",
-      "M2Vocab2Def": "<p>Data quality refers to the extent to which a dataset is fit for its intended purpose.</p><p>Source: Wang, R. Y., & Strong, D. M. (1996). Beyond accuracy: What data quality means to data consumers. Journal of management information systems, 12(4), 5-33.</p>"
+      "M2Vocab2Def": "<p>Data quality refers to the extent to which a dataset is fit for its intended purpose.</p><p>Source: Wang, R. Y., & Strong, D. M. (1996). Beyond accuracy: What data quality means to data consumers. Journal of management information systems, 12(4), 5-33.</p>", 
+      "M2PrevModule": "Previous Module"
     },
     "FR": {
       "M2Title": "",
@@ -106,7 +107,8 @@
       "M2Vocab1": "",
       "M2Vocab1Def": "",
       "M2Vocab2": "",
-      "M2Vocab2Def": ""
+      "M2Vocab2Def": "", 
+      "M2PrevModule": ""
     }
   }
 }

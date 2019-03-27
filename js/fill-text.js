@@ -24,9 +24,17 @@ function getText(source, lang){
 					//divid to search for
 					var divid = attribute; 
 					//get HTML element with the right divid
-					var div = document.getElementById(divid); 
-					//append the text to the HTML element
-					div.innerHTML = data[name][lang][divid];
+					var div = document.getElementById(divid);
+					//catch error in case the json includes text for a div that isn't on the page
+					//happens for the bottom nav buttons on 1st and last pages (ie. when there is not Prev button or Next button) 
+					if(div==null){
+						console.log("div is null: " + divid);
+					}
+					else{
+						//append the text to the HTML element
+						div.innerHTML = data[name][lang][divid];
+					}
+					
 				});
 
 				delete XMLHttpRequestObject; 
