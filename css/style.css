@@ -239,6 +239,15 @@ img{
 .vocab-section{
   padding: 20px;
 }
+.hide{
+  display: none;
+}
+.clickme{
+  cursor: pointer;
+}
+.hover-highlight:hover{
+  color: #929293;
+}
 
 /*--------------------------------------------------------------*/
 
@@ -264,8 +273,7 @@ img{
 /*adjust header to fit all of text in 1.3 table*/
 .tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title{
   white-space: normal;
-  text-overflow: clip;
-  height: 150px;
+  height: 100px;
 }
 /*for example tables*/
 .table{
@@ -273,6 +281,7 @@ img{
   margin-top: 20px;
   height: 400px;
   width: 100%;
+  font-size: 9pt;
 }
 
 /*--------------------------------------------------------------*/

@@ -69,33 +69,33 @@
 <!-------------------- QUESTIONS --------------------------->
 
           <div class='extra-text'>
-            <div id="Question1" class="bold bottom-margin"></div>
-            <div id="Answer1"></div>
+            <div id="Question1" class="bold bottom-margin clickme hover-highlight" onclick="reveal('Answer1')"></div>
+            <div id="Answer1" class='hide'></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <div id="Question2" class="bold bottom-margin"></div>
-            <div id="Answer2"></div>
+            <div id="Question2" class="bold bottom-margin clickme hover-highlight" onclick="reveal('Answer2')"></div>
+            <div id="Answer2" class='hide'></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <div id="Question3" class="bold bottom-margin"></div>
-            <div id="Answer3"></div>
+            <div id="Question3" class="bold bottom-margin clickme hover-highlight" onclick="reveal('Answer3')"></div>
+            <div id="Answer3" class='hide'></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <div id="Question4" class="bold bottom-margin"></div>
-            <div id="Answer4"></div>
+            <div id="Question4" class="bold bottom-margin clickme hover-highlight" onclick="reveal('Answer4')"></div>
+            <div id="Answer4" class='hide'></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <div id="Question5" class="bold bottom-margin"></div>
-            <div id="Answer5"></div>
+            <div id="Question5" class="bold bottom-margin clickme hover-highlight" onclick="reveal('Answer5')"></div>
+            <div id="Answer5" class='hide'></div>
           </div>
           <hr>
           <div class='extra-text'>
-            <div id="Question6" class="bold bottom-margin"></div>
-            <div id="Answer6"></div>
+            <div id="Question6" class="bold bottom-margin clickme hover-highlight" onclick="reveal('Answer6')"></div>
+            <div id="Answer6" class='hide'></div>
           </div>
           <hr>
 
@@ -131,6 +131,7 @@
 <!-------------------- LOCAL JS TO ADD CONTENT -------------->
 
   <script src="js/fill-text.js"></script>
+  <script src="js/reveal.js"></script>
   <script>
     getText("https://hannahker.github.io/web-development/data/text/nav.json", "EN");
     getText("https://hannahker.github.io/web-development/data/text/about.json", "EN");
