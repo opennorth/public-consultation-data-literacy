@@ -1,0 +1,64 @@
+{
+  "EN": {
+    "myQuestions": [
+      {
+        "question": "How might this dataset be cleaned?",
+        "answers": {
+          "a": "Delete angry comments",
+          "b": "Remove fields that are not relevant for your analysis",
+          "c": "Fix spelling errors in the individual comments from participants"
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "question": "Which of the following fields contains discrete quantitative data?",
+        "answers": {
+          "a": "Removal of personal information",
+          "b": "Online publishing",
+          "c": "Duplicated entries"
+        },
+        "correctAnswer": "a"
+      }, 
+      {
+        "question": "Which of the following fields contains nominal qualitative data?",
+        "answers": {
+          "a": "Minimize time and effort spent preprocessing",
+          "b": "The presence of duplicate entries is from a targeted email campaign, rather than errors in data entry",
+          "c": "To maintain a high numver of total entries"
+        },
+        "correctAnswer": "b"
+      }
+    ]
+  },
+  "FR": {
+    "myQuestions": [
+      {
+        "question": "",
+        "answers": {
+          "a": "",
+          "b": "",
+          "c": ""
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "question": "",
+        "answers": {
+          "a": "",
+          "b": "",
+          "c": ""
+        },
+        "correctAnswer": "a"
+      }, 
+      {
+        "question": "",
+        "answers": {
+          "a": "",
+          "b": "",
+          "c": ""
+        },
+        "correctAnswer": "b"
+      }
+    ]
+  }
+}

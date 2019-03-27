@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Data Literacy Guide</title>
+  <title id="PageTitle"></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- dependencies --> 
+<!-------------------- STYLING DEPENDENCIES ------------------------> 
+
   <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
- <!-- for tabulator --> 
+<!-------------------- TABLE DISPLAY DEPENDENCIES ------------------>  
+
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://unpkg.com/tabulator-tables@4.2.2/dist/css/bootstrap/tabulator_bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.2/dist/js/tabulator.min.js"></script>
 
-  <link rel="stylesheet" href="css/style.css">
+<!-------------------- LOCAL STYLING ------------------------------->
 
-  <script src="js/fill-text.js"></script>
-  <script>
-    getData("https://hannahker.github.io/web-development/data/text/nav.json", "EN");
-    getData("https://hannahker.github.io/web-development/data/text/module2.json", "EN");
-  </script>
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
+<!-------------------- NAV BAR -------------------------------------> 
 
-
-  <!-- nav bar --> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
     <a id="NavTitle" class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,19 +57,21 @@
       </ul>
     </div>
   </nav>
-  <!-- end of nav bar --> 
-  
 
+<!-------------------- END OF NAV BAR ---------------------->
+<!-------------------- START OF MAIN PAGE ------------------>
+  
   <div class="container-fluid text-center">    
     <div class="row content">
 
-      <!-- left sidebar --> 
+<!-------------------- START OF LEFT SIDEBAR ---------------> 
+
       <div class="col-sm-2 sidenav"></div>
-      <!-- end of left sidebar --> 
 
-      <!-- center content --> 
+<!-------------------- END OF LEFT SIDEBAR ----------------->
+<!-------------------- START OF CENTER CONTENT ------------->
+
       <div class="col-sm-8 text-left"> 
-
         <div id="M2Title" class="body-title m2"></div>
 
 <!-------------------- SECTION TABS ------------------------>
@@ -91,6 +90,7 @@
             <a id="M2S4Tab" class="nav-link tabs" data-toggle="tab" href="#fourth"></a>
           </li>
         </ul>
+<!-------------------- START OF SECTION TABS --------------->
 
         <div id="myTabContent" class="tab-content">
 
@@ -171,7 +171,6 @@
             </div>
             <div id='M2S2Text5' class='body-text'></div>
             <button id="M2S2Button4" type="button" class="btn btn-info" onclick="window.open('https://open.canada.ca/data/en/dataset/5e9433bf-2334-463a-bd48-03ba53a7051c')"></button>
-
           </div>
 
 <!-------------------- SECTION 3 --------------------------->
@@ -201,15 +200,20 @@
           <div class="tab-pane fade" id="fourth">
             <div id="M2S4Title" class="header"></div>
             <div id="M2S4Text1"></div>
-            <div class='table' id='quiz2-table'>               
-            </div>
+            <div class='table' id='quiz2-table'></div>
             <div class='quiz-wrapper'>
-                <div id="quiz"></div>
-                <button type="button" class="btn btn-success" id="M2S4Button"></button>
-                <div id="results"></div>
-              </div>
+              <div id="quiz"></div>
+              <button type="button" class="btn btn-success" id="M2S4Button"></button>
+              <div id="results"></div>
+            </div>
           </div>
+
+<!-------------------- END OF SECTION 4 -------------------->
+
         </div>
+
+<!-------------------- END OF SECTION TABS ----------------->
+<!-------------------- KEY VOCABULARY SECTION -------------->
 
         <div id="item5">
           <div id="M2Vocabulary" class="header"></div>
@@ -219,54 +223,62 @@
           </div>
         </div>
 
+<!-------------------- END OF KEY VOCABULARY --------------->
+
       </div>
-      <!-- end of center content --> 
 
-      <!-- right sidebar --> 
+<!-------------------- END OF CENTER CONTENT ---------------> 
+<!-------------------- START OF RIGHT SIDEBAR -------------->
+
       <div class="col-sm-2 sidenav"></div>
-      <!-- end of right sidebar --> 
 
+<!-------------------- END OF RIGHT SIDEBAR ----------------> 
 
     </div>
   </div>
+
+<!-------------------- END OF MAIN PAGE --------------------->
+<!-------------------- FOOTER ------------------------------->
 
   <nav class="navbar navbar-default navbar-fixed-bottom">
     <div id="Footer" class="footer"></div>
   </nav>
 
-      <!-- Modal -->
-      <div class="modal fade" id="preprocessing" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="M2Vocab1Def" class="modal-body"></div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
+<!-------------------- MODAL DISPLAYS ----------------------->
+
+  <div class="modal fade" id="preprocessing" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div id="M2Vocab1Def" class="modal-body"></div>
+        <div class="modal-footer">
+          <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
-      </div>
-      <!-- end of modal -->
+      </div>        
+    </div>
+  </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="quality" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div id="M2Vocab2Def" class="modal-body"></div>
-            <div class="modal-footer">
-              <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- end of modal content -->        
+  <div class="modal fade" id="quality" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div id="M2Vocab2Def" class="modal-body"></div>
+        <div class="modal-footer">
+          <button id="modal-close" type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
-      </div>
-      <!-- end of modal -->
+      </div>       
+    </div>
+  </div>   
 
-      
+<!-------------------- END OF MODAL DISPLAYS ---------------->
+<!-------------------- LOCAL JS TO ADD CONTENT -------------->
 
-  <script src="js/fill-content.js"></script>
+  <script src="js/fill-text.js"></script>
+  <script src="js/fill-tables.js"></script>
+  <script>
+    getText("https://hannahker.github.io/web-development/data/text/nav.json", "EN");
+    getText("https://hannahker.github.io/web-development/data/text/module2.json", "EN");
+    getData("https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-email.json");
+    getData("https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-online.json");
+  </script>
   <script src="js/quiz2.js"></script>
   <script src='js/reveal.js'></script>
 

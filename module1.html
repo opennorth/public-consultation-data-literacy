@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Data Literacy Guide</title>
+  <title id="PageTitle"></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- dependencies --> 
+<!-------------------- STYLING DEPENDENCIES ------------------------>
+
   <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
-  <!-- for tabulator --> 
+<!-------------------- TABLE DISPLAY DEPENDENCIES ------------------> 
+
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://unpkg.com/tabulator-tables@4.2.2/dist/css/bootstrap/tabulator_bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.2/dist/js/tabulator.min.js"></script>
 
-  <link rel="stylesheet" href="css/style.css">
+<!-------------------- LOCAL STYLING ------------------------------->
 
-  <script src="js/fill-text.js"></script>
-  <script src="js/fill-tables.js"></script>
-  <script>
-    getData("https://hannahker.github.io/web-development/data/text/nav.json", "EN");
-    getData("https://hannahker.github.io/web-development/data/text/module1.json", "EN");
-  </script>
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-  <!-- nav bar --> 
+<!-------------------- NAV BAR -------------------------------------> 
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
     <a id="NavTitle" class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,20 +57,24 @@
       </ul>
     </div>
   </nav>
-  <!-- end of nav bar --> 
-  
+
+<!-------------------- END OF NAV BAR ---------------------->
+<!-------------------- START OF MAIN PAGE ------------------> 
 
   <div class="container-fluid text-center">    
     <div class="row content">
 
-      <!-- left sidebar --> 
+<!-------------------- START OF LEFT SIDEBAR --------------->
+ 
       <div class="col-sm-2 sidenav"></div>
-      <!-- end of left sidebar --> 
 
-      <!-- center content --> 
+<!-------------------- END OF LEFT SIDEBAR ----------------->
+<!-------------------- START OF CENTER CONTENT ------------->
+
       <div class="col-sm-8 text-left"> 
-
         <div id="M1Title" class="body-title m1"></div>
+
+<!-------------------- SECTION TABS ------------------------>
 
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -89,142 +91,146 @@
           </li>
         </ul>
 
+<!-------------------- START OF SECTION TABS --------------->
+
         <div id="myTabContent" class="tab-content">
 
-          <!-- First tab pane --> 
+<!-------------------- SECTION 1 --------------------------->
+ 
           <div class="tab-pane fade show active" id="first">                
-                  <div id="M1S1Title" class="header"></div>
-                  <div id="M1S1Text1" class='body-text'></div>
-                  <div class="button-group">
-                    <button type="button" class="btn btn-success" id="M1S1Button1" onclick="reveal('notesDiv')"></button>
-                    <button type="button" class="btn btn-success" id="M1S1Button2" onclick="reveal('spreadsheetDiv')"></button>
-                    <button type="button" class="btn btn-success" id="M1S1Button3" onclick="reveal('transcriptDiv')"></button>
-                  </div>
-                  <div id='notesDiv' class="card text-white bg-primary mb-3 popup">
-                    <div id="M1S1Button1Title"class="card-header bold">
-                      <button type="button" class="close" onclick="reveal('notesDiv')" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="card-body">
-                      <p id="M1S1Button1Text"class="card-text"></p>
-                      <div class=card-image><img src='images/notes.jpg'></div>
-                    </div>
-                  </div>
-                  <div id='spreadsheetDiv' class="card text-white bg-primary mb-3 popup">
-                    <div id="M1S1Button2Title"class="card-header bold">
-                      <button type="button" class="close" onclick="reveal('spreadsheetDiv')" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="card-body">
-                      <p id="M1S1Button2Text"class="card-text"></p>
-                      <div class=card-image><img src='images/spreadsheet.PNG'></div>
-                    </div>
-                  </div>
-                  <div id='transcriptDiv' class="card text-white bg-primary mb-3 popup">
-                    <div id="M1S1Button3Title"class="card-header bold">
-                      <button type="button" class="close" onclick="reveal('transcriptDiv')" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="card-body">
-                      <p id="M1S1Button3Text" class="card-text"></p>
-                      <div class=card-image><img src='images/transcript.png'></div>
-                    </div>
-                  </div>
-                <div id ='M1S1Text2' class='body-text'></div>
+            <div id="M1S1Title" class="header"></div>
+            <div id="M1S1Text1" class='body-text'></div>
+            <div class="button-group">
+              <button type="button" class="btn btn-success" id="M1S1Button1" onclick="reveal('notesDiv')"></button>
+              <button type="button" class="btn btn-success" id="M1S1Button2" onclick="reveal('spreadsheetDiv')"></button>
+              <button type="button" class="btn btn-success" id="M1S1Button3" onclick="reveal('transcriptDiv')"></button>
+            </div>
+            <div id='notesDiv' class="card text-white bg-primary mb-3 popup">
+              <div id="M1S1Button1Title"class="card-header bold">
+                <button type="button" class="close" onclick="reveal('notesDiv')" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <p id="M1S1Button1Text"class="card-text"></p>
+                <div class=card-image><img src='images/notes.jpg'></div>
+              </div>
+            </div>
+            <div id='spreadsheetDiv' class="card text-white bg-primary mb-3 popup">
+              <div id="M1S1Button2Title"class="card-header bold">
+                <button type="button" class="close" onclick="reveal('spreadsheetDiv')" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <p id="M1S1Button2Text"class="card-text"></p>
+                <div class=card-image><img src='images/spreadsheet.PNG'></div>
+              </div>
+            </div>
+            <div id='transcriptDiv' class="card text-white bg-primary mb-3 popup">
+              <div id="M1S1Button3Title"class="card-header bold">
+                <button type="button" class="close" onclick="reveal('transcriptDiv')" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <p id="M1S1Button3Text" class="card-text"></p>
+                <div class=card-image><img src='images/transcript.png'></div>
+              </div>
+            </div>
+            <div id ='M1S1Text2' class='body-text'></div>
           </div>
 
-          <!-- Second tab pane --> 
+<!-------------------- SECTION 2 --------------------------->
+
           <div class="tab-pane fade" id="second">            
-                <div id="M1S2Title" class="header"></div>
-                <div id="M1S2Text1" class='body-text'></div>  
-                <div class='box'>
-                  <div class='vertical'>                    
-                    <div class="card text-white bg-primary mb-3 m2">
-                      <div id="M1S2Card1Title" class="card-header bold"></div>
-                      <div class='card-body'>
-                        <p id="M1S2Card1Text" class="card-text"></p>
-                        <button type="button" class="btn btn-warning" onclick='seemore("more-qual", "M1S2Card1Button")' id='M1S2Card1Button'></button>
-                        <div class='sub' id='more-qual'>
-                          <div class="card border-primary mb-3 m2">
-                            <div id="M1S2Card1Sub1Title" class="card-header bold"></div>
-                            <div id="M1S2Card1Sub1Text" class='card-body'></div>
-                          </div>
-                          <div class="card border-primary mb-3 m2">
-                            <div id="M1S2Card1Sub2Title" class="card-header bold"></div>
-                            <div id="M1S2Card1Sub2Text" class='card-body'></div>
-                          </div>
-                        </div>
+            <div id="M1S2Title" class="header"></div>
+            <div id="M1S2Text1" class='body-text'></div>  
+            <div class='box'>
+              <div class='vertical'>                    
+                <div class="card text-white bg-primary mb-3 m2">
+                  <div id="M1S2Card1Title" class="card-header bold"></div>
+                  <div class='card-body'>
+                    <p id="M1S2Card1Text" class="card-text"></p>
+                    <button type="button" class="btn btn-warning" onclick='seemore("more-qual", "M1S2Card1Button")' id='M1S2Card1Button'></button>
+                    <div class='sub' id='more-qual'>
+                      <div class="card border-primary mb-3 m2">
+                        <div id="M1S2Card1Sub1Title" class="card-header bold"></div>
+                        <div id="M1S2Card1Sub1Text" class='card-body'></div>
+                      </div>
+                      <div class="card border-primary mb-3 m2">
+                        <div id="M1S2Card1Sub2Title" class="card-header bold"></div>
+                        <div id="M1S2Card1Sub2Text" class='card-body'></div>
                       </div>
                     </div>
-
                   </div>
-
-                  <div class='vertical'>
-
-                    <div class="card text-white bg-primary mb-3 m2">
-                      <div id="M1S2Card2Title" class="card-header bold"></div>
-                      <div class='card-body'>
-                       <p id="M1S2Card2Text" class="card-text"></p>
-                        <button type="button" class="btn btn-warning" onclick='seemore("more-quant", "M1S2Card2Button")' id='M1S2Card2Button'></button>
-                        <div class='sub' id='more-quant'>
-                          <div class="card border-info mb-3 m2">
-                            <div id="M1S2Card2Sub1Title" class="card-header bold"></div>
-                            <div id="M1S2Card2Sub1Text" class='card-body'></div>
-                          </div>
-                          <div class="card border-info mb-3 m2">
-                            <div id="M1S2Card2Sub2Title" class="card-header bold"></div>
-                            <div id="M1S2Card2Sub2Text" class='card-body'></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class='vertical'>
-                    <div class="card text-white bg-primary mb-3 m2">
-                      <div id="M1S2Card3Title" class="card-header bold"></div>
-                      <div id="M1S2Card3Text" class='card-body'></div>
-                    </div>
-                  </div>
-    
                 </div>
-              
-                <div id="M1S2Text2" class='body-text'></div>
+              </div>
+              <div class='vertical'>
+                <div class="card text-white bg-primary mb-3 m2">
+                  <div id="M1S2Card2Title" class="card-header bold"></div>
+                  <div class='card-body'>
+                    <p id="M1S2Card2Text" class="card-text"></p>
+                    <button type="button" class="btn btn-warning" onclick='seemore("more-quant", "M1S2Card2Button")' id='M1S2Card2Button'></button>
+                    <div class='sub' id='more-quant'>
+                      <div class="card border-info mb-3 m2">
+                        <div id="M1S2Card2Sub1Title" class="card-header bold"></div>
+                        <div id="M1S2Card2Sub1Text" class='card-body'></div>
+                      </div>
+                      <div class="card border-info mb-3 m2">
+                        <div id="M1S2Card2Sub2Title" class="card-header bold"></div>
+                        <div id="M1S2Card2Sub2Text" class='card-body'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='vertical'>
+                <div class="card text-white bg-primary mb-3 m2">
+                  <div id="M1S2Card3Title" class="card-header bold"></div>
+                  <div id="M1S2Card3Text" class='card-body'></div>
+                </div>
+              </div>
+            </div>  
+            <div id="M1S2Text2" class='body-text'></div>
           </div>
 
-          <!-- third tab pane --> 
+<!-------------------- SECTION 3 --------------------------->
+
           <div class="tab-pane fade" id="third">           
-              <div id="M1S3Title" class="header"></div>
-              <div id="M1S3Text1" class='body-text'></div>  
-              <div class='table' id="example-table"></div>
-              <div class='button group'>
-                <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button1'></button>
-                <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button2'></button>
-                <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button3'></button>
-                <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button4'></button>
-                <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button5'></button>
-              </div>
-              <div id="M1S3Text2" class='body-text'></div>
-
+            <div id="M1S3Title" class="header"></div>
+            <div id="M1S3Text1" class='body-text'></div>  
+            <div class='table' id="example-table"></div>
+            <div class='button group'>
+              <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button1'></button>
+              <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button2'></button>
+              <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button3'></button>
+              <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button4'></button>
+              <button type="button" class="btn btn-success btn-sm data-type" id='M1S3Button5'></button>
+            </div>
+            <div id="M1S3Text2" class='body-text'></div>
           </div>
 
-          <!-- fourth tab pane --> 
+<!-------------------- SECTION 4 --------------------------->
+
           <div class="tab-pane fade" id="fourth">
-              <div id="M1S4Title" class="tab content header 4"></div>
-              <div id="M1S4Text1" class="body-text"></div>
-              <div class='table' id='quiz1-table'>               
-              </div>
-              <div class='quiz-wrapper'>
-                <div id="quiz"></div>
-                <button type="button" id="M1S4Button" class="btn btn-success"></button>
-                <div id="results"></div>
-              </div>
+            <div id="M1S4Title" class="tab content header 4"></div>
+            <div id="M1S4Text1" class="body-text"></div>
+            <div class='table' id='quiz1-table'>               
+            </div>
+            <div class='quiz-wrapper'>
+              <div id="quiz"></div>
+              <button type="button" id="M1S4Button" class="btn btn-success"></button>
+              <div id="results"></div>
+            </div>
           </div>
+
+<!-------------------- END OF SECTION 4 -------------------->
+
         </div>
+
+<!-------------------- END OF SECTION TABS ----------------->
+<!-------------------- KEY VOCABULARY SECTION -------------->        
 
         <div id="item5">
           <div id="M1Vocabulary" class="header"></div>
@@ -236,86 +242,87 @@
           </div>
         </div>
 
+<!-------------------- END OF KEY VOCABULARY --------------->
+
       </div>
-      <!-- end of center content --> 
 
-      <!-- right sidebar --> 
+<!-------------------- END OF CENTER CONTENT ---------------> 
+<!-------------------- START OF RIGHT SIDEBAR -------------->
+
       <div class="col-sm-2 sidenav"></div>
-      <!-- end of right sidebar --> 
 
+<!-------------------- END OF RIGHT SIDEBAR ---------------->
 
     </div>
   </div>
+
+<!-------------------- END OF MAIN PAGE --------------------->
+<!-------------------- FOOTER ------------------------------->
 
   <nav class="navbar navbar-default navbar-fixed-bottom">
     <div id="Footer" class="footer"></div>
   </nav>
 
-      <!-- Modal -->
+<!-------------------- MODAL DISPLAYS ----------------------->
+
       <div class="modal fade" id="data" role="dialog">
         <div class="modal-dialog">
-          <!-- Modal content-->
           <div class="modal-content">
             <div id="M1Vocab1Def" class="modal-body"></div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
-          </div>
-          <!-- end of modal content -->        
+          </div>       
         </div>
       </div>
-      <!-- end of modal -->
 
-
-      <!-- Modal -->
       <div class="modal fade" id="quantitative" role="dialog">
         <div class="modal-dialog">
-          <!-- Modal content-->
           <div class="modal-content">
             <div id="M1Vocab2Def" class="modal-body"></div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
-          </div>
-          <!-- end of modal content -->        
+          </div>       
         </div>
       </div>
-      <!-- end of modal -->
 
-      <!-- Modal -->
       <div class="modal fade" id="qualitative" role="dialog">
         <div class="modal-dialog">
-          <!-- Modal content-->
           <div class="modal-content">
             <div id="M1Vocab3Def" class="modal-body"></div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
-          </div>
-          <!-- end of modal content -->        
+          </div>       
         </div>
       </div>
-      <!-- end of modal -->
 
-      <!-- Modal -->
       <div class="modal fade" id="md" role="dialog">
         <div class="modal-dialog">
-          <!-- Modal content-->
           <div class="modal-content">
             <div id="M1Vocab4Def" class="modal-body"></div>
             <div class="modal-footer">
               <button id="modal-close" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
-          </div>
-          <!-- end of modal content -->        
+          </div>       
         </div>
       </div>
-      <!-- end of modal -->
 
-  <script src="js/fill-content.js"></script>
-  <script src="js/quiz1.js"></script>
+<!-------------------- END OF MODAL DISPLAYS ---------------->
+<!-------------------- LOCAL JS TO ADD CONTENT -------------->
+
+  <script src="js/fill-text.js"></script>
+  <script src="js/fill-tables.js"></script>
+  <script src="js/fill-quiz.js"></script>
   <script src='js/reveal.js'></script>
-
+  <script>
+    getText("https://hannahker.github.io/web-development/data/text/nav.json", "EN");
+    getText("https://hannahker.github.io/web-development/data/text/module1.json", "EN");
+    getData("https://hannahker.github.io/web-development/data/consultation/parks-consultation.json");
+    getData("https://hannahker.github.io/web-development/data/consultation/gen-eng-subset.json");
+    getQuiz("https://hannahker.github.io/web-development/data/quiz/quiz1.json", "mod1");
+  </script>
 
 </body>
 </html>

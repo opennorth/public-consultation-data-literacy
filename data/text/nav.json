@@ -1,6 +1,7 @@
 {
   "Nav": {
     "EN": {
+      "PageTitle": "Data Literacy Guide",
       "NavTitle": "Data Literacy Guide",
       "Item1": "Home",
       "Item2": "About this Guide",
@@ -11,6 +12,7 @@
       "Footer": "Developed by <a class=\"light-link\" href=\"https://www.opennorth.ca/\">OpenNorth</a>"
     },
     "FR": {
+      "PageTitle": "",
       "NavTitle": "",
       "Item1": "",
       "Item2": "",

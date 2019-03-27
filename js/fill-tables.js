@@ -1,11 +1,3 @@
-header = "https://hannahker.github.io/web-development/data/header.json";
-table13 = "https://hannahker.github.io/web-development/data/parks-consultation.json";
-table14 = "https://hannahker.github.io/web-development/data/gen-eng-subset.json";
-text = "https://hannahker.github.io/web-development/data/text.json";
-table24 = "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-email.json";
-table22 = "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-online.json"; 
-homepage = 'https://hannahker.github.io/web-development/data/home.json'; 
-
 function getData(source){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
@@ -191,53 +183,12 @@ function getData(source){
 					});	
 				}
 
-				//fills standard text across all pages 
-				function fillHeader(){
-					//fill in title
-					document.getElementById("title").innerHTML = data.Title; 
-					//fill in nav bar
-					document.getElementById("header-1").innerHTML = data.Header[0];
-			    	document.getElementById("header-2").innerHTML = data.Header[1];
-			    	document.getElementById("header-3").innerHTML = data.Header[2];	
-			    	//fill in dropdown
-			    	document.getElementById("dropdown-1").innerHTML = data.Dropdown[0];
-			    	document.getElementById("dropdown-2").innerHTML = data.Dropdown[1];
-			    	document.getElementById("dropdown-3").innerHTML = data.Dropdown[2];
-			    	//fill in footer
-				}
-
-				//fill in the content for module 1
-				//ONGOING !!!
-				function fillm1(){
-
-					//content for Section 1
-					document.getElementById("m1-s1-title").innerHTML = "<h4>" + data.Module1.Section1.Title.EN + "</h4>"; 
-					document.getElementById("m1-s1-text1").innerHTML = data.Module1.Section1.Text1.EN; 
-					document.getElementById("m1-s1-text2").innerHTML = data.Module1.Section1.Text2.EN;
-					document.getElementById("m1-s1-text3").innerHTML = data.Module1.Section1.Text3.EN;
-					document.getElementById("m1-s1-text4").innerHTML = data.Module1.Section1.Text4.EN;  
-					document.getElementById("m1-s1-text5").innerHTML = data.Module1.Section1.Text5.EN; 
-					document.getElementById("m1-s1-text6").innerHTML = data.Module1.Section1.Text6.EN; 
-					document.getElementById("m1-s1-text7").innerHTML = data.Module1.Section1.Text7.EN; 
-
-					//text content for buttons 
-					document.getElementById("m1-s1-button1").innerHTML = data.Module1.Section1.Button1.EN;
-					document.getElementById("m1-s1-button2").innerHTML = data.Module1.Section1.Button2.EN;
-					document.getElementById("m1-s1-button3").innerHTML = data.Module1.Section1.Button3.EN;
-				}
-
 				//determine which type of content to fill
-				if(source == "https://hannahker.github.io/web-development/data/header.json"){
-					fillHeader();
-				}
 				if(source == "https://hannahker.github.io/web-development/data/parks-consultation.json"){
 					fillTable13(); 
 				}
 				if(source == "https://hannahker.github.io/web-development/data/gen-eng-subset.json"){
 					fillTable14(); 
-				}
-				if(source == "https://hannahker.github.io/web-development/data/text.json"){
-					fillm1();
 				}
 				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-email.json"){
 					fillTable24();
@@ -255,9 +206,3 @@ function getData(source){
 	}
 	
 }
-getData(header);
-getData(table13); 
-getData(table14);
-getData(text); 
-getData(table24);
-getData(table22);

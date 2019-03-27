@@ -1,6 +1,6 @@
 //SOURCE = url for the JSON
 //LANG = "EN" or "FR"
-function getData(source, lang){
+function getText(source, lang){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
 		XMLHttpRequestObject = new XMLHttpRequest();
