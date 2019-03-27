@@ -1,7 +1,8 @@
 //MOD = "mod1" or "mod2"
 //SOURCE = link to json data
+//LANG = "EN" or "FR"
 //adapted from https://www.sitepoint.com/simple-javascript-quiz/
-function getQuiz(source, mod){
+function getQuiz(source, lang, mod){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
 		XMLHttpRequestObject = new XMLHttpRequest();
@@ -15,22 +16,25 @@ function getQuiz(source, mod){
 
 		XMLHttpRequestObject.onreadystatechange = function(){
 			if (XMLHttpRequestObject.readyState == 4 && XMLHttpRequestObject.status == 200){
-				const myQuestions=XMLHttpRequestObject.response;
+				var data=XMLHttpRequestObject.response;
 				const quizContainer = document.getElementById('quiz');
 				const resultsContainer = document.getElementById('results');
-								
+				var submitButton = "";  
+
 				if(mod=="mod1"){
-					const submitButton = document.getElementById('M1S4Button');
+					submitButton = document.getElementById('M1S4Button');
 				}
 				if(mod=="mod2"){
-					const submitButton = document.getElementById('M2S4Button');
+					submitButton = document.getElementById('M2S4Button');
 				}
+
+				var questions = data[lang]['myQuestions']; 
 
 				function buildQuiz() {
 				    // we'll need a place to store the HTML output
 				    const output = [];
 				    // for each question...
-				    myQuestions.forEach(
+				    questions.forEach(
 				        (currentQuestion, questionNumber) => {
 				            // we'll want to store the list of answer choices
 				            const answers = [];
@@ -62,7 +66,7 @@ function getQuiz(source, mod){
 				    // keep track of user's answers
 				    let numCorrect = 0;
 				    // for each question...
-				    myQuestions.forEach((currentQuestion, questionNumber) => {
+				    questions.forEach((currentQuestion, questionNumber) => {
 				        // find selected answer
 				        const answerContainer = answerContainers[questionNumber];
 				        const selector = 'input[name=question' + questionNumber + ']:checked';
@@ -83,7 +87,7 @@ function getQuiz(source, mod){
 				        }
 				    });
 				    // add to results box
-				    resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
+				    resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
 				}
 				// display quiz right away
 				buildQuiz();

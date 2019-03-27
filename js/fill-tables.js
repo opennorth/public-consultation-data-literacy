@@ -12,6 +12,7 @@ function getData(source){
 
 		XMLHttpRequestObject.onreadystatechange = function(){
 			if (XMLHttpRequestObject.readyState == 4 && XMLHttpRequestObject.status == 200){
+
 				data=XMLHttpRequestObject.response;
 				//creates tabulator table for section 1.3
 				function fillTable13(){
@@ -21,10 +22,8 @@ function getData(source){
 					var table = new Tabulator("#example-table", {
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	data:data, //assign data to table
-					 	//layout:"fitColumns", //fit columns to width of table (optional)
 					 	columns:[ //Define Table Columns
 					 		{title:colHeaders[0], field: colHeaders[0], width: 40, headerSort:false, formatter: "textarea"},
-					 		//{title:colHeaders[0], field: colHeaders[0], width: 40, headerSort:false, cellClick:function(e,cell){reveal('a');}},
 						 	{title:colHeaders[1], field:colHeaders[1], width: 80, headerSort:false, formatter: "textarea"},
 						 	{title:colHeaders[2], field:colHeaders[2], width: 80, headerSort:false, formatter: "textarea"},
 						 	{title:colHeaders[3], field:colHeaders[3], width: 120, headerSort:false, formatter: "textarea"},
@@ -184,16 +183,16 @@ function getData(source){
 				}
 
 				//determine which type of content to fill
-				if(source == "https://hannahker.github.io/web-development/data/parks-consultation.json"){
+				if(source == "https://hannahker.github.io/web-development/data/consultation/parks-consultation.json"){
 					fillTable13(); 
 				}
-				if(source == "https://hannahker.github.io/web-development/data/gen-eng-subset.json"){
+				if(source == "https://hannahker.github.io/web-development/data/consultation/gen-eng-subset.json"){
 					fillTable14(); 
 				}
-				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-email.json"){
+				if(source == "https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-email.json"){
 					fillTable24();
 				}
-				if(source == "https://hannahker.github.io/web-development/data/ntnl-scrt-sub-online.json"){
+				if(source == "https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-online.json"){
 					fillTable22();
 				}
 
