@@ -72,7 +72,7 @@
 <!-------------------- START OF CENTER CONTENT ------------->
 
       <div class="col-sm-8 text-left"> 
-        <div id="M1Title" class="body-title m1"></div>
+        <div id="M1Title" class="h2"></div>
 
 <!-------------------- SECTION TABS ------------------------>
 
@@ -98,7 +98,7 @@
 <!-------------------- SECTION 1 --------------------------->
  
           <div class="tab-pane fade show active" id="first">                
-            <div id="M1S1Title" class="header"></div>
+            <div id="M1S1Title" class="h3 bold"></div>
             <div id="M1S1Text1" class='body-text'></div>
             <div class="button-group">
               <button type="button" class="btn btn-success" id="M1S1Button1" onclick="reveal('notesDiv')"></button>
@@ -144,7 +144,7 @@
 <!-------------------- SECTION 2 --------------------------->
 
           <div class="tab-pane fade" id="second">            
-            <div id="M1S2Title" class="header"></div>
+            <div id="M1S2Title" class="h3 bold"></div>
             <div id="M1S2Text1" class='body-text'></div>  
             <div class='box'>
               <div class='vertical'>                    
@@ -198,7 +198,7 @@
 <!-------------------- SECTION 3 --------------------------->
 
           <div class="tab-pane fade" id="third">           
-            <div id="M1S3Title" class="header"></div>
+            <div id="M1S3Title" class="h3 bold"></div>
             <div id="M1S3Text1" class='body-text'></div>  
             <div class='table' id="example-table"></div>
             <div class='button group'>
@@ -214,7 +214,7 @@
 <!-------------------- SECTION 4 --------------------------->
 
           <div class="tab-pane fade" id="fourth">
-            <div id="M1S4Title" class="tab content header 4"></div>
+            <div id="M1S4Title" class="h3 bold"></div>
             <div id="M1S4Text1" class="body-text"></div>
             <div class='table' id='quiz1-table'>               
             </div>
@@ -231,18 +231,25 @@
 
 <!-------------------- END OF SECTION TABS ----------------->
 <!-------------------- KEY VOCABULARY SECTION -------------->        
-
-        <div id="item5">
-          <div id="M1Vocabulary" class="header"></div>
-          <div id="body5-content" class=body-content>
-            <button id="M1Vocab1" type="button" class="btn btn-info" data-toggle="modal" data-target="#data"></button>
-            <button id="M1Vocab2" type="button" class="btn btn-info" data-toggle="modal" data-target="#quantitative"></button>
-            <button id="M1Vocab3" type="button" class="btn btn-info" data-toggle="modal" data-target="#qualitative"></button>
-            <button id="M1Vocab4" type="button" class="btn btn-info" data-toggle="modal" data-target="#md"></button>
-          </div>
+        <hr>
+        <div class='vocab-section'>
+          <div id="M1Vocabulary" class="h4 bold"></div>
+          <button id="M1Vocab1" type="button" class="btn btn-info" data-toggle="modal" data-target="#data"></button>
+          <button id="M1Vocab2" type="button" class="btn btn-info" data-toggle="modal" data-target="#quantitative"></button>
+          <button id="M1Vocab3" type="button" class="btn btn-info" data-toggle="modal" data-target="#qualitative"></button>
+          <button id="M1Vocab4" type="button" class="btn btn-info" data-toggle="modal" data-target="#md"></button>
         </div>
+        <hr>
 
 <!-------------------- END OF KEY VOCABULARY --------------->
+<!-------------------- START OF BOTTOM NAV------------------>
+
+          <div class='bottom-nav'>
+            <button class='btn btn-warning' onclick="window.location.href = 'overview.html';">Previous</button>
+            <button class='btn btn-warning' onclick="window.location.href = 'module2.html';">Next</button>          
+          </div>
+          
+<!-------------------- END OF BOTTOM NAV ------------------->
 
       </div>
 

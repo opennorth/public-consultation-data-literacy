@@ -9,6 +9,8 @@
       "Dropdown1": "Overview",
       "Dropdown2": "Module 1",
       "Dropdown3": "Module 2",
+      "NextButton": "Next",
+      "PrevButton": "Previous",
       "Footer": "Developed by <a class=\"light-link\" href=\"https://www.opennorth.ca/\">OpenNorth</a>"
     },
     "FR": {
@@ -20,6 +22,8 @@
       "Dropdown1": "",
       "Dropdown2": "",
       "Dropdown3": "",
+      "NextButton": "",
+      "PrevButton": "", 
       "Footer": ""
     }
   }
