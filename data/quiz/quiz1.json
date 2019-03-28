@@ -2,42 +2,42 @@
   "EN": {
     "myQuestions": [
       {
-        "question": "What would we call this spreadsheet?",
+        "question": "1. What would we call this spreadsheet?",
         "answers": {
-          "a": "A spreadsheet with information",
-          "b": "Something that comes from a computer",
-          "c": "A table with comments from people",
-          "d": "Public consultation data!"
+          "a": "A: A spreadsheet with information",
+          "b": "B: Something that comes from a computer",
+          "c": "C: A table with comments from people",
+          "d": "D: Public consultation data!"
         },
         "correctAnswer": "d"
       },
       {
-        "question": "Which of the following fields contains discrete quantitative data?",
+        "question": "2. Which of the following fields contains discrete quantitative data?",
         "answers": {
-          "a": "Title",
-          "b": "User defined theme",
-          "c": "Idea score",
-          "d": "Forum related theme"
+          "a": "A: Title",
+          "b": "B: User defined theme",
+          "c": "C: Idea score",
+          "d": "D: Forum related theme"
         },
         "correctAnswer": "c"
       }, 
       {
-        "question": "Which of the following fields contains nominal qualitative data?",
+        "question": "3. Which of the following fields contains nominal qualitative data?",
         "answers": {
-          "a": "Total 'likes'",
-          "b": "Post number",
-          "c": "Date posted",
-          "d": "Idea or comment"
+          "a": "A: Total 'likes'",
+          "b": "B: Post number",
+          "c": "C: Date posted",
+          "d": "D: Idea or comment"
         },
         "correctAnswer": "d"
       }, 
       {
-        "question": "How many fields could be considered as metadata?",
+        "question": "4. How many fields could be considered as metadata?",
         "answers": {
-          "a": "3",
-          "b": "None",
-          "c": "1",
-          "d": "15"
+          "a": "A: 3",
+          "b": "B: None",
+          "c": "C: 1",
+          "d": "D: 14"
         },
         "correctAnswer": "d"
       }

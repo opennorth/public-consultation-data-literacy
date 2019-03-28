@@ -2,29 +2,29 @@
   "EN": {
     "myQuestions": [
       {
-        "question": "How might this dataset be cleaned?",
+        "question": "1. How might this dataset be cleaned?",
         "answers": {
-          "a": "Delete angry comments",
-          "b": "Remove fields that are not relevant for your analysis",
-          "c": "Fix spelling errors in the individual comments from participants"
+          "a": "A: Delete angry comments",
+          "b": "B: Remove fields that are not relevant for your analysis",
+          "c": "C: Fix spelling errors in the individual comments from participants"
         },
         "correctAnswer": "b"
       },
       {
-        "question": "Where does this dataset show evidence of previous preprocessing?",
+        "question": "2. Where does this dataset show evidence of previous preprocessing?",
         "answers": {
-          "a": "Removal of personal information",
-          "b": "Online publishing",
-          "c": "Duplicated entries"
+          "a": "A; Removal of personal information",
+          "b": "B: Online publishing",
+          "c": "C: Duplicated entries"
         },
         "correctAnswer": "a"
       }, 
       {
-        "question": "Why might it be important to preserve duplicate entries in this case?",
+        "question": "3. Why might it be important to preserve duplicate entries in this case?",
         "answers": {
-          "a": "Minimize time and effort spent preprocessing",
-          "b": "The presence of duplicate entries is from a targeted email campaign, rather than errors in data entry",
-          "c": "To maintain a high number of total entries"
+          "a": "A: Minimize time and effort spent preprocessing",
+          "b": "B: The presence of duplicate entries is from a targeted email campaign, rather than errors in data entry",
+          "c": "C: To maintain a high number of total entries"
         },
         "correctAnswer": "b"
       }
