@@ -23,6 +23,7 @@ function getData(source){
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	layout: 'fitColumns',
 					 	tooltipsHeader: true,
+					 	resizableColumns:false,
 					 	tooltips: true,
 					 	data:data, //assign data to table
 					 	columns:[ //Define Table Columns
@@ -99,6 +100,7 @@ function getData(source){
 					var table = new Tabulator("#quiz1-table", {
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	tooltipsHeader: true,
+					 	resizableColumns:false,
 					 	tooltips: true,
 					 	data:data, //assign data to table
 					 	columns:[ //Define Table Columns
@@ -129,6 +131,7 @@ function getData(source){
 					var table = new Tabulator("#quiz2-table", {
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	tooltipsHeader: true,
+					 	resizableColumns:false, 
 					 	tooltips: true,
 					 	data:data, //assign data to table
 					 	columns:[ //Define Table Columns
@@ -164,6 +167,7 @@ function getData(source){
 					 	height:500, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
 					 	tooltipsHeader: true,
 					 	tooltips: true,
+					 	resizableColumns:false, 
 					 	data:data, //assign data to table
 					 	columns:[ //Define Table Columns
 					 		{title:colHeaders[0], field: colHeaders[0], width: 80},

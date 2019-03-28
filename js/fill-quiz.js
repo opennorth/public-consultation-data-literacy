@@ -22,10 +22,10 @@ function getQuiz(source, lang, mod){
 				var submitButton = "";  
 
 				if(mod=="mod1"){
-					submitButton = document.getElementById('M1S4Button');
+					submitButton = document.getElementById('M1S4Button1');
 				}
 				if(mod=="mod2"){
-					submitButton = document.getElementById('M2S4Button');
+					submitButton = document.getElementById('M2S4Button1');
 				}
 
 				var questions = data[lang]['myQuestions']; 
