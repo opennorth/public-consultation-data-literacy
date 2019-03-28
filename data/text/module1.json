@@ -45,11 +45,10 @@
       "M1S3Button4": "Qualitative: Ordinal",
       "M1S3Button5": "Metadata",
       "M1S3Text3": "<p>It is important to note the structure of how data is stored in this table. The data is organized in rows and columns. Each column contains a single variable, or data type. The column labels, or headers, are stored in the first row of the table. Each row contains a single data entry, indicating that all the data in that row corresponds to the same real-world entity.</p><p>This is a standard structure for tabular datasets and may be required for the data to be read by analysis software. In most cases, consultation datasets should follow this format.</p>",
-
-      
       "M1S4Tab": "Check Your Understanding",
       "M1S4Title": "Check Your Understanding: Quiz",
       "M1S4Text1": "The multiple choice questions will be based on the following content, collected as part of Natural Resources Canada’s Generation Energy consultation. This content was collected from an online forum located on the Generation Energy website.",
+      "M1S4Text2": "<p>How to explore this table:</p><ul><li>Scroll vertically and horizontally to view all the data</li><li>Hover your mouse over a cell to see all the content</li><li>Resize the width of columns by dragging to view more or less content</li><li>Visit <a href=\"https://docs.google.com/spreadsheets/d/15qbQkl6nsAUREbkykQq1MZetjjvk8JebKyzlr5JFnyU/edit?usp=sharing\">this</a> link to view the dataset on Google Sheets</li><ul>",
       "M1S4Button": "Submit Quiz",
       "M1Vocabulary": "Key Vocabulary from this Module",
       "M1Vocab1": "Public consultation data",
