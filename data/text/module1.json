@@ -61,7 +61,10 @@
       "M1Vocab3Def": "Qualitative data describes the qualities of real-world objects or entities. Qualitative data is often descriptive and may be retrieved from documents in different formats, such as text or audio. Includes nominal data, which does not have a natural order or ranking, and ordinal data, which does have a natural order.",
       "M1Vocab4": "Metadata",
       "M1Vocab4Def": "Metadata is data that describes the characteristics of an associated dataset.", 
-      "M1ModalClose": "Close",
+      "M1ModalClose1": "Close",
+      "M1ModalClose2": "Close",
+      "M1ModalClose3": "Close",
+      "M1ModalClose4": "Close",
       "M1PrevButton": "Previous", 
       "M1NextModule": "Next Module"
     },
@@ -126,7 +129,10 @@
       "M1Vocab3Def": "",
       "M1Vocab4": "",
       "M1Vocab4Def": "",
-      "M1ModalClose": "", 
+      "M1ModalClose1": "",
+      "M1ModalClose2": "", 
+      "M1ModalClose3": "",
+      "M1ModalClose4": "",
       "M1PrevButton": "", 
       "M1NextModule": ""
     }
