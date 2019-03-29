@@ -36,7 +36,7 @@
       "M1S2Card3Text": "<p>Metadata describes the characteristics of data.</p><p><i>Eg. data collection method, date of data collection, author</i></p>",
       "M1S2Text2": "Note that the quantitative and qualitative classifications are mutually exclusive. Data cannot be both quantitative and qualitative. There can, however, be both quantitative and qualitative types of data within a single dataset. Metadata can also be either quantitative or qualitative.",
       "M1S3Tab": "Section 3",
-      "M1S3Title": "Introduction to Components of a Tabular Dataset",
+      "M1S3Title": "Breaking Down a Tabular Dataset",
       "M1S3Text1": "Let’s explore a subset of the spreadsheet of feedback that you collected from the online form that you sent around to Canadian citizens during your consultation. Go ahead and click on the buttons at the bottom of the page to highlight some of the different data types.",
       "M1S3Text2": "<p>How to explore this table:</p><ul><li>Scroll vertically and horizontally to view all the data</li><li>Hover your mouse over a cell to see all the content</li><li>Visit <a href=\"https://docs.google.com/spreadsheets/d/1g2YP_1Yixk-GwVQgk4ni5YF5t6ivJXpUoxi2TFWjqKc/edit?usp=sharing\">this</a> link to view the dataset on Google Sheets</li><ul>",
       "M1S3Button1": "Quantitative: Discrete",
@@ -61,6 +61,7 @@
       "M1Vocab3Def": "Qualitative data describes the qualities of real-world objects or entities. Qualitative data is often descriptive and may be retrieved from documents in different formats, such as text or audio. Includes nominal data, which does not have a natural order or ranking, and ordinal data, which does have a natural order.",
       "M1Vocab4": "Metadata",
       "M1Vocab4Def": "Metadata is data that describes the characteristics of an associated dataset.", 
+      "M1ModalClose": "Close",
       "M1PrevButton": "Previous", 
       "M1NextModule": "Next Module"
     },
@@ -124,7 +125,8 @@
       "M1Vocab3": "",
       "M1Vocab3Def": "",
       "M1Vocab4": "",
-      "M1Vocab4Def": "", 
+      "M1Vocab4Def": "",
+      "M1ModalClose": "", 
       "M1PrevButton": "", 
       "M1NextModule": ""
     }
