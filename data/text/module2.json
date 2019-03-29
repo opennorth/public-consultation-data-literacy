@@ -19,7 +19,7 @@
       "M2S2Title": "Getting to Know a Dataset",
       "M2S2Text1": "Imagine that you are interested in the following question:",
       "M2S2Text2": "What are Canadians’ expections regarding privacy in both the physical and digital worlds? Do expectations of privacy differ across these two environments?",
-      "M2S2Text3": "To help answer this question, you have downloaded a dataset that was collected as part of the Government of Canada’s consultation on national security. Let’s begin by exploring this dataset and asking some basic questions:",
+      "M2S2Text3": "To help answer this question, you have downloaded a dataset that was collected as part of the Government of Canada’s consultation on national security. Let’s begin by exploring this dataset and asking some basic questions.",
       "M2S2Text4": "<p>How to explore this table:</p><ul><li>Scroll vertically and horizontally to view all the data</li><li>Hover your mouse over a cell to see all the content</li><li>Click on the triangles in the header of the spreadsheet to sort each column</li><li>Visit <a href=\"https://docs.google.com/spreadsheets/d/1t6TazxBp5GVKBiHLgmXPWOnbmdFOC204-WSkXDDwWsY/edit?usp=sharing\">this</a> link to view the dataset on Google Sheets</li><ul>",
       "M2S2Text5": "Click on the buttons below to reveal some key questions to ask while exploring your dataset, important attributes of the dataset to consider when determining your preprocessing approach, and potential preprocessing options",
       "M2S2Button1": "Exploring your dataset",
@@ -57,6 +57,8 @@
       "M2Vocab1Def": "Data preprocessing includes activities to prepare a dataset for analysis. Preprocessing activities can include data cleaning, data transformation, and data integration.",
       "M2Vocab2": "Data quality",
       "M2Vocab2Def": "<p>Data quality refers to the extent to which a dataset is fit for its intended purpose.</p><p>Source: Wang, R. Y., & Strong, D. M. (1996). Beyond accuracy: What data quality means to data consumers. Journal of management information systems, 12(4), 5-33.</p>", 
+      "M2ModalClose1": "Close",
+      "M2ModalClose2": "Close",
       "M2PrevModule": "Previous Module"
     },
     "FR": {
@@ -115,7 +117,9 @@
       "M2Vocab1": "",
       "M2Vocab1Def": "",
       "M2Vocab2": "",
-      "M2Vocab2Def": "", 
+      "M2Vocab2Def": "",
+      "M2ModalClose1": "", 
+      "M2ModalClose2": "", 
       "M2PrevModule": ""
     }
   }

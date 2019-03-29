@@ -13,7 +13,7 @@
       {
         "question": "2. Where does this dataset show evidence of previous preprocessing?",
         "answers": {
-          "a": "A; Removal of personal information",
+          "a": "A: Removal of personal information",
           "b": "B: Online publishing",
           "c": "C: Duplicated entries"
         },
