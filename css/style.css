@@ -88,6 +88,10 @@
 .bold{
   font-weight:bold;
 }
+/*underline text*/
+.underline{
+  text-decoration: underline;
+}
 /*text with bottom margin*/
 .bottom-margin{
   margin-bottom: 10px;
