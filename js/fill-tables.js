@@ -1,14 +1,8 @@
 //Functionality = fills in the example tables based on JSON data, also includes function to highlight the specific cells from Section 1.3
 //Note = each table has a specific function that will fill it (b/c depends on the number of columns)
 //SOURCE = url to one of the example datasets - needs to be one of the four specified below
-
-//Change these urls accordingly if you change any of the example datasets
-var table13 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/parks-consultation.json';
-var table14 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/gen-eng-subset.json'; 
-var table22 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/ntnl-scrt-sub-online.json';
-var table24 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/ntnl-scrt-sub-email.json';
-
-function getData(source){
+//TABLE_NAME = "S13" (table in section 1.3) or "S14" (table in section 1.4) or "S22" or "S24"
+function getData(source, table_name){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
 		XMLHttpRequestObject = new XMLHttpRequest();
@@ -207,16 +201,16 @@ function getData(source){
 				}
 
 				//determine which table to fill, based on the function (getData()) input
-				if(source == table13){
+				if(table_name == "S13"){
 					fillTable13(); 
 				}
-				if(source == table14){
+				if(table_name == "S14"){
 					fillTable14();
 				}
-				if(source == table24){
+				if(table_name == "S24"){
 					fillTable24();
 				}
-				if(source == table22){
+				if(table_name == "S22"){
 					fillTable22();
 				}
 
