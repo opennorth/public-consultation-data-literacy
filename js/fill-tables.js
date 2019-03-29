@@ -3,10 +3,10 @@
 //SOURCE = url to one of the example datasets - needs to be one of the four specified below
 
 //Change these urls accordingly if you change any of the example datasets
-var table13 = 'https://hannahker.github.io/web-development/data/consultation/parks-consultation.json';
-var table14 = 'https://hannahker.github.io/web-development/data/consultation/gen-eng-subset.json'; 
-var table22 = 'https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-online.json';
-var table24 = 'https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-email.json';
+var table13 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/parks-consultation.json';
+var table14 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/gen-eng-subset.json'; 
+var table22 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/ntnl-scrt-sub-online.json';
+var table24 = 'https://opennorth.github.io/public-consultation-data-literacy/data/consultation/ntnl-scrt-sub-email.json';
 
 function getData(source){
 	var XMLHttpRequestObject = false; 
