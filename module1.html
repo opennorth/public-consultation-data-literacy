@@ -37,7 +37,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="navbar-collapse collapse" id="navbarColor01" style="">
+    <div class="navbar-collapse collapse" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a id="Item1" class="nav-link" href="index.html"><span class="sr-only"></span></a>
@@ -113,7 +113,7 @@
               </div>
               <div class="card-body">
                 <p id="M1S1Button1Text"class="card-text"></p>
-                <div class=card-image><img src='images/notes.jpg'></div>
+                <div class=card-image><img src='images/notes.jpg' alt='Image of handwritten notes'></div>
               </div>
             </div>
             <div id='spreadsheetDiv' class="card text-white bg-primary mb-3 popup">
@@ -124,7 +124,7 @@
               </div>
               <div class="card-body">
                 <p id="M1S1Button2Text"class="card-text"></p>
-                <div class=card-image><img src='images/spreadsheet.PNG'></div>
+                <div class=card-image><img src='images/spreadsheet.PNG' alt='Image of a spreadsheet of data'></div>
               </div>
             </div>
             <div id='transcriptDiv' class="card text-white bg-primary mb-3 popup">
@@ -135,7 +135,7 @@
               </div>
               <div class="card-body">
                 <p id="M1S1Button3Text" class="card-text"></p>
-                <div class=card-image><img src='images/transcript.png'></div>
+                <div class=card-image><img src='images/transcript.png' alt='Image of a transcript'></div>
               </div>
             </div>
             <div id ='M1S1Text2' class='body-text'></div>
@@ -152,7 +152,7 @@
                   <div id="M1S2Card1Title" class="card-header bold"></div>
                   <div class='card-body'>
                     <p id="M1S2Card1Text" class="card-text"></p>
-                    <button type="button" class="btn btn-warning" onclick='seemore("more-qual", "M1S2Card1Button")' id='M1S2Card1Button'></button>
+                    <button type="button" class="btn btn-warning" onclick='reveal("more-qual")' id='M1S2Card1Button'></button>
                     <div class='sub' id='more-qual'>
                       <div class="card border-primary mb-3 m2">
                         <div id="M1S2Card1Sub1Title" class="card-header bold"></div>
@@ -171,7 +171,7 @@
                   <div id="M1S2Card2Title" class="card-header bold"></div>
                   <div class='card-body'>
                     <p id="M1S2Card2Text" class="card-text"></p>
-                    <button type="button" class="btn btn-warning" onclick='seemore("more-quant", "M1S2Card2Button")' id='M1S2Card2Button'></button>
+                    <button type="button" class="btn btn-warning" onclick='reveal("more-quant")' id='M1S2Card2Button'></button>
                     <div class='sub' id='more-quant'>
                       <div class="card border-info mb-3 m2">
                         <div id="M1S2Card2Sub1Title" class="card-header bold"></div>
@@ -218,15 +218,12 @@
             <div id="M1S4Title" class="h3 bold"></div>
             <div id="M1S4Text1" class="body-text"></div>
             <div id="M1S4Text2" class='body-text highlight-2'></div>
-            <div class='table' id='quiz1-table'>               
-            </div>
-            <div class='quiz-wrapper'>
-              <div id="quiz"></div>
-              <button type="button" id="M1S4Button1" class="btn btn-success"></button>
-              <div id="results"></div>
-            </div>
-              <button type="button" class="btn btn-success" id="M1S4Button2" onclick="reveal('M1S4Answers')"></button>
-              <div id='M1S4Answers' class='body-text highlight-2 hide'></div>
+            <div class='table' id='quiz1-table'></div>
+            <div id="quiz"></div>
+            <button type="button" id="M1S4Button1" class="btn btn-success"></button>
+            <button type="button" class="btn btn-success" id="M1S4Button2" onclick="reveal('M1S4Answers')"></button>
+            <div id="results"></div>             
+            <div id='M1S4Answers' class='body-text highlight-2 hide'></div>
           </div>
 
 <!-------------------- END OF SECTION 4 -------------------->

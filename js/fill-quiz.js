@@ -1,7 +1,8 @@
-//MOD = "mod1" or "mod2"
-//SOURCE = link to json data
+//MOD = "mod1" or "mod2" (for the module that the quiz belongs to)
+//SOURCE = link to json data for the quiz questions
 //LANG = "EN" or "FR"
 //adapted from https://www.sitepoint.com/simple-javascript-quiz/
+
 function getQuiz(source, lang, mod){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){

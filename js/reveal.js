@@ -1,26 +1,18 @@
-//reveal/hide a div - function used on button click in Module 1
-//used in section 1.1
+//Functionality = toggle between div hide or reveal - eg. implemented on a button click
+//DIVID = id of the div that you want to hide/reveal
+
 function reveal(divID) {
+  //select the div that you want to hide or reveal
   var x = document.getElementById(divID);
+  //if the div is already displayed, then hide it
   if (x.style.display === "block") {
     x.style.display = "none";
+    //if the div is already hidden, then display it
   } else {
     x.style.display = "block";
   }
 }
 
-//pretty much the same function, except this one changes the text on the button
-//used in section 1.2
-function seemore(divID, buttonID){
-	var x = document.getElementById(divID);
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    document.getElementById(buttonID).innerHTML = "See more";
-  } else {
-    x.style.display = "block";
-    document.getElementById(buttonID).innerHTML = "See less";
-  }
-}
 
 
 

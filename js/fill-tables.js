@@ -1,3 +1,13 @@
+//Functionality = fills in the example tables based on JSON data, also includes function to highlight the specific cells from Section 1.3
+//Note = each table has a specific function that will fill it (b/c depends on the number of columns)
+//SOURCE = url to one of the example datasets - needs to be one of the four specified below
+
+//Change these urls accordingly if you change any of the example datasets
+var table13 = 'https://hannahker.github.io/web-development/data/consultation/parks-consultation.json';
+var table14 = 'https://hannahker.github.io/web-development/data/consultation/gen-eng-subset.json'; 
+var table22 = 'https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-online.json';
+var table24 = 'https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-email.json';
+
 function getData(source){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
@@ -75,6 +85,7 @@ function getData(source){
 					var qualn = [2,5,6]; 
 					var qualo = [4]; 
 
+					//add event listeners to the buttons so that the appropriate columns are highlighted on click
 					document.getElementById("M1S3Button5").addEventListener("click", function(){
 							highlightColumn(metadata, "#dee3ea"); 
 						});	
@@ -93,7 +104,7 @@ function getData(source){
 				}
 				//end of function 
 
-				//creates tabulator table for section 1.4
+				//fill table in Module 1 Quiz
 				function fillTable14(){
 					var colHeaders = Object.keys(data[0])
 					//create Tabulator on DOM element with id "example-table"
@@ -124,7 +135,7 @@ function getData(source){
 
 					});	
 				}
-
+				//fill table in Module 2 Quiz
 				function fillTable24(){
 					var colHeaders = Object.keys(data[0])
 					//create Tabulator on DOM element with id "example-table"
@@ -159,7 +170,7 @@ function getData(source){
 
 					});	
 				}
-
+				//fill table in Section 2.2
 				function fillTable22(){
 					var colHeaders = Object.keys(data[0])
 					//create Tabulator on DOM element with id "example-table"
@@ -195,17 +206,17 @@ function getData(source){
 					});	
 				}
 
-				//determine which type of content to fill
-				if(source == "https://hannahker.github.io/web-development/data/consultation/parks-consultation.json"){
+				//determine which table to fill, based on the function (getData()) input
+				if(source == table13){
 					fillTable13(); 
 				}
-				if(source == "https://hannahker.github.io/web-development/data/consultation/gen-eng-subset.json"){
+				if(source == table14){
 					fillTable14();
 				}
-				if(source == "https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-email.json"){
+				if(source == table24){
 					fillTable24();
 				}
-				if(source == "https://hannahker.github.io/web-development/data/consultation/ntnl-scrt-sub-online.json"){
+				if(source == table22){
 					fillTable22();
 				}
 

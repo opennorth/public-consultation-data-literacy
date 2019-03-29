@@ -1,5 +1,7 @@
+//Functionality = reads the JSON text data and fills in the webpage by matching JSON attribute name to div id
 //SOURCE = url for the JSON
 //LANG = "EN" or "FR"
+
 function getText(source, lang){
 	var XMLHttpRequestObject = false; 
 	if(window.XMLHttpRequest){
